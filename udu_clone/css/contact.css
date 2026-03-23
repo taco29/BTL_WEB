@@ -1,0 +1,122 @@
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    /* max-width: 1100px; */
+    margin: 60px 0; 
+}
+/* banner  */
+.contact-banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+
+    background-image: url('/udu_clone/img/breadcrumb.webp'); 
+    background-size: cover; 
+    background-position: center -560px; 
+    background-repeat: no-repeat;
+    margin-bottom: 60px; 
+}
+
+.contact-banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(8, 19, 57, 0.5); 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+    color: var(--secondary-color);
+}
+
+
+.contact-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 12px;
+}
+
+.contact-breadcrumb a {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.contact-breadcrumb a:hover {
+    color: var(--primary-color); 
+}
+
+.contact-breadcrumb i.fa-angle-right {
+    font-size: 12px; 
+}
+
+
+.contact-banner-title {
+    font-size: 45px;
+    font-weight: 600;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.contact-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #c02328; 
+    color: #ffffff;
+    border-radius: 50%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    flex-shrink: 0; 
+}
+
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contact-label {
+    font-size: 15px;
+    color: #555; 
+}
+
+.contact-value {
+    font-size: 18px;
+    color: #0b2253;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+
+.contact-map {
+    flex: 1; 
+    width: 100%;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    display: block;
+}
