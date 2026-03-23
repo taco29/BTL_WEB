@@ -1,11 +1,10 @@
-/* Global Styles & Variables */
 :root {
     --primary-color: #CC0000;
     --primary-dark: rgb(163, 0, 0);
     --secondary-color: #FFFFFF;
     --text-color: #333333;
     --bg-light: #F9F9F9;
-    --font-main: 'Roboto', sans-serif;
+    --font-main: 'Manrope', sans-serif;
     --transition: all 0.3s linear;
 }
 
@@ -115,7 +114,7 @@ ul {
     width: 0%;
     height: 1px;
     background-color: white;
-    transition: width 0.4s ease;
+    transition: var(--transition);
     
 }
 .slide-bottom-line:hover::after {
