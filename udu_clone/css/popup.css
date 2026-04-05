@@ -134,3 +134,33 @@
     height: auto;
     display: block;
 }
+
+/* ==========================================================================
+   Responsive Design for Popup
+   ========================================================================== */
+@media (max-width: 768px) {
+    .popup-form {
+        padding: 30px 15px;
+    }
+    .popup-content-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .popup-number-and-email {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .popup-content-container-right {
+        align-items: center;
+    }
+    .popup-content-container-student img {
+        position: static;
+        width: 100%;
+        max-width: 250px;
+        margin-top: 20px;
+    }
+    .popup-content-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}

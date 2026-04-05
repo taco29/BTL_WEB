@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/udu_clone/css/contact.css">
     <link rel="stylesheet" href="/udu_clone/icon/css_icon/all.min.css">
+    <link rel="stylesheet" href="/udu_clone/css/popup.css">
     <link rel="stylesheet" href="/udu_clone/css/footer.css">
     <link rel="stylesheet" href="/udu_clone/css/base.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,45 +53,65 @@
                             <span>Trang chủ</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="has-submenu">
                         <a href="#" class="link">
                             <span>Giới thiệu</span>
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Giới thiệu chung</a></li>
+                            <li><a href="#">Triết lý GD & Dấu ấn Đào tạo</a></li>
+                            <li><a href="#">Lịch sử hình thành & PT</a></li>
+                            <li><a href="#">Đội ngũ giảng viên</a></li>
+                            <li><a href="#">Cơ cấu tổ chức</a></li>
+                        </ul>
                     </li>
-                    <li>
+                    <li class="has-submenu">
                         <a href="#" class="link">
                             <span>Tin tức</span>
                             <i class="fa-solid fa-angle-down"></i>
-
                         </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Chứng chỉ hóa</a></li>
+                            <li><a href="#">Doanh nghiệp hóa</a></li>
+                            <li><a href="#">Quốc tế hoá</a></li>
+                            <li><a href="#">Tin khác</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#" class="link">
                             <span>Sự kiện</span>
-
                         </a>
                     </li>
-                    <li>
+                    <li class="has-submenu">
                         <a href="#" class="link">
                             <span>Chương trình đào tạo</span>
                             <i class="fa-solid fa-angle-down"></i>
-
                         </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Trí tuệ nhân tạo vạn vật (AIoT)</a></li>
+                            <li><a href="#">Công nghệ thông tin định hướng ứng dụng</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="#" class="link">
+                    <li class="has-submenu">
+                        <a href="/udu_clone/pages/research.html" class="link">
                             <span>Nghiên cứu</span>
                             <i class="fa-solid fa-angle-down"></i>
-
                         </a>
+                        <ul class="sub-menu">
+                            <li><a href="/udu_clone/pages/research.html">Nhóm nghiên cứu</a></li>
+                            <li><a href="#">Đề tài NCKH</a></li>
+                        </ul>
                     </li>
-                    <li>
+                    <li class="has-submenu">
                         <a href="#" class="link">
                             <span>Sinh viên</span>
                             <i class="fa-solid fa-angle-down"></i>
-
                         </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Liên chi đoàn, CLB</a></li>
+                            <li><a href="#">Hoạt động sinh viên</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="/udu_clone/pages/contact.html" class="link">
@@ -153,22 +174,27 @@
                 <div class="hocbong-giaithuong-content-img">
                     <div class="img-body1 img-body1-1">
                         <img src="/udu_clone/img/z6852511036355_7eb51365fe3b09b8dae2f558ce3bf6ad.jpg" alt="Image 1">
+                        <div class="img-hover-overlay"><div class="overlay-icon"><i class="fa-solid fa-angle-right"></i></div></div>
                     </div>
                     <div class="img-body1 img-body1-2">
                         <img src="/udu_clone/img/IMG_8108-668x520.jpg" alt="Image 2">
+                        <div class="img-hover-overlay"><div class="overlay-icon"><i class="fa-solid fa-angle-right"></i></div></div>
                     </div>
                     <div class="img-body1 img-body1-3 tall">
                         <img src="/udu_clone/img/F4-e1772874363958.png" alt="Image 3">
+                        <div class="img-hover-overlay"><div class="overlay-icon"><i class="fa-solid fa-angle-right"></i></div></div>
                     </div>
                     <div class="img-body1 img-body1-4">
-                        <img src="/udu_clone/img/z6940392926430_ac6432d72d185b09d8486bbcc98c8b66-1024x681-1.jpg"
-                            alt="Image 4">
+                        <img src="/udu_clone/img/z6940392926430_ac6432d72d185b09d8486bbcc98c8b66-1024x681-1.jpg" alt="Image 4">
+                        <div class="img-hover-overlay"><div class="overlay-icon"><i class="fa-solid fa-angle-right"></i></div></div>
                     </div>
                     <div class="img-body1 img-body1-5">
                         <img src="/udu_clone/img/3-3-e1772873811654.png" alt="Image 5">
+                        <div class="img-hover-overlay"><div class="overlay-icon"><i class="fa-solid fa-angle-right"></i></div></div>
                     </div>
                     <div class="img-body1 img-body1-6 tall">
                         <img src="/udu_clone/img/17-e1772874678215.png" alt="Image 6">
+                        <div class="img-hover-overlay"><div class="overlay-icon"><i class="fa-solid fa-angle-right"></i></div></div>
                     </div>
                 </div>
             </div>
@@ -355,6 +381,81 @@
             </div>
         </div>
     </footer>
+    </footer>
+
+    <!-- Popup Modal -->
+    <div class="layout-popup" id="homePopup" style="display: none;">
+        <div class="popup-form">
+            <button class="popup-close" id="closePopupBtn">
+                <i class="fa-solid fa-x"></i>
+            </button>
+            <div class="popup-content">
+                <div class="popup-content-title">
+                    <h5>Đăng kí tư vấn tuyển sinh</h5>
+                </div>
+                <div class="popup-content-container">
+                    <form class="popup-info">
+                        <div class="popup-content-container-left">
+                            <div class="popup-name">
+                                <input type="text" placeholder="Họ và tên" required>
+                            </div>
+                            <div class="popup-number-and-email">
+                                <div class="popup-number">
+                                    <input type="tel" placeholder="Số điện thoại" required>
+                                </div>
+                                <div class="popup-email">
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="popup-school">
+                                <input type="text" placeholder="Trường THPT" required>
+                            </div>
+                            <div class="popup-select-field">
+                                <select required>
+                                    <option value="aiot">Trí tuệ nhân tạo vạn vật (AIoT)</option>
+                                    <option value="udu">Công nghệ thông tin Định hướng ứng dụng (UDU)</option>
+                                </select>
+                            </div>
+                            <div class="popup-submit">
+                                <button type="submit">Đăng ký ngay</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="popup-content-container-right">
+                        <div class="popup-content-container-logo">
+                            <img src="/udu_clone/img/logo-ript.png" alt="logo">
+                        </div>
+                        <div class="popup-content-container-student">
+                            <img src="/udu_clone/img/modal.png" alt="student">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const popup = document.getElementById("homePopup");
+            const closeBtn = document.getElementById("closePopupBtn");
+            
+            // Hiện popup sau khoảng 1 giây
+            setTimeout(() => {
+                popup.style.display = "flex";
+            }, 1000);
+
+            // Tắt popup khi bấm X
+            closeBtn.addEventListener("click", function () {
+                popup.style.display = "none";
+            });
+
+            // Tắt popup khi bấm ra bên ngoài form
+            popup.addEventListener("click", function (e) {
+                if (e.target === popup) {
+                    popup.style.display = "none";
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

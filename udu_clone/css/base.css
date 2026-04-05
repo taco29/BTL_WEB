@@ -210,41 +210,47 @@ body{
 .body1{
     position: relative;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    /* height: 100%; */
+    /* overflow: hidden; */
     /* background-color: grey; */
-    margin-top: -5px;
+    margin-top: 50px;
+    padding: 60px 0;
+    overflow: hidden;
 }
 .bgimg{
-    opacity: 0.1;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    opacity: 0.05;
+    /* height: 100%; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     inset: 0;
-    flex-direction: column;
+    /* flex-direction: column; */
     z-index: 1;
+    pointer-events: none;
+    
 }
 .hocbong-giaithuong{
     /* background-color: cyan; */
     display: flex;
     width: 100%;
-    height: 100%;
+    /* height: 100%; */
     justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     z-index: 2;
-    margin-top: 60px;
+    /* margin-top: 60px 0; */
+    /* min-height: 800px; */
 }
 .hocbong-giaithuong-content{
     /* background-color: red; */
     display: flex;
-    width: 85%;
-    height: 100%;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
+    width: 90%;
+    /* height: 100%; */
+    /* justify-content: flex-start; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* max-width: 1200px; */
+    margin: 0 auto;
 }
 .hocbong-giaithuong-content-text{
     /* background-color: blue; */
@@ -310,54 +316,93 @@ body{
     border: none;
 }
 .hocbong-giaithuong-content-img{
+    display: grid;
+    /* justify-content: center; */
     width: 100%;
     /* background-color: yellow; */
-    display: grid;
-    margin-top: 60px;
-    grid-template-columns: repeat(4,1fr); /* Tạo 4 cột có kích thước bằng nhau, mỗi cột chiếm 1 phần bằng nhau */
-    grid-template-rows: repeat(auto-fit, 260px); /* Tạo hàng tự động với chiều cao cố định là 260px */
-    gap: 30px;
+    margin-top: 40px;
+    /* grid-template-columns: repeat(4,1fr); 
+    grid-template-rows: repeat(auto-fit, 260px);  */
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
+
+.img-body1 {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+.img-body1::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(183, 33, 38, 0.8);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 1;
+}
+
+.img-body1:hover::after {
+    opacity: 1;
+}
+
+.img-hover-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.overlay-icon {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.5);
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.img-body1:hover .overlay-icon {
+    transform: scale(1);
+    opacity: 1;
+}
+
 .img-body1 img{
-    width: 380px;
-    height: 260px;
+    width: 100%;
+    height: 250px;
+    display: block;
     object-fit:cover;
+    transition: transform 0.4s ease;
+}
+
+.img-body1:hover img {
+    transform: scale(1.08);
 }
 .img-body1.tall img{
-    width: 380px;
-    height: 555px;
+    width: 100%;
+    height: 100%;
+    min-height: 550px;
     object-fit: cover;
 }
-.img-body1-1{
-    grid-column:1 / 2; /*bắt đầu từ cột 1 đến cột 2, tức là chiếm cột 1 */
-    grid-row:1 / 2; /* bắt đầu từ hàng 1 đến hàng 2, tức là chiếm hàng 1 */
-}
-.img-body1-3{
-    grid-column:2 / 3;
-    grid-row:1 / 2;
-}
-.img-body1-4{
-    grid-column:3 / 4;
-    grid-row:1 / 2;
-}
-.img-body1-2{
-    grid-column:1 / 2;
-    grid-row:2 / 3;
-}
-.img-body1-5{
-    grid-column:3 / 5;
-    grid-row:2 / 3;
-}
-.img-body1-6{
-    grid-column:4 / 5;
-    grid-row:1 / 2;
-}
+
 
 .body2{
     width: 100%;
     height: 660px;
     background-color: #BC2626;
-    margin-top: -8px;
+    margin-top: 0;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -510,4 +555,104 @@ body{
 }
 .link:hover {
     color: var(--primary-color);
+}
+
+/* ==========================================================================
+   Header Dropdown Sub-menu 
+   ========================================================================== */
+.has-submenu {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 250px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    border-radius: 4px;
+}
+
+.has-submenu:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.sub-menu li {
+    padding: 0;
+}
+
+.sub-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+    font-weight: 500;
+}
+
+.sub-menu li a:hover {
+    background-color: #f7f7f7;
+    color: #BC2626;
+}
+
+@media (min-width: 1024px) {
+    .hocbong-giaithuong-content-img {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 260px); 
+        grid-auto-flow: column; 
+        gap: 20px;
+    }
+
+    .img-body1.tall { 
+        grid-row: span 2; 
+    }
+
+    .img-body1.tall img {
+        height: 100% !important;
+        min-height: 540px;
+    }
+}
+
+/* ==========================================================================
+   Responsive Design for Base Template
+   ========================================================================== */
+@media (max-width: 1024px) {
+    .nav1-another-info { width: auto; gap: 15px; margin-right: 15px; }
+    .navbar-list-ul { margin-right: 15px; gap: 15px; }
+    .body2-content { flex-direction: column; height: auto; align-items: center; }
+    .body2-content-left, .body2-content-right { width: 100%; height: auto; }
+    .body2 { height: auto; padding: 40px 0; }
+    .hocbong-giaithuong-content-text { width: 100%; flex-wrap: wrap; }
+    .hocbong-giaithuong-content-text-text { width: 100%; }
+    .hocbong-giaithuong-content-text-button { width: 100%; justify-content: flex-start; margin-top: 15px; }
+}
+
+@media (max-width: 768px) {
+    .header-navbar { flex-direction: column; height: auto; padding: 10px; gap: 10px; }
+    .nav1-another-info { flex-direction: column; align-items: center; width: 100%; gap: 5px; margin: 0; }
+    
+    /* Làm cho navbar cuộn ngang trên điện thoại */
+    .navbar-list { display: flex; overflow-x: auto; height: auto; padding-bottom: 10px; white-space: nowrap; }
+    .navbar-list-ul { justify-content: flex-start; margin-right: 0; padding-left: 20px;}
+    
+    .hocbong-giaithuong-content-img { grid-template-columns: 1fr; }
+    .img-body1.tall img { min-height: 250px; }
+    .img-body1, .img-body1-1, .img-body1-2, .img-body1-3, .img-body1-4, .img-body1-5, .img-body1-6 { grid-area: auto !important; }
+    
+    .triet-ly-dao-tao-content-text { flex-direction: column; width: 100%; align-items: flex-start; }
+    .triet-ly-dao-tao-content-text-button { width: 100%; justify-content: flex-start; margin-top: 20px; }
+    .triet-ly-dao-tao-content { width: 95%; }
 }
