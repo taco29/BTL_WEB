@@ -4,19 +4,20 @@
     align-items: center;
     gap: 60px;
     /* max-width: 1100px; */
-    margin: 60px 0; 
+    margin: 60px 0;
 }
+
 /* banner  */
 .contact-banner {
     position: relative;
     width: 100%;
     height: 400px;
 
-    background-image: url('/udu_clone/img/breadcrumb.webp'); 
-    background-size: cover; 
-    background-position: center -560px; 
+    background-image: url('/udu_clone/img/breadcrumb.webp');
+    background-size: cover;
+    background-position: center -560px;
     background-repeat: no-repeat;
-    margin-bottom: 60px; 
+    margin-bottom: 60px;
 }
 
 .contact-banner-overlay {
@@ -25,11 +26,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(8, 19, 57, 0.5); 
+    background-color: rgba(8, 19, 57, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
     color: var(--secondary-color);
 }
 
@@ -49,11 +50,11 @@
 }
 
 .contact-breadcrumb a:hover {
-    color: var(--primary-color); 
+    color: var(--primary-color);
 }
 
 .contact-breadcrumb i.fa-angle-right {
-    font-size: 12px; 
+    font-size: 12px;
 }
 
 
@@ -74,20 +75,20 @@
 .contact-item {
     display: flex;
     align-items: center;
-    gap: 20px; 
+    gap: 20px;
 }
 
 .contact-icon {
     width: 60px;
     height: 60px;
-    background-color: #c02328; 
+    background-color: #c02328;
     color: #ffffff;
-    border-radius: 50%; 
+    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    flex-shrink: 0; 
+    flex-shrink: 0;
 }
 
 .contact-text {
@@ -98,7 +99,7 @@
 
 .contact-label {
     font-size: 15px;
-    color: #555; 
+    color: #555;
 }
 
 .contact-value {
@@ -110,35 +111,35 @@
 
 
 .contact-map {
-    flex: 1; 
+    flex: 1;
     width: 100%;
 }
 
 .contact-map iframe {
     width: 100%;
     height: 300px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     display: block;
 }
 
-/* ==========================================================================
-   Responsive Design for Contact
-   ========================================================================== */
 @media (max-width: 768px) {
     .contact {
         flex-direction: column;
         gap: 30px;
         margin: 30px 0;
     }
+
     .contact-banner {
         height: 250px;
         background-position: center top;
         margin-bottom: 30px;
     }
+
     .contact-banner-title {
         font-size: 32px;
     }
+
     .contact-item {
         gap: 15px;
     }
-}
+}

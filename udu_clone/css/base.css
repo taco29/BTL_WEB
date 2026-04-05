@@ -99,12 +99,13 @@ ul {
 .gray-bg {
     background-color: var(--bg-light);
 }
+
 .slide-bottom-line {
     position: relative;
     padding-bottom: 2px;
     width: fit-content;
     cursor: pointer;
-    
+
 }
 
 .slide-bottom-line::after {
@@ -116,27 +117,29 @@ ul {
     height: 1px;
     background-color: white;
     transition: var(--transition);
-    
+
 }
+
 .slide-bottom-line:hover::after {
     width: 100%;
 
 }
 
 @keyframes fadeIn {
-    from { 
-        opacity: 0; 
-        transform: translateY(20px); 
+    from {
+        opacity: 0;
+        transform: translateY(20px);
     }
-    to { 
-        opacity: 1; 
-        transform: translateY(0); 
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
 
 /* cai nay la cua vu  */
-.header-navbar{
+.header-navbar {
     display: flex;
     list-style: none;
     flex-direction: row;
@@ -148,7 +151,8 @@ ul {
     color: white;
     font-size: 14px;
 }
-.nav1-another-info{
+
+.nav1-another-info {
     list-style: none;
     flex-direction: row;
     display: flex;
@@ -156,20 +160,24 @@ ul {
     width: 540px;
     margin-right: 55px;
 }
-.nav1-info{
+
+.nav1-info {
     list-style: none;
 }
-body{
+
+body {
     margin: 0;
     font-family: "Manrope";
-    
+
 }
-.info2{
+
+.info2 {
     position: sticky;
-    top: 0; 
+    top: 0;
     z-index: 999999999;
 }
-.navbar-info2{
+
+.navbar-info2 {
     display: flex;
     background-color: white;
     width: 100%;
@@ -178,7 +186,8 @@ body{
     position: relative;
 
 }
-.navbar-list-ul{
+
+.navbar-list-ul {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -191,23 +200,27 @@ body{
     font-weight: 600;
     font-size: 15px;
 }
-.navbar-info2 img{
+
+.navbar-info2 img {
     margin-left: 40px;
     width: auto;
     height: 40px;
     margin-top: 16px;
 }
-.navbar-list{
+
+.navbar-list {
     display: flex;
     width: 100%;
     height: 70px;
     /* background-color: red; */
 }
-.banner img{
+
+.banner img {
     width: 100%;
     height: auto;
 }
-.body1{
+
+.body1 {
     position: relative;
     width: 100%;
     /* height: 100%; */
@@ -217,7 +230,8 @@ body{
     padding: 60px 0;
     overflow: hidden;
 }
-.bgimg{
+
+.bgimg {
     position: absolute;
     opacity: 0.05;
     /* height: 100%; */
@@ -228,9 +242,10 @@ body{
     /* flex-direction: column; */
     z-index: 1;
     pointer-events: none;
-    
+
 }
-.hocbong-giaithuong{
+
+.hocbong-giaithuong {
     /* background-color: cyan; */
     display: flex;
     width: 100%;
@@ -241,7 +256,8 @@ body{
     /* margin-top: 60px 0; */
     /* min-height: 800px; */
 }
-.hocbong-giaithuong-content{
+
+.hocbong-giaithuong-content {
     /* background-color: red; */
     display: flex;
     width: 90%;
@@ -252,7 +268,8 @@ body{
     /* max-width: 1200px; */
     margin: 0 auto;
 }
-.hocbong-giaithuong-content-text{
+
+.hocbong-giaithuong-content-text {
     /* background-color: blue; */
     width: 75%;
     height: auto;
@@ -262,7 +279,8 @@ body{
     flex-direction: row;
     gap: 24px;
 }
-.hocbong-giaithuong-content-title{
+
+.hocbong-giaithuong-content-title {
     font-size: 14px;
     font-weight: 800;
     color: #BC2626;
@@ -275,7 +293,8 @@ body{
     height: auto;
     top: 0;
 }
-.hocbong-giaithuong-content-title::after{
+
+.hocbong-giaithuong-content-title::after {
     content: "";
     position: absolute;
     left: 0;
@@ -284,13 +303,15 @@ body{
     height: 2px;
     background-color: #BC2626;
 }
-.hocbong-giaithuong-content-title-h2{
+
+.hocbong-giaithuong-content-title-h2 {
     /* background-color: green; */
     font-size: 35px;
     height: auto;
     margin: 0;
 }
-.hocbong-giaithuong-content-text-text{
+
+.hocbong-giaithuong-content-text-text {
     width: 70%;
     /* background-color: pink; */
     height: auto;
@@ -298,7 +319,8 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-.hocbong-giaithuong-content-text-button{
+
+.hocbong-giaithuong-content-text-button {
     width: 30%;
     margin: 0;
     /* background-color: purple; */
@@ -306,16 +328,18 @@ body{
     justify-content: flex-end;
     align-items: center;
 }
-.button-h2{
+
+.button-h2 {
     background-color: #BC2626;
     color: white;
-    padding: 12px 30px;    
+    padding: 12px 30px;
     font-size: 15px;
     font-family: "Manrope";
     cursor: pointer;
     border: none;
 }
-.hocbong-giaithuong-content-img{
+
+.hocbong-giaithuong-content-img {
     display: grid;
     /* justify-content: center; */
     width: 100%;
@@ -379,18 +403,19 @@ body{
     opacity: 1;
 }
 
-.img-body1 img{
+.img-body1 img {
     width: 100%;
     height: 250px;
     display: block;
-    object-fit:cover;
+    object-fit: cover;
     transition: transform 0.4s ease;
 }
 
 .img-body1:hover img {
     transform: scale(1.08);
 }
-.img-body1.tall img{
+
+.img-body1.tall img {
     width: 100%;
     height: 100%;
     min-height: 550px;
@@ -398,7 +423,7 @@ body{
 }
 
 
-.body2{
+.body2 {
     width: 100%;
     height: 660px;
     background-color: #BC2626;
@@ -408,75 +433,84 @@ body{
     justify-content: center;
 }
 
-.body2-content{
+.body2-content {
     width: 84%;
     /* background-color: yellow; */
     height: 580px;
     display: flex;
     gap: 20px;
 }
-.body2-content-left{
+
+.body2-content-left {
     /* background-color: blue; */
     width: 712px;
     height: 580px;
 
 }
-.body2-content-right{
+
+.body2-content-right {
     /* background-color: pink; */
     width: 896px;
     height: 580px;
 }
-.body2-content-left-up{
+
+.body2-content-left-up {
     width: 100%;
     height: 50%;
     /* background-color: cyan; */
 }
-.img-cody{
+
+.img-cody {
     width: 100%;
     height: 100%;
 }
-.body2-content-left-down-h2 h2{
+
+.body2-content-left-down-h2 h2 {
     font-size: 28px;
     color: #FFFFFF;
     font-weight: 800;
     margin-top: 12px;
 }
-.body2-content-left-down-h2 span{
-    display: block;    
+
+.body2-content-left-down-h2 span {
+    display: block;
     font-size: 12px;
     color: #FFFFFF;
     margin-top: -9px;
     line-height: 1.8;
 }
-.body2-content-left-down-h2 button{
+
+.body2-content-left-down-h2 button {
     width: 160px;
     height: 35px;
     margin: 60px;
     margin-left: 0px;
     /* background-color: purple; */
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
 
-.button-body2{
+.button-body2 {
     background-color: white;
     color: #BC2626;
-    padding: 12px 30px;    
+    padding: 12px 30px;
     font-size: 12px;
     font-family: "Manrope";
     cursor: pointer;
-    border: 1px solid #FFFFFF; 
-    border-radius: 999px;  
+    border: 1px solid #FFFFFF;
+    border-radius: 999px;
     gap: 5px;
 }
-.body3{
+
+.body3 {
     width: 100%;
     padding: 60px 0;
     /* background-color: grey; */
     margin-top: 0;
 }
-.triet-ly-dao-tao{
+
+.triet-ly-dao-tao {
     /* background-color: cyan; */
     display: flex;
     width: 100%;
@@ -486,7 +520,8 @@ body{
     z-index: 2;
     margin-top: 0;
 }
-.triet-ly-dao-tao-content{
+
+.triet-ly-dao-tao-content {
     /* background-color: red; */
     display: flex;
     width: 85%;
@@ -495,7 +530,8 @@ body{
     flex-direction: column;
     align-items: center;
 }
-.triet-ly-dao-tao-content-text{
+
+.triet-ly-dao-tao-content-text {
     /* background-color: blue; */
     width: 75%;
     height: auto;
@@ -505,7 +541,8 @@ body{
     flex-direction: row;
     gap: 24px;
 }
-.triet-ly-dao-tao-content-title{
+
+.triet-ly-dao-tao-content-title {
     font-size: 14px;
     font-weight: 800;
     color: #BC2626;
@@ -518,7 +555,8 @@ body{
     height: auto;
     top: 0;
 }
-.triet-ly-dao-tao-content-title::after{
+
+.triet-ly-dao-tao-content-title::after {
     content: "";
     position: absolute;
     left: 0;
@@ -527,13 +565,15 @@ body{
     height: 2px;
     background-color: #BC2626;
 }
-.triet-ly-dao-tao-content-title-h2{
+
+.triet-ly-dao-tao-content-title-h2 {
     /* background-color: green; */
     font-size: 35px;
     height: auto;
     margin: 0;
 }
-.triet-ly-dao-tao-content-text-text{
+
+.triet-ly-dao-tao-content-text-text {
     width: 70%;
     /* background-color: pink; */
     height: auto;
@@ -541,7 +581,8 @@ body{
     flex-direction: column;
     justify-content: center;
 }
-.triet-ly-dao-tao-content-text-button{
+
+.triet-ly-dao-tao-content-text-button {
     width: 30%;
     margin: 0;
     /* background-color: purple; */
@@ -549,17 +590,17 @@ body{
     justify-content: flex-end;
     align-items: center;
 }
-.triet-ly-dao-tao-content-text-span{
+
+.triet-ly-dao-tao-content-text-span {
     font-size: 12px;
     font-weight: 300;
 }
+
 .link:hover {
     color: var(--primary-color);
 }
 
-/* ==========================================================================
-   Header Dropdown Sub-menu 
-   ========================================================================== */
+
 .has-submenu {
     position: relative;
 }
@@ -570,7 +611,7 @@ body{
     left: 0;
     min-width: 250px;
     background-color: #ffffff;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     list-style: none;
     padding: 10px 0;
     margin: 0;
@@ -611,13 +652,13 @@ body{
     .hocbong-giaithuong-content-img {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 260px); 
-        grid-auto-flow: column; 
+        grid-template-rows: repeat(2, 260px);
+        grid-auto-flow: column;
         gap: 20px;
     }
 
-    .img-body1.tall { 
-        grid-row: span 2; 
+    .img-body1.tall {
+        grid-row: span 2;
     }
 
     .img-body1.tall img {
@@ -626,33 +667,113 @@ body{
     }
 }
 
-/* ==========================================================================
-   Responsive Design for Base Template
-   ========================================================================== */
 @media (max-width: 1024px) {
-    .nav1-another-info { width: auto; gap: 15px; margin-right: 15px; }
-    .navbar-list-ul { margin-right: 15px; gap: 15px; }
-    .body2-content { flex-direction: column; height: auto; align-items: center; }
-    .body2-content-left, .body2-content-right { width: 100%; height: auto; }
-    .body2 { height: auto; padding: 40px 0; }
-    .hocbong-giaithuong-content-text { width: 100%; flex-wrap: wrap; }
-    .hocbong-giaithuong-content-text-text { width: 100%; }
-    .hocbong-giaithuong-content-text-button { width: 100%; justify-content: flex-start; margin-top: 15px; }
+    .nav1-another-info {
+        width: auto;
+        gap: 15px;
+        margin-right: 15px;
+    }
+
+    .navbar-list-ul {
+        margin-right: 15px;
+        gap: 15px;
+    }
+
+    .body2-content {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+
+    .body2-content-left,
+    .body2-content-right {
+        width: 100%;
+        height: auto;
+    }
+
+    .body2 {
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .hocbong-giaithuong-content-text {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .hocbong-giaithuong-content-text-text {
+        width: 100%;
+    }
+
+    .hocbong-giaithuong-content-text-button {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 15px;
+    }
 }
 
 @media (max-width: 768px) {
-    .header-navbar { flex-direction: column; height: auto; padding: 10px; gap: 10px; }
-    .nav1-another-info { flex-direction: column; align-items: center; width: 100%; gap: 5px; margin: 0; }
-    
+    .header-navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .nav1-another-info {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 5px;
+        margin: 0;
+    }
+
     /* Làm cho navbar cuộn ngang trên điện thoại */
-    .navbar-list { display: flex; overflow-x: auto; height: auto; padding-bottom: 10px; white-space: nowrap; }
-    .navbar-list-ul { justify-content: flex-start; margin-right: 0; padding-left: 20px;}
-    
-    .hocbong-giaithuong-content-img { grid-template-columns: 1fr; }
-    .img-body1.tall img { min-height: 250px; }
-    .img-body1, .img-body1-1, .img-body1-2, .img-body1-3, .img-body1-4, .img-body1-5, .img-body1-6 { grid-area: auto !important; }
-    
-    .triet-ly-dao-tao-content-text { flex-direction: column; width: 100%; align-items: flex-start; }
-    .triet-ly-dao-tao-content-text-button { width: 100%; justify-content: flex-start; margin-top: 20px; }
-    .triet-ly-dao-tao-content { width: 95%; }
+    .navbar-list {
+        display: flex;
+        overflow-x: auto;
+        height: auto;
+        padding-bottom: 10px;
+        white-space: nowrap;
+    }
+
+    .navbar-list-ul {
+        justify-content: flex-start;
+        margin-right: 0;
+        padding-left: 20px;
+    }
+
+    .hocbong-giaithuong-content-img {
+        grid-template-columns: 1fr;
+    }
+
+    .img-body1.tall img {
+        min-height: 250px;
+    }
+
+    .img-body1,
+    .img-body1-1,
+    .img-body1-2,
+    .img-body1-3,
+    .img-body1-4,
+    .img-body1-5,
+    .img-body1-6 {
+        grid-area: auto !important;
+    }
+
+    .triet-ly-dao-tao-content-text {
+        flex-direction: column;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .triet-ly-dao-tao-content-text-button {
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 20px;
+    }
+
+    .triet-ly-dao-tao-content {
+        width: 95%;
+    }
 }
