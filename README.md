@@ -204,7 +204,7 @@ Squash merge
 
 ---
 
-# 1. Xóa branch sau khi merge
+# 11. Xóa branch sau khi merge
 
 Sau khi merge:
 
