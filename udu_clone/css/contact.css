@@ -38,10 +38,10 @@
 .contact-breadcrumb {
     display: flex;
     align-items: center;
-    gap: 12px;
+    /* gap: 5px; */
     font-size: 16px;
     font-weight: 500;
-    margin-bottom: 12px;
+    /* margin-bottom: 12px; */
 }
 
 .contact-breadcrumb a {
@@ -61,6 +61,7 @@
 .contact-banner-title {
     font-size: 45px;
     font-weight: 600;
+    height: fit-content;
     margin: 0;
     letter-spacing: 1px;
 }

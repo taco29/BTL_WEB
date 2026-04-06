@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="/udu_clone/icon/css_icon/all.min.css">
     <link rel="stylesheet" href="/udu_clone/css/footer.css">
     <link rel="stylesheet" href="/udu_clone/css/base.css">
+    <link rel="stylesheet" href="/udu_clone/css/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <title>Nhóm nghiên cứu</title>
+    <link rel="icon" type="image/webp" href="/udu_clone/img/logo-ptit-small.webp">
+    <title>Nhóm nghiên cứu - Chương trình Cử nhân Công nghệ thông tin định hướng ứng dụng</title>
 </head>
 
 <body>
@@ -53,28 +55,65 @@
                             <span>Trang chủ</span>
                         </a>
                     </li>
-                    <li>
-                        <span>Giới thiệu</span>
-                        <i class="fa-solid fa-angle-down"></i>
+                    <li class="has-submenu">
+                        <a href="#" class="link">
+                            <span>Giới thiệu</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Giới thiệu chung</a></li>
+                            <li><a href="#">Triết lý GD & Dấu ấn Đào tạo</a></li>
+                            <li><a href="#">Lịch sử hình thành & PT</a></li>
+                            <li><a href="#">Đội ngũ giảng viên</a></li>
+                            <li><a href="#">Cơ cấu tổ chức</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#" class="link">
+                            <span>Tin tức</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Chứng chỉ hóa</a></li>
+                            <li><a href="#">Doanh nghiệp hóa</a></li>
+                            <li><a href="#">Quốc tế hoá</a></li>
+                            <li><a href="#">Tin khác</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <span>Tin tức</span>
-                        <i class="fa-solid fa-angle-down"></i>
+                        <a href="#" class="link">
+                            <span>Sự kiện</span>
+                        </a>
                     </li>
-                    <li>
-                        <span>Sự kiện</span>
+                    <li class="has-submenu">
+                        <a href="#" class="link">
+                            <span>Chương trình đào tạo</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Trí tuệ nhân tạo vạn vật (AIoT)</a></li>
+                            <li><a href="#">Công nghệ thông tin định hướng ứng dụng</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <span>Chương trình đào tạo</span>
-                        <i class="fa-solid fa-angle-down"></i>
+                    <li class="has-submenu">
+                        <a href="/udu_clone/pages/research.html" class="link">
+                            <span>Nghiên cứu</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="/udu_clone/pages/research.html">Nhóm nghiên cứu</a></li>
+                            <li><a href="#">Đề tài NCKH</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <span>Nghiên cứu</span>
-                        <i class="fa-solid fa-angle-down"></i>
-                    </li>
-                    <li>
-                        <span>Sinh viên</span>
-                        <i class="fa-solid fa-angle-down"></i>
+                    <li class="has-submenu">
+                        <a href="#" class="link">
+                            <span>Sinh viên</span>
+                            <i class="fa-solid fa-angle-down"></i>
+                        </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Liên chi đoàn, CLB</a></li>
+                            <li><a href="#">Hoạt động sinh viên</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="/udu_clone/pages/contact.html" class="link">
@@ -92,7 +131,7 @@
             <div class="contact-breadcrumb">
                 <a href="/udu_clone/pages/home.html"><i class="fa-solid fa-house-chimney"></i></a>
                 <i class="fa-solid fa-angle-right"></i>
-                <a href="#">Nghiên cứu</a>
+                <a href="/udu_clone/pages/research.html">Nghiên cứu</a>
                 <i class="fa-solid fa-angle-right"></i>
                 <span>Nhóm nghiên cứu</span>
             </div>
@@ -103,68 +142,77 @@
     <div class="container">
         <div class="research-content">
             <div class="research-group">
-                <h3 class="research-group-title">Dữ liệu thông minh (D2AI - Data To Artificial Intelligence)</h3>
+                <div class="research-group-header">
+                    <img src="/udu_clone/img/logo-ptit-small.webp" class="research-group-icon" alt="PTIT Logo">
+                    <h3 class="research-group-title">Dữ liệu thông minh (D2AI - Data To Artificial Intelligence)</h3>
+                </div>
                 <ul class="research-list">
                     <li>
-                        <strong><i class="fa-solid fa-microscope"></i> Lĩnh vực nghiên cứu:</strong> Nghiên cứu, phát
-                        triển và ứng dụng trí tuệ nhân tạo, khoa học dữ liệu vào xử lý dữ liệu thông minh và giải quyết
-                        các bài toán thực tế trong nhiều lĩnh vực như giáo dục, nhà thông minh, hành chính công, chăm
-                        sóc khách hàng.
+                        Lĩnh vực nghiên cứu: Nghiên cứu, phát triển và ứng dụng trí tuệ nhân tạo, khoa học dữ liệu vào
+                        xử lý dữ liệu thông minh và giải quyết các bài toán thực tế trong nhiều lĩnh vực như giáo dục,
+                        nhà thông minh, hành chính công, chăm sóc khách hàng.
                     </li>
                     <li>
-                        <strong><i class="fa-solid fa-location-dot"></i> Địa chỉ:</strong> Phòng Nghiên cứu Phát triển
-                        Công nghệ số, Tầng 4 Viện Khoa học Kỹ thuật Bưu điện, 122 Hoàng Quốc Việt, Hà Nội.
+                        Địa chỉ: Phòng Nghiên cứu Phát triển Công nghệ số, Tầng 4 Viện Khoa học Kỹ thuật Bưu điện, 122
+                        Hoàng Quốc Việt, Hà Nội.
                     </li>
                     <li>
-                        <strong><i class="fa-solid fa-user-tie"></i> Trưởng nhóm:</strong> TS. Phan Lý Huỳnh
+                        Trưởng nhóm: TS. Phan Lý Huỳnh
                     </li>
                     <li>
-                        <strong><i class="fa-solid fa-users"></i> Số thành viên:</strong> 3
+                        Số thành viên: 3
                     </li>
                 </ul>
             </div>
 
             <div class="research-group">
-                <h3 class="research-group-title">An ninh mạng và Hệ thống thông minh (Cybersecurity and Intelligent
-                    Systems Research Group – CISRG)</h3>
+                <div class="research-group-header">
+                    <img src="/udu_clone/img/logo-ptit-small.webp" class="research-group-icon" alt="PTIT Logo">
+                    <h3 class="research-group-title">An ninh mạng và Hệ thống thông minh (Cybersecurity and Intelligent
+                        Systems Research Group – CISRG)</h3>
+                </div>
                 <ul class="research-list">
                     <li>
-                        <strong><i class="fa-solid fa-microscope"></i> Lĩnh vực nghiên cứu:</strong> Nghiên cứu các giải
-                        pháp công nghệ tiên tiến trong lĩnh vực an toàn thông tin, bảo mật IoT, phân tích mã độc và ứng
-                        dụng trí tuệ nhân tạo trong hệ thống mạng và dữ liệu lớn.
+                        Lĩnh vực nghiên cứu: Nghiên cứu các giải pháp công nghệ tiên tiến trong lĩnh vực an toàn thông
+                        tin, bảo mật IoT, phân tích mã độc và ứng dụng trí tuệ nhân tạo trong hệ thống mạng và dữ liệu
+                        lớn.
                     </li>
                     <li>
-                        <strong><i class="fa-solid fa-location-dot"></i> Địa chỉ:</strong> Phòng Nghiên cứu Phát triển
-                        Công nghệ số, Tầng 4 Viện Khoa học Kỹ thuật Bưu điện, 122 Hoàng Quốc Việt, Hà Nội.
+                        Địa chỉ: Phòng Nghiên cứu Phát triển Công nghệ số, Tầng 4 Viện Khoa học Kỹ thuật Bưu điện, 122
+                        Hoàng Quốc Việt, Hà Nội.
                     </li>
                     <li>
-                        <strong><i class="fa-solid fa-user-tie"></i> Trưởng nhóm:</strong> TS. Nguyễn Huy Trung
+                        Trưởng nhóm: TS. Nguyễn Huy Trung
                     </li>
                     <li>
-                        <strong><i class="fa-solid fa-users"></i> Số thành viên:</strong> 5
+                        Số thành viên: 5
                     </li>
                 </ul>
             </div>
 
             <div class="research-group">
-                <h3 class="research-group-title">Nghiên cứu công nghệ mạng 5G/6G</h3>
+                <div class="research-group-header">
+                    <img src="/udu_clone/img/logo-ptit-small.webp" class="research-group-icon" alt="PTIT Logo">
+                    <h3 class="research-group-title">Nghiên cứu và phát triển công nghệ và thiết bị viễn thông thế hệ
+                        mới</h3>
+                </div>
                 <ul class="research-list">
                     <li>
-                        <strong><i class="fa-solid fa-microscope"></i> Lĩnh vực nghiên cứu:</strong> Nghiên cứu các công
-                        nghệ mới cho mạng 5G/6G. Xây dựng mạng viễn thông phục vụ phát triển và đánh giá công nghệ
-                        5G/6G. Phát triển các sản phẩm mẫu 5G/6G. Nghiên cứu và phát triển kỹ thuật đo lường viễn thông.
-                        Xây dựng phương pháp đo lường cho các công nghệ mới. Nghiên cứu và xây dựng các hệ thống đo
-                        lường các mạng và công nghệ mới. Nghiên cứu và phát triển các thiết bị phục vụ đo lường.
+                        Lĩnh vực nghiên cứu: Nghiên cứu các công nghệ mới cho mạng 5G/6G. Xây dựng mạng viễn thông phục
+                        vụ phát triển và đánh giá công nghệ 5G/6G. Phát triển các sản phẩm mẫu 5G/6G. Nghiên cứu và phát
+                        triển kỹ thuật đo lường viễn thông. Xây dựng phương pháp đo lường cho các công nghệ mới. Nghiên
+                        cứu và xây dựng các hệ thống đo lường các mạng và công nghệ mới. Nghiên cứu và phát triển các
+                        thiết bị phục vụ đo lường.
                     </li>
                     <li>
-                        <strong><i class="fa-solid fa-location-dot"></i> Địa chỉ:</strong> Phòng Nghiên cứu Kỹ thuật
-                        Dịch vụ Viễn thông, Tầng 4 Viện Khoa học Kỹ thuật Bưu điện, 122 Hoàng Quốc Việt, Hà Nội.
+                        Địa chỉ: Phòng Nghiên cứu Kỹ thuật Dịch vụ Viễn thông, Tầng 4 Viện Khoa học Kỹ thuật Bưu điện,
+                        122 Hoàng Quốc Việt, Hà Nội.
                     </li>
                     <li>
-                        <strong><i class="fa-solid fa-user-tie"></i> Trưởng nhóm:</strong> TS. Nguyễn Thành
+                        Trưởng nhóm: TS. Nguyễn Thành
                     </li>
                     <li>
-                        <strong><i class="fa-solid fa-users"></i> Số thành viên:</strong> 50
+                        Số thành viên: 50
                     </li>
                 </ul>
             </div>

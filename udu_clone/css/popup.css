@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,7 +14,7 @@
 .popup-form {
     background-color: #ffffff;
     width: 800px;
-    max-width: 95%; 
+    max-width: 95%;
     border-radius: 10px;
     padding: 40px 20px 40px 20px;
     position: relative;
@@ -34,12 +34,12 @@
 }
 
 .popup-close:hover {
-    color: #b92b27; 
+    color: #b92b27;
 }
 
 /* --- Nội dung form --- */
 .popup-content-title {
-    color: #0b2253; 
+    color: #0b2253;
     font-size: 28px;
     font-weight: 700;
     margin-bottom: 30px;
@@ -47,18 +47,18 @@
 
 .popup-content-container {
     display: flex;
-    gap: 30px; 
+    gap: 30px;
 }
 
 .popup-info {
-    flex: 2; 
+    flex: 2;
 }
 
-.popup-info input, 
+.popup-info input,
 .popup-info select {
     width: 100%;
     padding: 13px;
-    background-color: #f4f5f7; 
+    background-color: #f4f5f7;
     border: 2px solid transparent;
     border-radius: 2px;
     font-size: 15px;
@@ -67,7 +67,7 @@
     transition: border 0.3s;
 }
 
-.popup-info input:focus, 
+.popup-info input:focus,
 .popup-info select:focus {
     border: 2px solid rgb(243, 244, 247);
 }
@@ -87,10 +87,11 @@
 }
 
 .popup-number {
-    flex: 1; 
+    flex: 1;
 }
-.popup-email  {
-    flex: 1; 
+
+.popup-email {
+    flex: 1;
 }
 
 
@@ -99,7 +100,7 @@
 }
 
 .popup-submit button {
-    background-color: #c02328; 
+    background-color: #c02328;
     color: white;
     border: none;
     padding: 12px 32px;
@@ -135,30 +136,32 @@
     display: block;
 }
 
-/* ==========================================================================
-   Responsive Design for Popup
-   ========================================================================== */
 @media (max-width: 768px) {
     .popup-form {
         padding: 30px 15px;
     }
+
     .popup-content-container {
         flex-direction: column;
         gap: 20px;
     }
+
     .popup-number-and-email {
         flex-direction: column;
         gap: 16px;
     }
+
     .popup-content-container-right {
         align-items: center;
     }
+
     .popup-content-container-student img {
-        position: static;
+        /* position: static; */
         width: 100%;
         max-width: 250px;
         margin-top: 20px;
     }
+
     .popup-content-title {
         font-size: 24px;
         margin-bottom: 20px;
