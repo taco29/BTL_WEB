@@ -40,7 +40,6 @@ body {
     line-height: 1.6;
     background-color: var(--secondary-color);
     overflow-x: hidden;
-    /* Ẩn thẻ cuộn ngang */
 }
 
 a {
@@ -195,7 +194,7 @@ body {
     /* align-items: center; */
     inset: 0;
     /* flex-direction: column; */
-    z-index: 1;
+    /* z-index: 0; */
     pointer-events: none;
 
 }
@@ -207,7 +206,7 @@ body {
     /* height: 100%; */
     justify-content: center;
     position: relative;
-    z-index: 2;
+    /* z-index: 2; */
     /* margin-top: 60px 0; */
     /* min-height: 800px; */
 }
@@ -346,7 +345,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* z-index: 1; */
+    z-index: 1;
 }
 
 .overlay-icon {
@@ -486,7 +485,7 @@ body {
     height: auto;
     justify-content: center;
     position: relative;
-    z-index: 2;
+    /* z-index: 2; */
     margin-top: 0;
 }
 
@@ -638,7 +637,6 @@ body {
         margin: 0;
     }
 
-    /* Làm cho navbar cuộn ngang trên điện thoại */
     .navbar-list {
         display: flex;
         overflow-x: auto;
@@ -686,4 +684,591 @@ body {
     .triet-ly-dao-tao-content {
         width: 95%;
     }
+}
+
+/* ===================================== */
+.triet-ly-dao-tao-content-text-span {
+    font-size: 15px;
+    font-weight: 5 00;
+    color: #4E4F53;
+}
+
+.triet-ly-dao-tao-content-img {
+    /* background-color: orange; */
+    width: 77%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 27px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.triet-ly-dao-tao-content-box-1,
+.triet-ly-dao-tao-content-box-2,
+.triet-ly-dao-tao-content-box-3 {
+    aspect-ratio: 4 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.triet-ly-dao-tao-content-box-1 img,
+.triet-ly-dao-tao-content-box-2 img,
+.triet-ly-dao-tao-content-box-3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.triet-ly-dao-tao-content-text-1 {
+    padding: 20px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.triet-ly-dao-tao-content-text-date {
+    height: auto;
+    font-size: 14px;
+}
+
+.triet-ly-dao-tao-content-text-h2-1 {
+    font-size: 15px;
+    font-weight: 800;
+    color: #051A53;
+    font-family: var(--font-main);
+    padding: 18px 0;
+    width: 99%;
+}
+
+.triet-ly-dao-tao-content-text-h2-1 a {
+    display: -webkit-box;
+    max-width: 100%;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+}
+
+.triet-ly-dao-tao-content-more-info {
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.triet-ly-dao-tao-content-more-info-text {
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.triet-ly-dao-tao-content-more-info-icon {
+    font-size: 13px;
+}
+
+.link:hover {
+    color: var(--primary-color);
+}
+
+.body4 {
+    width: 1913px;
+    height: 655px;
+    padding: 0px 0;
+    /* background-color: grey; */
+    margin-top: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.body4::before {
+    content: "";
+    position: absolute;
+    background-image: url('../img/Google-Cloud-Certifications.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.05;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.body4 * {
+    position: relative;
+    z-index: 1;
+}
+
+.body4-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cchoa {
+    /* background-color: cyan; */
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    margin-top: 0;
+
+}
+
+.cchoa-content {
+    /* background-color: red; */
+    display: flex;
+    width: 60%;
+    height: auto;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.triet-ly-dao-tao-content-title-h2 {
+    /* background-color: green; */
+    font-size: 35px;
+    height: auto;
+    margin-top: -8px;
+}
+
+.cchoa-h2 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #4E4F53;
+    margin-top: 30px;
+    letter-spacing: 0.07px;
+    line-height: 2;
+    text-align: justify;
+}
+
+.cchoa-button {
+    margin-top: 25px;
+}
+
+.cchoa-block1 {
+    flex: 1;
+    max-width: 420px;
+}
+
+.cchoa-block2 {
+    flex: 2;
+    min-width: 320px;
+    padding: 10px;
+    margin: -10px;
+}
+
+.cchoa-block2 .triet-ly-dao-tao-content-img {
+    display: grid;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 20px;
+}
+
+.cchoa-block2 .triet-ly-dao-tao-content-box-1,
+.cchoa-block2 .triet-ly-dao-tao-content-box-2 {
+    aspect-ratio: auto;
+    height: 100%;
+}
+
+.cchoa-block2 .triet-ly-dao-tao-content-box-1 img,
+.cchoa-block2 .triet-ly-dao-tao-content-box-2 img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    display: block;
+}
+
+.cchoa-block2 .triet-ly-dao-tao-content-text-h2-1 {
+    min-height: 110px;
+}
+
+.cchoa-block2 .triet-ly-dao-tao-content-more-info {
+    margin-top: 50px;
+}
+
+.logo-between {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    /* 5 cột */
+    grid-template-rows: repeat(2, auto);
+    /* 2 dòng */
+    gap: 10px;
+}
+
+.logo-between div {
+    text-align: center;
+    padding: 20px 30px;
+}
+
+.logo-between img {
+    height: 80px;
+    width: auto;
+    width: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.body5 {
+    width: 100%;
+    padding: 0px 0;
+    /* background-color: grey; */
+    margin-top: 0;
+}
+
+.quoc-te-hoa {
+    /* background-color: cyan; */
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+}
+
+.quoc-te-hoa-content {
+    /* background-color: red; */
+    display: flex;
+    width: 81%;
+    height: auto;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+
+.quoc-te-hoa-content-text {
+    /* background-color: blue; */
+    width: 75%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.quoc-te-hoa-content-title {
+    font-size: 14px;
+    font-weight: 800;
+    color: #BC2626;
+    line-height: 1.2;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 18px;
+    margin: 0 0 16px 0;
+    /* background-color: yellow; */
+    height: auto;
+    top: 0;
+    letter-spacing: 1px;
+}
+
+.quoc-te-hoa-content-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 2px;
+    background-color: #BC2626;
+}
+
+.quoc-te-hoa-content-title-h2 {
+    /* background-color: green; */
+    font-size: 35px;
+    height: auto;
+    margin-top: -4px;
+    font-weight: 1000;
+}
+
+.quoc-te-hoa-content-text-text {
+    width: 70%;
+    /* background-color: pink; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 520px;
+}
+
+.quoc-te-hoa-content-text-button {
+    width: 30%;
+    margin: 0;
+    /* background-color: purple; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.quoc-te-hoa-content-text-span {
+    font-size: 15px;
+    font-weight: 500;
+    color: #4E4F53;
+}
+
+.quoc-te-hoa-content-img {
+    /* background-color: orange; */
+    width: 77%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 27px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.quoc-te-hoa-content-box-1,
+.quoc-te-hoa-content-box-2,
+.quoc-te-hoa-content-box-3 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.quoc-te-hoa-content-box-1-img,
+.quoc-te-hoa-content-box-2-img,
+.quoc-te-hoa-content-box-3-img {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+
+.quoc-te-hoa-content-box-1-img img,
+.quoc-te-hoa-content-box-2-img img,
+.quoc-te-hoa-content-box-3-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.quoc-te-hoa-content-text-1 {
+    padding: 20px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.quoc-te-hoa-content-text-date {
+    height: auto;
+    font-size: 14px;
+}
+
+.quoc-te-hoa-content-text-h2-1 {
+    font-size: 15px;
+    font-weight: 800;
+    color: #051A53;
+    font-family: var(--font-main);
+    padding: 18px 0;
+    width: 99%;
+    flex-grow: 1;
+    /* day xuong cuoi block */
+}
+
+.quoc-te-hoa-content-text-h2-1 a {
+    display: -webkit-box;
+    max-width: 100%;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+}
+
+.quoc-te-hoa-content-more-info {
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: auto;
+}
+
+.quoc-te-hoa-content-more-info-text {
+    font-size: 15px;
+    font-weight: bold;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.quoc-te-hoa-content-more-info-icon {
+    font-size: 13px;
+}
+
+.thong-tin-tuyen-sinh {
+    width: 1914px;
+    height: 145px;
+    background-image: url("../img/line-bgr.png");
+    background-color: #051A53;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.thong-tin-tuyen-sinh-content {
+    /* background-color: red; */
+    width: 61%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.thong-tin-tuyen-sinh-logo {
+    /* background-color: green; */
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.thong-tin-tuyen-sinh-logo-border {
+    background-color: #112C74;
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.thong-tin-tuyen-sinh-text {
+    margin-left: 30px;
+    color: white;
+}
+
+.thong-tin-tuyen-sinh-h3 {
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.thong-tin-tuyen-sinh-p {
+    font-size: 15px;
+    font-weight: 500;
+    max-width: 750px;
+}
+
+.button-ts {
+    background-color: white;
+    color: #051A53;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: "Manrope";
+    cursor: pointer;
+    border: none;
+}
+
+.thong-tin-tuyen-sinh-button {
+    margin-left: 80px;
+}
+
+.body6 {
+    width: 77%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-direction: column;
+    max-width: 1170px;
+}
+
+.ctdt-heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ctdt-heading-1 {
+    font-size: 14px;
+    font-weight: 800;
+    color: #BC2626;
+    margin: 10px 0px 15px;
+}
+
+/* first 1k line */
+.ctdt-heading-2 {
+    font-size: 25px;
+    letter-spacing: 1%;
+    font-weight: 800;
+    color: #051A53;
+}
+
+.ctdt-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.ctdt-content-1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.ctdt-content-1-img img {
+    width: 585px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.ctdt-content-1-text {
+    padding: 0 0 20px 20px;
+}
+
+.ctdt-content-1-text-h2 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    padding-bottom: 20px;
+    font-weight: 800;
+    color: #051A53;
+}
+
+.ctdt-content-1-text-p {
+    padding-top: 20px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.9em;
+}
+
+.button-ctdt {
+    background-color: #BC2626;
+    color: white;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: "Manrope";
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
 }
