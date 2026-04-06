@@ -1,0 +1,150 @@
+.header-navbar {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    width: 100%;
+    background-color: #BC2626;
+    justify-content: space-between;
+    height: 41px;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+}
+
+.nav1-another-info {
+    list-style: none;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    width: 540px;
+    margin-right: 55px;
+}
+
+.nav1-info {
+    list-style: none;
+}
+
+.nav1-info:nth-child(1) {
+    margin-left: 40px;
+}
+
+.info2 {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+}
+
+.navbar-info2 {
+    display: flex;
+    background-color: white;
+    width: 100%;
+    height: 72px;
+    position: relative;
+}
+
+.navbar-info2 img {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 40px;
+    width: auto;
+    height: 53px;
+    /* margin-top: 16px; */
+}
+
+.navbar-list {
+    display: flex;
+    width: 100%;
+    height: 70px;
+}
+
+.navbar-list-ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+    margin-right: 50px;
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--title-text-color);
+}
+
+.link:hover {
+    color: var(--primary-color);
+}
+
+.has-submenu {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 250px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.has-submenu:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.sub-menu li {
+    padding: 0;
+}
+
+.sub-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: #333;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.2s, color 0.2s;
+    font-weight: 500;
+}
+
+.sub-menu li a:hover {
+    background-color: #f7f7f7;
+    color: #BC2626;
+}
+
+/* Base Responsive */
+@media (max-width: 1024px) {
+    .nav1-another-info {
+        width: auto;
+        gap: 15px;
+        margin-right: 15px;
+    }
+
+    .navbar-list-ul {
+        margin-right: 15px;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-list-ul {
+        display: none;
+
+    }
+
+    .navbar-info2 img {
+        margin-left: 20px;
+    }
+}

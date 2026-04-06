@@ -4,14 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/contact.css">
-    <link rel="stylesheet" href="../icon/css_icon/all.min.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/base.css">
+    <link rel="icon" type="image/webp" href="/udu_clone/img/logo-ptit-small.webp">
+    <link rel="stylesheet" href="/udu_clone/css/contact.css">
+    <link rel="stylesheet" href="/udu_clone/icon/css_icon/all.min.css">
+    <link rel="stylesheet" href="/udu_clone/css/popup.css">
+    <link rel="stylesheet" href="/udu_clone/css/footer.css">
+    <link rel="stylesheet" href="/udu_clone/css/base.css">
+    <link rel="stylesheet" href="/udu_clone/css/header.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
-    <title>Home</title>
+    <title>Chương trình Cử nhân Công nghệ thông tin định hướng ứng dụng</title>
 </head>
 
 <body>
@@ -19,7 +22,7 @@
         <div class="info1">
             <nav class="header-navbar">
                 <ul class="nav1-info">
-                    <li class="udu-title-header">
+                    <li>
                         <i class="fa-solid fa-globe icon"></i>
                         <span class="slide-bottom-line">Cổng thông tin điện tử Học viện Công nghệ Bưu chính Viễn
                             thông</span>
@@ -28,15 +31,19 @@
                 <ul class="nav1-another-info ">
                     <li>
                         <i class="fa-solid fa-phone"></i>
-                        <span class="slide-bottom-line">0243.756.1261</span>
+                        <a href="tel:02437561261" class="slide-bottom-line phone">0243.756.1261</a>
+                        <!-- <span class="slide-bottom-line">0243.756.1261</span> -->
                     </li>
                     <li>
                         <i class="fa-regular fa-envelope icon"></i>
-                        <span class="slide-bottom-line">ript@ptit.edu.vn</span>
+                        <a href="mailto:ript@ptit.edu.vn" class="slide-bottom-line email">ript@ptit.edu.vn</a>
+                        <!-- <span class="slide-bottom-line">ript@ptit.edu.vn</span> -->
                     </li>
                     <li>
                         <i class="fa-brands fa-facebook-f icon"></i>
-                        <span class="slide-bottom-line">CNTT định hướng ứng dụng PTIT</span>
+                        <a href="https://www.facebook.com/AIoT.CNTT.PTIT" class="slide-bottom-line link_face">CNTT định
+                            hướng ứng dụng PTIT</a>
+                        <!-- <span class="slide-bottom-line">CNTT định hướng ứng dụng PTIT</span> -->
                     </li>
                 </ul>
             </nav>
@@ -44,56 +51,76 @@
     </div>
     <div class="info2">
         <nav class="navbar-info2">
-            <img src="../img/logo-ript.png" alt="logo">
+            <img src="/udu_clone/img/logo-ript.png" alt="logo">
             <div class="navbar-list">
                 <ul class="navbar-list-ul">
                     <li>
-                        <a href="home.html" class="link">
+                        <a href="/udu_clone/pages/home.html" class="link">
                             <span>Trang chủ</span>
                         </a>
                     </li>
-                    <li>
+                    <li class="has-submenu">
                         <a href="#" class="link">
                             <span>Giới thiệu</span>
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Giới thiệu chung</a></li>
+                            <li><a href="#">Triết lý GD & Dấu ấn Đào tạo</a></li>
+                            <li><a href="#">Lịch sử hình thành & PT</a></li>
+                            <li><a href="#">Đội ngũ giảng viên</a></li>
+                            <li><a href="#">Cơ cấu tổ chức</a></li>
+                        </ul>
                     </li>
-                    <li>
+                    <li class="has-submenu">
                         <a href="#" class="link">
                             <span>Tin tức</span>
                             <i class="fa-solid fa-angle-down"></i>
-
                         </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Chứng chỉ hóa</a></li>
+                            <li><a href="#">Doanh nghiệp hóa</a></li>
+                            <li><a href="#">Quốc tế hoá</a></li>
+                            <li><a href="#">Tin khác</a></li>
+                        </ul>
                     </li>
                     <li>
                         <a href="#" class="link">
                             <span>Sự kiện</span>
-
                         </a>
                     </li>
-                    <li>
+                    <li class="has-submenu">
                         <a href="#" class="link">
                             <span>Chương trình đào tạo</span>
                             <i class="fa-solid fa-angle-down"></i>
-
                         </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Trí tuệ nhân tạo vạn vật (AIoT)</a></li>
+                            <li><a href="#">Công nghệ thông tin định hướng ứng dụng</a></li>
+                        </ul>
                     </li>
-                    <li>
-                        <a href="#" class="link">
+                    <li class="has-submenu">
+                        <a href="/udu_clone/pages/research.html" class="link">
                             <span>Nghiên cứu</span>
                             <i class="fa-solid fa-angle-down"></i>
-
                         </a>
+                        <ul class="sub-menu">
+                            <li><a href="/udu_clone/pages/research.html">Nhóm nghiên cứu</a></li>
+                            <li><a href="#">Đề tài NCKH</a></li>
+                        </ul>
                     </li>
-                    <li>
+                    <li class="has-submenu">
                         <a href="#" class="link">
                             <span>Sinh viên</span>
                             <i class="fa-solid fa-angle-down"></i>
-
                         </a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Liên chi đoàn, CLB</a></li>
+                            <li><a href="#">Hoạt động sinh viên</a></li>
+                        </ul>
                     </li>
                     <li>
-                        <a href="contact.html" class="link">
+                        <a href="/udu_clone/pages/contact.html" class="link">
                             <span>Liên hệ</span>
                         </a>
                     </li>
@@ -102,13 +129,13 @@
         </nav>
     </div>
     <div class="banner">
-        <img src="../img/banner1.jpg" alt="banner">
+        <img src="/udu_clone/img/banner1.jpg" alt="banner">
     </div>
     <div class="body2">
         <div class="body2-content">
             <div class="body2-content-left">
                 <div class="body2-content-left-up">
-                    <img src="../img/RIPT_Banner_CODY-1024x427.jpg" alt="Image 2" class="img-cody">
+                    <img src="/udu_clone/img/RIPT_Banner_CODY-1024x427.jpg" alt="Image 2" class="img-cody">
                 </div>
                 <div class="body2-content-left-down">
                     <div class="body2-content-left-down-h2">
@@ -135,9 +162,9 @@
     </div>
     <div class="body1">
         <div class="bgimg">
-            <img src="../img/bg-decor-dep1.png" alt="bg decor">
-            <img src="../img/bg-decor-dep1.png" alt="bg decor">
-            <img src="../img/bg-decor-dep1.png" alt="bg decor">
+            <img src="/udu_clone/img/bg-decor-dep1.png" alt="bg decor">
+            <img src="/udu_clone/img/bg-decor-dep1.png" alt="bg decor">
+            <img src="/udu_clone/img/bg-decor-dep1.png" alt="bg decor">
         </div>
         <div class="hocbong-giaithuong">
             <div class="hocbong-giaithuong-content">
@@ -152,22 +179,41 @@
                 </div>
                 <div class="hocbong-giaithuong-content-img">
                     <div class="img-body1 img-body1-1">
-                        <img src="../img/z6852511036355_7eb51365fe3b09b8dae2f558ce3bf6ad.jpg" alt="Image 1">
+                        <img src="/udu_clone/img/z6852511036355_7eb51365fe3b09b8dae2f558ce3bf6ad.jpg" alt="Image 1">
+                        <div class="img-hover-overlay">
+                            <div class="overlay-icon"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
                     </div>
                     <div class="img-body1 img-body1-2">
-                        <img src="../img/IMG_8108-668x520.jpg" alt="Image 2">
+                        <img src="/udu_clone/img/IMG_8108-668x520.jpg" alt="Image 2">
+                        <div class="img-hover-overlay">
+                            <div class="overlay-icon"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
                     </div>
                     <div class="img-body1 img-body1-3 tall">
-                        <img src="../img/F4-e1772874363958.png" alt="Image 3">
+                        <img src="/udu_clone/img/F4-e1772874363958.png" alt="Image 3">
+                        <div class="img-hover-overlay">
+                            <div class="overlay-icon"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
                     </div>
                     <div class="img-body1 img-body1-4">
-                        <img src="../img/z6940392926430_ac6432d72d185b09d8486bbcc98c8b66-1024x681-1.jpg" alt="Image 4">
+                        <img src="/udu_clone/img/z6940392926430_ac6432d72d185b09d8486bbcc98c8b66-1024x681-1.jpg"
+                            alt="Image 4">
+                        <div class="img-hover-overlay">
+                            <div class="overlay-icon"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
                     </div>
                     <div class="img-body1 img-body1-5">
-                        <img src="../img/3-3-668x520.png" alt="Image 5">
+                        <img src="/udu_clone/img/3-3-e1772873811654.png" alt="Image 5">
+                        <div class="img-hover-overlay">
+                            <div class="overlay-icon"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
                     </div>
                     <div class="img-body1 img-body1-6 tall">
-                        <img src="../img/17-e1772874678215.png" alt="Image 6">
+                        <img src="/udu_clone/img/17-e1772874678215.png" alt="Image 6">
+                        <div class="img-hover-overlay">
+                            <div class="overlay-icon"><i class="fa-solid fa-angle-right"></i></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -181,101 +227,10 @@
                         <span class="triet-ly-dao-tao-content-title">TRIẾT LÝ ĐÀO TẠO</span>
                         <h2 class="triet-ly-dao-tao-content-title-h2">Doanh nghiệp hoá</h2>
                         <span class="triet-ly-dao-tao-content-text-span">Doanh nghiệp hoá với thực hành, thực tế, thực
-                            hiện dự án, làm việc tại doanh nghiệp ngay từ năm thứ nhất</span>
+                            hiện dự án, làm việc tại <br> doanh nghiệp ngay từ năm thứ nhất</span>
                     </div>
                     <div class="triet-ly-dao-tao-content-text-button">
                         <button class="button-h2">Tìm hiểu thêm</button>
-                    </div>
-                </div>
-                <div class="triet-ly-dao-tao-content-img">
-                    <div class="triet-ly-dao-tao-content-box-1">
-                        <img src="../img/tldt-1.png" alt="Image 1">
-                        <div class="triet-ly-dao-tao-content-text-1">
-                            <div class="triet-ly-dao-tao-content-calendar-icon">
-                                <span><i class="fa-regular fa-calendar" style="color: #BC2626;"></i></span>
-                            </div>
-                            <div class="triet-ly-dao-tao-content-text-date">
-                                <span
-                                    style="color: #4e4f53; font-family: 'Manrope'; font-size: 14px; font-weight: 600;">20/01/2026</span>
-                            </div>
-
-                        </div>
-                        <div class="triet-ly-dao-tao-content-text-h2-1">
-                            <h2>
-                                <a href="https://udu.ptit.edu.vn/company-tour-2025-hanh-trinh-trai-nghiem-dang-nho-cua-d24-udu-cung-vti-group/"
-                                    rel="bookmark"
-                                    title="[Company Tour 2025] Hành trình trải nghiệm đáng nhớ của D24 UDU cùng VTI Group">
-                                    [Company Tour 2025] Hành trình trải nghiệm đáng nhớ của D24 UDU cùng VTI Group</a>
-                            </h2>
-                        </div>
-                        <div class="triet-ly-dao-tao-content-more-info">
-                            <div class="triet-ly-dao-tao-content-more-info-text">
-                                <span>Xem chi tiết</span>
-                            </div>
-                            <div class="triet-ly-dao-tao-content-more-info-icon">
-                                <span><i class="fa-solid fa-arrow-right"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="triet-ly-dao-tao-content-box-2">
-                        <img src="../img/tldt-2.jpg" alt="Image 2">
-                        <div class="triet-ly-dao-tao-content-text-1">
-                            <div class="triet-ly-dao-tao-content-calendar-icon">
-                                <span><i class="fa-regular fa-calendar" style="color: #BC2626;"></i></span>
-                            </div>
-                            <div class="triet-ly-dao-tao-content-text-date">
-                                <span
-                                    style="color: #4e4f53; font-family: 'Manrope'; font-size: 14px; font-weight: 600;">20/01/2026</span>
-                            </div>
-
-                        </div>
-                        <div class="triet-ly-dao-tao-content-text-h2-1">
-                            <h2>
-                                <a href="https://udu.ptit.edu.vn/company-tour-2025-hanh-trinh-trai-nghiem-dang-nho-cua-d24-udu-cung-vti-group/"
-                                    rel="bookmark"
-                                    title="[Company Tour 2025] Hành trình trải nghiệm đáng nhớ của D24 UDU cùng VTI Group">
-                                    Cơ hội dành cho sinh viên năm 3, 4 PTIT – Chương trình Liên kết đào tạo
-                                    NATV-PTIT</a>
-                            </h2>
-                        </div>
-                        <div class="triet-ly-dao-tao-content-more-info">
-                            <div class="triet-ly-dao-tao-content-more-info-text">
-                                <span>Xem chi tiết</span>
-                            </div>
-                            <div class="triet-ly-dao-tao-content-more-info-icon">
-                                <span><i class="fa-solid fa-arrow-right"></i></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="triet-ly-dao-tao-content-box-3">
-                        <img src="../img/tldt-3.jpg" alt="Image 3">
-                        <div class="triet-ly-dao-tao-content-text-1">
-                            <div class="triet-ly-dao-tao-content-calendar-icon">
-                                <span><i class="fa-regular fa-calendar" style="color: #BC2626;"></i></span>
-                            </div>
-                            <div class="triet-ly-dao-tao-content-text-date">
-                                <span
-                                    style="color: #4e4f53; font-family: 'Manrope'; font-size: 14px; font-weight: 600;">20/01/2026</span>
-                            </div>
-
-                        </div>
-                        <div class="triet-ly-dao-tao-content-text-h2-1">
-                            <h2>
-                                <a href="https://udu.ptit.edu.vn/company-tour-2025-hanh-trinh-trai-nghiem-dang-nho-cua-d24-udu-cung-vti-group/"
-                                    rel="bookmark"
-                                    title="[Company Tour 2025] Hành trình trải nghiệm đáng nhớ của D24 UDU cùng VTI Group">
-                                    RIPT & Mirabo Global chính thức ký kết Biên bản ghi nhớ hợp tác (MOU) – Mở ra cơ hội
-                                    hợp tác đào tạo và phát triển nguồn nhân lực công nghệ</a>
-                            </h2>
-                        </div>
-                        <div class="triet-ly-dao-tao-content-more-info">
-                            <div class="triet-ly-dao-tao-content-more-info-text">
-                                <span>Xem chi tiết</span>
-                            </div>
-                            <div class="triet-ly-dao-tao-content-more-info-icon">
-                                <span><i class="fa-solid fa-arrow-right"></i></span>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -579,7 +534,7 @@
             <div class="footer-logo-and-social">
                 <div class="footer-logo">
                     <a href="#" class="footer-logo-ript">
-                        <img src="../img/logo.webp" alt="RIPT" class="img-ript">
+                        <img src="/udu_clone/img/logo.webp" alt="RIPT" class="img-ript">
                     </a>
                 </div>
                 <div class="footer-social">
@@ -738,6 +693,81 @@
             </div>
         </div>
     </footer>
+    </footer>
+
+    <!-- Popup Modal -->
+    <div class="layout-popup" id="homePopup" style="display: none;">
+        <div class="popup-form">
+            <button class="popup-close" id="closePopupBtn">
+                <i class="fa-solid fa-x"></i>
+            </button>
+            <div class="popup-content">
+                <div class="popup-content-title">
+                    <h5>Đăng kí tư vấn tuyển sinh</h5>
+                </div>
+                <div class="popup-content-container">
+                    <form class="popup-info">
+                        <div class="popup-content-container-left">
+                            <div class="popup-name">
+                                <input type="text" placeholder="Họ và tên" required>
+                            </div>
+                            <div class="popup-number-and-email">
+                                <div class="popup-number">
+                                    <input type="tel" placeholder="Số điện thoại" required>
+                                </div>
+                                <div class="popup-email">
+                                    <input type="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="popup-school">
+                                <input type="text" placeholder="Trường THPT" required>
+                            </div>
+                            <div class="popup-select-field">
+                                <select required>
+                                    <option value="aiot">Trí tuệ nhân tạo vạn vật (AIoT)</option>
+                                    <option value="udu">Công nghệ thông tin Định hướng ứng dụng (UDU)</option>
+                                </select>
+                            </div>
+                            <div class="popup-submit">
+                                <button type="submit">Đăng ký ngay</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="popup-content-container-right">
+                        <div class="popup-content-container-logo">
+                            <img src="/udu_clone/img/logo-ript.png" alt="logo">
+                        </div>
+                        <div class="popup-content-container-student">
+                            <img src="/udu_clone/img/modal.png" alt="student">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const popup = document.getElementById("homePopup");
+            const closeBtn = document.getElementById("closePopupBtn");
+
+            // Hiện popup sau khoảng 1 giây
+            setTimeout(() => {
+                popup.style.display = "flex";
+            }, 1000);
+
+            // Tắt popup khi bấm X
+            closeBtn.addEventListener("click", function () {
+                popup.style.display = "none";
+            });
+
+            // Tắt popup khi bấm ra bên ngoài form
+            popup.addEventListener("click", function (e) {
+                if (e.target === popup) {
+                    popup.style.display = "none";
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
