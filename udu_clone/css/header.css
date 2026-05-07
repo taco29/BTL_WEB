@@ -99,10 +99,28 @@
     border-radius: 4px;
 }
 
+.sub-menu:last-child {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    min-width: 250px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+    z-index: 1;
+    border-radius: 4px;
+}
+
 .has-submenu:hover .sub-menu {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
+
 }
 
 .sub-menu li {
