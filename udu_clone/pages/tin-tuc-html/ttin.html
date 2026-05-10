@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/udu_clone/css/contact.css">
+    <link rel="stylesheet" href="/udu_clone/css/tin-tuc-css/ttin.css">
     <link rel="stylesheet" href="/udu_clone/icon/css_icon/all.min.css">
     <link rel="stylesheet" href="/udu_clone/css/footer.css">
     <link rel="stylesheet" href="/udu_clone/css/base.css">
@@ -13,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/webp" href="/udu_clone/img/logo-ptit-small.webp">
-    <title>Liên hệ - Chương trình Cử nhân Công nghệ thông tin định hướng ứng dụng</title>
+    <title>Hoạt động sinh viên - Chương trình Cử nhân Công nghệ thông tin định hướng ứng dụng</title>
 </head>
 
 <body>
@@ -109,7 +110,7 @@
                         </ul>
                     </li>
                     <li class="has-submenu">
-                        <a href="#" class="link">
+                        <a href="/udu_clone/pages/hoat-dong-sinh-vien.html" class="link">
                             <span>Sinh viên</span>
                             <i class="fa-solid fa-angle-down"></i>
                         </a>
@@ -128,62 +129,121 @@
         </nav>
     </div>
 
-    <div class="contact-banner">
+    <div class="contact-banner research-banner">
         <div class="contact-banner-overlay">
-            <div class="contact-breadcrumb'">
-                <a href="#"><i class="fa-solid fa-house-chimney"></i></a>
+            <div class="contact-breadcrumb">
+                <a href="/udu_clone/index.html"><i class="fa-solid fa-house-chimney"></i></a>
                 <i class="fa-solid fa-angle-right"></i>
-                <span>Liên hệ</span>
+                <a href="/udu_clone/pages/tin-tuc-html/ttin.html"><span>Tin khác</span></a>
+                <i class="fa-solid fa-angle-right"></i>
             </div>
-            <h1 class="contact-banner-title ">Liên hệ</h1>
+            <h1 class="contact-banner-title">Tin khác</h1>
         </div>
     </div>
-    <div class="container">
-        <div class="contact">
-            <div class="contact-info">
+    <div class="anhtenlabang">
+        <!-- Thanh tìm kiếm -->
+        <div class="news-search">
+            <input type="text" placeholder="Nhập thông tin tìm kiếm">
+            <select>
+                <option value="">Sắp xếp theo ...</option>
+                <option value="date-desc">Mới nhất</option>
+                <option value="date-asc">Cũ nhất</option>
+            </select>
+            <button>Tìm kiếm</button>
+        </div>
 
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fa-solid fa-envelope-open-text"></i>
-                    </div>
-                    <div class="contact-text">
-                        <span class="contact-label">Email liên hệ</span>
-                        <strong class="contact-value">ript@ptit.edu.vn</strong>
-                    </div>
+        <!-- Grid bài viết -->
+        <div class="news-grid">
+            <div class="box1">
+                <div class="box1-img">
+                    <img src="/udu_clone/img/HGHGH-668x520.png" alt="Image 1">
                 </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fa-solid fa-phone-volume"></i>
+                <div class="box1-content">
+                    <div class="date">
+                        <div class="date-icon">
+                            <i class="fa-regular fa-calendar" style="color: #BC2626;"></i>
+                        </div>
+                        <div class="date-text">
+                            <span>20/01/2026</span>
+                        </div>
                     </div>
-                    <div class="contact-text">
-                        <span class="contact-label">Số điện thoại liên hệ</span>
-                        <strong class="contact-value">0243.756.1261</strong>
-                    </div>
-                </div>
-
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <div class="contact-text">
-                        <span class="contact-label">Địa chỉ</span>
-                        <strong class="contact-value">Số 122 Hoàng Quốc Việt, phường Nghĩa Đô, thành phố Hà Nội</strong>
+                    <div class="wrap">
+                        <div class="post-title">
+                            <span>[Tấm gương UDU] Sinh viên năm 1 UDU PTIT gây bão với điểm gần tuyệt đối ở level 2
+                                trong kỳ
+                                thi COS pro</span>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="contact-map">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.863855881404!2d105.7958117!3d21.0381328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab3a9fa43db5%3A0xc3bba91f930eeb88!2zMTIyIEhvw6BuZyBRdeG7kWMgVmnhu4d0LCBOZ2jEqWEgxJDDtCwgQ-G6p3UgR2nhuqV5LCBIw6AgTuG7mWksIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1711200000000!5m2!1svi!2s"
-                    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="box1">
+                <div class="box1-img">
+                    <img src="/udu_clone/img/HGHGH-668x520.png" alt="Image 1">
+                </div>
+                <div class="box1-content">
+                    <div class="date">
+                        <div class="date-icon">
+                            <i class="fa-regular fa-calendar" style="color: #BC2626;"></i>
+                        </div>
+                        <div class="date-text">
+                            <span>20/01/2026</span>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div class="post-title">
+                            <span>[Tấm gương UDU] Sinh viên năm 1 UDU PTIT gây bão với điểm gần tuyệt đối ở level 2
+                                trong kỳ
+                                thi COS pro</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-
+            <div class="box1">
+                <div class="box1-img">
+                    <img src="/udu_clone/img/HGHGH-668x520.png" alt="Image 1">
+                </div>
+                <div class="box1-content">
+                    <div class="date">
+                        <div class="date-icon">
+                            <i class="fa-regular fa-calendar" style="color: #BC2626;"></i>
+                        </div>
+                        <div class="date-text">
+                            <span>20/01/2026</span>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div class="post-title">
+                            <span>[Tấm gương UDU] Sinh viên năm 1 UDU PTIT gây bão với điểm gần tuyệt đối ở level 2
+                                trong kỳ
+                                thi COS pro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box1">
+                <div class="box1-img">
+                    <img src="/udu_clone/img/HGHGH-668x520.png" alt="Image 1">
+                </div>
+                <div class="box1-content">
+                    <div class="date">
+                        <div class="date-icon">
+                            <i class="fa-regular fa-calendar" style="color: #BC2626;"></i>
+                        </div>
+                        <div class="date-text">
+                            <span>20/01/2026</span>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div class="post-title">
+                            <span>[Tấm gương UDU] Sinh viên năm 1 UDU PTIT gây bão với điểm gần tuyệt đối ở level 2
+                                trong kỳ
+                                thi COS pro</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-
-
     <footer>
         <div class="container footer-inner">
             <div class="footer-logo-and-social">
@@ -337,7 +397,6 @@
                             </a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
