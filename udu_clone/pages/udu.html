@@ -333,28 +333,452 @@
 
             <section id="cau-truc-chuong-trinh" class="udu-section">
                 <h2 class="udu-section-title">Cấu trúc chương trình</h2>
+                <div class="curriculum-container">
+                    <div class="curriculum-tabs">
+                        <button class="curriculum-tab-btn active" onclick="openCurriculum(event, 'cnpm')">Công nghệ phần mềm</button>
+                        <button class="curriculum-tab-btn" onclick="openCurriculum(event, 'httt')">Hệ thống thông tin</button>
+                    </div>
 
-                <div class="udu-curriculum-block" style="margin-bottom: 30px;">
-                    <h3 style="color: #bc2626; font-size: 18px; margin-bottom: 15px;">Cấu trúc chương trình các chuyên
-                        ngành (Tiến trình học tập theo học chế tín chỉ)</h3>
-                    <ul class="udu-list">
-                        <li><i class="fa-solid fa-check"></i> Công nghệ phần mềm</li>
-                        <li><i class="fa-solid fa-check"></i> Hệ thống thông tin</li>
-                    </ul>
-                </div>
+                    <div id="cnpm" class="curriculum-content active">
 
-                <div class="udu-curriculum-block">
-                    <h3 style="color: #bc2626; font-size: 18px; margin-bottom: 15px;">Các học phần tự chọn</h3>
-                    <ul class="udu-list">
-                        <li><i class="fa-solid fa-check"></i> Bắt buộc chung</li>
-                        <li><i class="fa-solid fa-check"></i> Bổ trợ ngành</li>
-                        <li><i class="fa-solid fa-check"></i> Chuyên ngành</li>
-                        <li><i class="fa-solid fa-check"></i> Giáo dục chuyên nghiệp</li>
-                        <li><i class="fa-solid fa-check"></i> Bắt buộc chung nhóm ngành</li>
-                        <li><i class="fa-solid fa-check"></i> Cơ sở ngành</li>
-                        <li><i class="fa-solid fa-check"></i> Thực tập</li>
-                        <li><i class="fa-solid fa-check"></i> Luận văn tốt nghiệp</li>
-                    </ul>
+                    <div class="semester-group">
+                        <div class="semester-label"><span>Học kỳ 1</span></div>
+                        <div class="semester-courses">
+                            <div class="course-card bat-buoc-chung-nhom-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Đại số</h4>
+                            </div>
+                            <div class="course-card bat-buoc-chung-nhom-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Giải tích 1</h4>
+                            </div>
+                            <div class="course-card bat-buoc-chung">
+                                <span class="course-credits">2 tín chỉ</span>
+                                <h4 class="course-name">Pháp luật đại cương</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Nhập môn lập trình với Python</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="semester-group">
+                        <div class="semester-label"><span>Học kỳ 2</span></div>
+                        <div class="semester-courses">
+                            <div class="course-card bat-buoc-chung-nhom-nganh">
+                                <span class="course-credits">2 tín chỉ</span>
+                                <h4 class="course-name">Xác suất thống kê</h4>
+                            </div>
+                            <div class="course-card bat-buoc-chung-nhom-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Giải tích 2</h4>
+                            </div>
+                            <div class="course-card bat-buoc-chung">
+                                <span class="course-credits">4 tín chỉ</span>
+                                <h4 class="course-name">Tiếng Anh (Course 1)</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Lập trình với ngôn ngữ Script</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Cơ sở dữ liệu</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="semester-group">
+                        <div class="semester-label"><span>Học kỳ 3</span></div>
+                        <div class="semester-courses">
+                            <div class="course-card bat-buoc-chung">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Triết học Mác-Lênin</h4>
+                            </div>
+                            <div class="course-card bat-buoc-chung">
+                                <span class="course-credits">4 tín chỉ</span>
+                                <h4 class="course-name">Tiếng Anh (Course 2)</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Lập trình hướng đối tượng</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Toán rời rạc 1</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Lập trình web</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="semester-group">
+                        <div class="semester-label"><span>Học kỳ 4</span></div>
+                        <div class="semester-courses">
+                            <div class="course-card bat-buoc-chung">
+                                <span class="course-credits">2 tín chỉ</span>
+                                <h4 class="course-name">Kinh tế chính trị Mác-Lênin</h4>
+                            </div>
+                            <div class="course-card bat-buoc-chung">
+                                <span class="course-credits">4 tín chỉ</span>
+                                <h4 class="course-name">Tiếng Anh (Course 3)</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">An toàn và bảo mật hệ thống thông tin</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">2 tín chỉ</span>
+                                <h4 class="course-name">Quản lý dự án phần mềm</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Thực hành lập trình web</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Học phần doanh nghiệp 1</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="semester-group">
+                        <div class="semester-label"><span>Học kỳ 5</span></div>
+                        <div class="semester-courses">
+                            <div class="course-card bat-buoc-chung">
+                                <span class="course-credits">2 tín chỉ</span>
+                                <h4 class="course-name">Chủ nghĩa xã hội khoa học</h4>
+                            </div>
+                            <div class="course-card bat-buoc-chung">
+                                <span class="course-credits">2 tín chỉ</span>
+                                <h4 class="course-name">Tiếng Anh (Course 3 Plus)</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Phát triển ứng dụng cho các thiết bị di động</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Cấu trúc dữ liệu và giải thuật</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Nhập môn công nghệ nền tảng</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Nhập môn tích hợp hệ thống</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="semester-group">
+                        <div class="semester-label"><span>Học kỳ 6</span></div>
+                        <div class="semester-courses">
+                            <div class="course-card bat-buoc-chung">
+                                <span class="course-credits">2 tín chỉ</span>
+                                <h4 class="course-name">Tư tưởng Hồ Chí Minh</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">4 tín chỉ</span>
+                                <h4 class="course-name">Mạng máy tính theo CCNA</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Học phần doanh nghiệp 2</h4>
+                            </div>
+                            <div class="course-card chuyen-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Nhập môn công nghệ phần mềm</h4>
+                            </div>
+                            <div class="course-card chuyen-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Kiến trúc và thiết kế phần mềm</h4>
+                            </div>
+                            <div class="course-card chuyen-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Thiết kế giao diện người dùng</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="semester-group">
+                        <div class="semester-label"><span>Học kỳ 7</span></div>
+                        <div class="semester-courses">
+                            <div class="course-card bat-buoc-chung">
+                                <span class="course-credits">2 tín chỉ</span>
+                                <h4 class="course-name">Lịch sử Đảng cộng sản VN</h4>
+                            </div>
+                            <div class="course-card chuyen-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Lập trình web nâng cao</h4>
+                            </div>
+                            <div class="course-card chuyen-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Đảm bảo chất lượng phần mềm</h4>
+                            </div>
+                            <div class="course-card chuyen-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Phân tích nghiệp vụ</h4>
+                            </div>
+                            <div class="course-card chuyen-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Phát triển ứng dụng di động đa nền tảng</h4>
+                            </div>
+                            <div class="course-card chuyen-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Học phần tự chọn</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="semester-group">
+                        <div class="semester-label"><span>Học kỳ 8</span></div>
+                        <div class="semester-courses">
+                            <div class="course-card thuc-tap">
+                                <span class="course-credits">11 tín chỉ</span>
+                                <h4 class="course-name">Thực tập và tốt nghiệp</h4>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div id="httt" class="curriculum-content">
+
+                    <div class="semester-group">
+                        <div class="semester-label"><span>Học kỳ 1</span></div>
+                        <div class="semester-courses">
+                            <div class="course-card bat-buoc-chung-nhom-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Đại số</h4>
+                            </div>
+                            <div class="course-card bat-buoc-chung-nhom-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Giải tích 1</h4>
+                            </div>
+                            <div class="course-card bat-buoc-chung">
+                                <span class="course-credits">2 tín chỉ</span>
+                                <h4 class="course-name">Pháp luật đại cương</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Nhập môn lập trình với Python</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="semester-group">
+                        <div class="semester-label"><span>Học kỳ 2</span></div>
+                        <div class="semester-courses">
+                            <div class="course-card bat-buoc-chung-nhom-nganh">
+                                <span class="course-credits">2 tín chỉ</span>
+                                <h4 class="course-name">Xác suất thống kê</h4>
+                            </div>
+                            <div class="course-card bat-buoc-chung-nhom-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Giải tích 2</h4>
+                            </div>
+                            <div class="course-card bat-buoc-chung">
+                                <span class="course-credits">4 tín chỉ</span>
+                                <h4 class="course-name">Tiếng Anh (Course 1)</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Lập trình với ngôn ngữ Script</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Cơ sở dữ liệu</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="semester-group">
+                        <div class="semester-label"><span>Học kỳ 3</span></div>
+                        <div class="semester-courses">
+                            <div class="course-card bat-buoc-chung">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Triết học Mác-Lênin</h4>
+                            </div>
+                            <div class="course-card bat-buoc-chung">
+                                <span class="course-credits">4 tín chỉ</span>
+                                <h4 class="course-name">Tiếng Anh (Course 2)</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Lập trình hướng đối tượng</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Toán rời rạc 1</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Lập trình web</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="semester-group">
+                        <div class="semester-label"><span>Học kỳ 4</span></div>
+                        <div class="semester-courses">
+                            <div class="course-card bat-buoc-chung">
+                                <span class="course-credits">2 tín chỉ</span>
+                                <h4 class="course-name">Kinh tế chính trị Mác-Lênin</h4>
+                            </div>
+                            <div class="course-card bat-buoc-chung">
+                                <span class="course-credits">4 tín chỉ</span>
+                                <h4 class="course-name">Tiếng Anh (Course 3)</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">An toàn và bảo mật hệ thống thông tin</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">2 tín chỉ</span>
+                                <h4 class="course-name">Quản lý dự án phần mềm</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Thực hành lập trình web</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Học phần doanh nghiệp 1</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="semester-group">
+                        <div class="semester-label"><span>Học kỳ 5</span></div>
+                        <div class="semester-courses">
+                            <div class="course-card bat-buoc-chung">
+                                <span class="course-credits">2 tín chỉ</span>
+                                <h4 class="course-name">Chủ nghĩa xã hội khoa học</h4>
+                            </div>
+                            <div class="course-card bat-buoc-chung">
+                                <span class="course-credits">2 tín chỉ</span>
+                                <h4 class="course-name">Tiếng Anh (Course 3 Plus)</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Phát triển ứng dụng cho các thiết bị di động</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Cấu trúc dữ liệu và giải thuật</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Nhập môn công nghệ nền tảng</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Nhập môn tích hợp hệ thống</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="semester-group">
+                        <div class="semester-label"><span>Học kỳ 6</span></div>
+                        <div class="semester-courses">
+                            <div class="course-card bat-buoc-chung">
+                                <span class="course-credits">2 tín chỉ</span>
+                                <h4 class="course-name">Tư tưởng Hồ Chí Minh</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">4 tín chỉ</span>
+                                <h4 class="course-name">Mạng máy tính theo CCNA</h4>
+                            </div>
+                            <div class="course-card co-so-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Học phần doanh nghiệp 2</h4>
+                            </div>
+                            <div class="course-card chuyen-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Nhập môn DevOps</h4>
+                            </div>
+                            <div class="course-card chuyen-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Quản trị cơ sở dữ liệu nâng cao</h4>
+                            </div>
+                            <div class="course-card chuyen-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Điện toán đám mây</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="semester-group">
+                        <div class="semester-label"><span>Học kỳ 7</span></div>
+                        <div class="semester-courses">
+                            <div class="course-card bat-buoc-chung">
+                                <span class="course-credits">2 tín chỉ</span>
+                                <h4 class="course-name">Lịch sử Đảng cộng sản Việt Nam</h4>
+                            </div>
+                            <div class="course-card chuyen-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Kho dữ liệu và khai phá dữ liệu</h4>
+                            </div>
+                            <div class="course-card chuyen-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Cấu hình hệ thống phân tán</h4>
+                            </div>
+                            <div class="course-card chuyen-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Thực hành DevOps</h4>
+                            </div>
+                            <div class="course-card chuyen-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Phát triển hệ thống thông tin quản lý</h4>
+                            </div>
+                            <div class="course-card chuyen-nganh">
+                                <span class="course-credits">3 tín chỉ</span>
+                                <h4 class="course-name">Học phần tự chọn</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="semester-group">
+                        <div class="semester-label"><span>Học kỳ 8</span></div>
+                        <div class="semester-courses">
+                            <div class="course-card thuc-tap">
+                                <span class="course-credits">11 tín chỉ</span>
+                                <h4 class="course-name">Thực tập và tốt nghiệp</h4>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="curriculum-legend">
+                        <div class="legend-item">
+                            <div class="legend-color bg-bat-buoc-chung"></div>Bắt buộc chung
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color bg-bo-tro-nganh"></div>Bổ trợ ngành
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color bg-chuyen-nganh"></div>Chuyên ngành
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color bg-giao-duc-chuyen-nghiep"></div>Giáo dục chuyên nghiệp
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color bg-bat-buoc-chung-nhom-nganh"></div>Bắt buộc chung nhóm ngành
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color bg-co-so-nganh"></div>Cơ sở ngành
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color bg-thuc-tap"></div>Thực tập
+                        </div>
+                        <div class="legend-item">
+                            <div class="legend-color bg-luan-van"></div>Luận văn tốt nghiệp
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -593,6 +1017,65 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sidebarLinks = document.querySelectorAll(".udu-sidebar a");
+            const sections = document.querySelectorAll(".udu-section");
+
+            // Smooth scroll and active state on click
+            sidebarLinks.forEach(link => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop - 120, // offset for header height
+                            behavior: "smooth"
+                        });
+                    }
+                    
+                    // Update active class immediately on click
+                    sidebarLinks.forEach(l => l.classList.remove("active"));
+                    this.classList.add("active");
+                });
+            });
+
+            // Update active state on scroll
+            window.addEventListener("scroll", function () {
+                let current = "";
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (window.pageYOffset >= sectionTop - 130) {
+                        current = section.getAttribute("id");
+                    }
+                });
+
+                sidebarLinks.forEach(link => {
+                    link.classList.remove("active");
+                    if (current && link.getAttribute("href").includes(current)) {
+                        link.classList.add("active");
+                    }
+                });
+            });
+        });
+
+        function openCurriculum(evt, curriculumName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("curriculum-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("curriculum-tab-btn");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(curriculumName).classList.add("active");
+            evt.currentTarget.classList.add("active");
+        }
+    </script>
 </body>
 
 </html>

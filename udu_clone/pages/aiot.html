@@ -780,6 +780,51 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sidebarLinks = document.querySelectorAll(".aiot-sidebar a");
+            const sections = document.querySelectorAll(".aiot-section");
+
+            // Smooth scroll and active state on click
+            sidebarLinks.forEach(link => {
+                link.addEventListener("click", function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute("href").substring(1);
+                    const targetSection = document.getElementById(targetId);
+                    
+                    if (targetSection) {
+                        window.scrollTo({
+                            top: targetSection.offsetTop - 120, // offset for header height
+                            behavior: "smooth"
+                        });
+                    }
+                    
+                    // Update active class immediately on click
+                    sidebarLinks.forEach(l => l.classList.remove("active"));
+                    this.classList.add("active");
+                });
+            });
+
+            // Update active state on scroll
+            window.addEventListener("scroll", function () {
+                let current = "";
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    if (window.pageYOffset >= sectionTop - 130) {
+                        current = section.getAttribute("id");
+                    }
+                });
+
+                sidebarLinks.forEach(link => {
+                    link.classList.remove("active");
+                    if (current && link.getAttribute("href").includes(current)) {
+                        link.classList.add("active");
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
