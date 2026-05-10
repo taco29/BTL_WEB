@@ -74,7 +74,7 @@
     width: 280px;
     flex-shrink: 0;
     position: sticky;
-    top: 20px;
+    top: 120px;
     margin-top: 60px;
 }
 
@@ -358,6 +358,59 @@
     padding-bottom: 5px;
     margin-bottom: 30px;
     font-weight: 600;
+}
+
+/* Curriculum Tabs */
+.curriculum-tabs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.curriculum-tab-btn {
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #4e4f53;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s;
+    font-family: inherit;
+}
+
+.curriculum-tab-btn:hover {
+    color: #bc2626;
+}
+
+.curriculum-tab-btn.active {
+    color: #bc2626;
+}
+
+.curriculum-tab-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #bc2626;
+}
+
+.curriculum-content {
+    display: none;
+    animation: fadeIn 0.4s ease;
+}
+
+.curriculum-content.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(5px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .semester-group {
