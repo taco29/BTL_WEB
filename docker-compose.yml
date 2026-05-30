@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  qdrant:
+    image: qdrant/qdrant:latest
+    container_name: qdrant_vector_db
+    ports:
+      - "8888:6333"
+      - "8889:6334"
+    volumes:
+      - ./qdrant_data:/qdrant/storage
