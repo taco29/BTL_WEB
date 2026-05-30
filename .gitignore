@@ -1,0 +1,6 @@
+.vscode/
+.env
+qdrant_data/
+__pycache__/
+*.pyc
+data.txt
