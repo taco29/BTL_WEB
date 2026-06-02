@@ -2,6 +2,7 @@ from langchain_community.document_loaders import TextLoader
 from langchain_text_splitters import MarkdownHeaderTextSplitter, RecursiveCharacterTextSplitter
 
 headers_to_split_on = [
+    ("#", "Header 1"),
     ("##", "Header 2"),
     ("###", "Header 3"),
     ("####", "Header 4")
