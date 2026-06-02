@@ -21,7 +21,7 @@ class CreateVectorStore:
         if not self.client.collection_exists(collection_name):
             self.client.create_collection(
                 collection_name=collection_name,
-                vector_config = VectorParams(size= vector_size, distance= Distance.COSINE)
+                vectors_config = VectorParams(size= vector_size, distance= Distance.COSINE)
             )
         
         return QdrantVectorStore.from_documents(
