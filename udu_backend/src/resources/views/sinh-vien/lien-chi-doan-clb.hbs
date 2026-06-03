@@ -1,0 +1,57 @@
+<main id="main-content">
+      <div class="contact-banner research-banner">
+        <div class="contact-banner-overlay">
+          <div class="contact-breadcrumb">
+            <a href="/udu_clone/index.html"><i class="fa-solid fa-house-chimney"></i></a>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#">Sinh viên</a>
+            <i class="fa-solid fa-angle-right"></i>
+            <span>Liên chi đoàn, CLB</span>
+          </div>
+          <h1 class="contact-banner-title">Liên chi đoàn, CLB</h1>
+        </div>
+      </div>
+      <div class="container">
+        <!-- Club Intro -->
+        <div class="club-intro">
+          <div class="club-intro-content">
+            <h2 class="club-intro-title">Câu lạc bộ IU Club</h2>
+            <p class="club-intro-desc">
+              IU Club là câu lạc bộ dành riêng cho sinh viên UDU, với sứ mệnh
+              tạo điều kiện cho các bạn trẻ đam mê công nghệ thông tin có cơ hội
+              kết nối, giao lưu và học hỏi lẫn nhau. Mỗi thành viên của IUC đều
+              là những mắt xích quan trọng góp phần xây dựng nên sự vững mạnh
+              của câu lạc bộ. Hơn nữa, IUC còn đóng vai trò hỗ trợ sinh viên
+              trưởng thành, giúp các bạn trẻ theo đuổi đam mê và phát triển bản
+              thân trong một môi trường năng động và tích cực.
+            </p>
+            <a href="https://www.facebook.com/profile.php?id=61564322655289" class="club-intro-btn">Khám phá CLB</a>
+          </div>
+          <div class="club-intro-img-wrapper">
+            <img src="/udu_clone/img/club-1.jpg" alt="Câu lạc bộ IU Club" class="club-intro-img">
+          </div>
+        </div>
+      </div>
+      <div style="background-color: #f9f9f9; width: 100%">
+        <div class="container">
+          <!-- Club News -->
+          <div class="club-news">
+            <h2 class="club-news-header">Tin tức Liên chi đoàn, câu lạc bộ</h2>
+            <div class="club-news-grid">
+              {{#each clubNews}}
+              <div class="club-card">
+                <div class="club-card-img-wrapper">
+                  <img src="{{this.thumbnail}}" alt="{{this.title}}" class="club-card-img">
+                </div>
+                <div class="club-card-content">
+                  <h3 class="club-card-title">
+                    <a href="/news/{{this.slug}}">{{this.title}}</a>
+                  </h3>
+                </div>
+              </div>
+              {{/each}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>

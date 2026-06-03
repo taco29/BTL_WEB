@@ -1,0 +1,224 @@
+<main id="main-content">
+      <div class="contact-banner research-banner">
+        <div class="contact-banner-overlay">
+          <div class="contact-breadcrumb">
+            <a href="/udu_clone/index.html"
+              ><i class="fa-solid fa-house-chimney"></i
+            ></a>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="#"><span>Chương trình đào tạo</span></a>
+            <i class="fa-solid fa-angle-right"></i>
+            <span>Trí tuệ nhân tạo vạn vật (AIoT)</span>
+          </div>
+          <h1 class="contact-banner-title">{{course.name}}</h1>
+        </div>
+      </div>
+      <div class="aiot-overview-container">
+        <div class="aiot-overview">
+          <div class="aiot-overview-item">
+            <div class="aiot-icon"><i class="fa-solid fa-barcode"></i></div>
+            <div class="aiot-info">
+              <span class="aiot-label">Mã ngành</span>
+              <span class="aiot-value">{{course.code}}</span>
+            </div>
+          </div>
+          <div class="aiot-overview-item">
+            <div class="aiot-icon"><i class="fa-regular fa-clock"></i></div>
+            <div class="aiot-info">
+              <span class="aiot-label">Thời gian</span>
+              <span class="aiot-value">{{course.duration}}</span>
+            </div>
+          </div>
+          <div class="aiot-overview-item">
+            <div class="aiot-icon">
+              <i class="fa-regular fa-calendar-check"></i>
+            </div>
+            <div class="aiot-info">
+              <span class="aiot-label">Kỳ nhập học</span>
+              <span class="aiot-value">{{course.intake}}</span>
+            </div>
+          </div>
+          <div class="aiot-overview-item">
+            <div class="aiot-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="aiot-info">
+              <span class="aiot-label">Cơ sở</span>
+              <span class="aiot-value">{{course.campus}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container aiot-main-layout">
+        <aside class="aiot-sidebar">
+          <ul>
+            <li><a href="#tong-quan" class="active">Tổng quan</a></li>
+            <li><a href="#chuan-dau-ra">Chuẩn đầu ra</a></li>
+            <li><a href="#cau-truc-chuong-trinh">Cấu trúc chương trình</a></li>
+            <li><a href="#nghe-nghiep">Nghề nghiệp</a></li>
+            <li><a href="#hoc-phi">Học phí</a></li>
+            <li><a href="#dieu-kien-tuyen-sinh">Điều kiện tuyển sinh</a></li>
+            <li><a href="#quy-trinh-nhap-hoc">Quy trình nhập học</a></li>
+            <li><a href="#tai-lieu-dao-tao">Tài liệu đào tạo</a></li>
+          </ul>
+        </aside>
+
+        <div class="aiot-content-right">
+          <section id="tong-quan" class="aiot-section">
+            <h2 class="aiot-section-title">Tổng quan</h2>
+            <p>
+              {{course.description}}
+            </p>
+          </section>
+
+          <section id="chuan-dau-ra" class="aiot-section">
+            <h2 class="aiot-section-title">Chuẩn đầu ra</h2>
+            <div class="aiot-table-responsive">
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Chuẩn đầu ra (LO)</th>
+                    <th>Chỉ số đánh giá (PI)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {{#each course.learningOutcomes}}
+                    {{#each this.pis}}
+                    <tr>
+                      {{#if @first}}
+                      <td rowspan="{{../pis.length}}">
+                        <b>{{../lo_id}}</b>: {{../lo_desc}}
+                      </td>
+                      {{/if}}
+                      <td><b>{{this.pi_id}}</b>: {{this.pi_desc}}</td>
+                    </tr>
+                    {{/each}}
+                  {{/each}}
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section id="cau-truc-chuong-trinh" class="aiot-section">
+            <h2 class="aiot-section-title">Cấu trúc chương trình</h2>
+            <div class="curriculum-container">{{#each course.curriculum}}
+              <div class="semester-group">
+                <div class="semester-label"><span>{{this.semester}}</span></div>
+                <div class="semester-courses">
+                  {{#each this.courses}}
+                  <div class="course-card {{this.type}}">
+                    <span class="course-credits">{{this.credits}}</span>
+                    <h4 class="course-name">{{this.name}}</h4>
+                  </div>
+                  {{/each}}
+                </div>
+              </div>
+              {{/each}}
+
+              <div class="curriculum-legend">
+                <div class="legend-item">
+                  <div class="legend-color bg-bat-buoc-chung"></div>
+                  Bắt buộc chung
+                </div>
+                <div class="legend-item">
+                  <div class="legend-color bg-bo-tro-nganh"></div>
+                  Bổ trợ ngành
+                </div>
+                <div class="legend-item">
+                  <div class="legend-color bg-chuyen-nganh"></div>
+                  Chuyên ngành
+                </div>
+                <div class="legend-item">
+                  <div class="legend-color bg-giao-duc-chuyen-nghiep"></div>
+                  Giáo dục chuyên nghiệp
+                </div>
+                <div class="legend-item">
+                  <div class="legend-color bg-bat-buoc-chung-nhom-nganh"></div>
+                  Bắt buộc chung nhóm ngành
+                </div>
+                <div class="legend-item">
+                  <div class="legend-color bg-co-so-nganh"></div>
+                  Cơ sở ngành
+                </div>
+                <div class="legend-item">
+                  <div class="legend-color bg-thuc-tap"></div>
+                  Thực tập
+                </div>
+                <div class="legend-item">
+                  <div class="legend-color bg-luan-van"></div>
+                  Luận văn tốt nghiệp
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="nghe-nghiep" class="aiot-section">
+            <h2 class="aiot-section-title">Nghề nghiệp</h2>
+            <p>Đang cập nhật nội dung nghề nghiệp...</p>
+          </section>
+
+          <section id="hoc-phi" class="aiot-section">
+            <h2 class="aiot-section-title">Học phí</h2>
+            <p>Đang cập nhật nội dung học phí...</p>
+          </section>
+
+          <section id="dieu-kien-tuyen-sinh" class="aiot-section">
+            <h2 class="aiot-section-title">Điều kiện tuyển sinh</h2>
+            <p>
+              Là người đã tốt nghiệp THPT hoặc tương đương, tham dự và trúng
+              tuyển (đạt các yêu cầu đầu vào) trong kỳ tuyển sinh đại học hệ
+              chính quy với tổ hợp xét tuyển: Toán, Lý, Hóa (A00 – khối A0);
+              hoặc Toán, Lý, Anh văn (A01 – khối A1) hoặc các phương thức xét
+              tuyển riêng khác của Học viện Công nghệ Bưu chính Viễn thông.
+            </p>
+          </section>
+
+          <section id="quy-trinh-nhap-hoc" class="aiot-section">
+            <h2 class="aiot-section-title">Quy trình nhập học</h2>
+            <div class="aiot-process">
+              <div class="process-step">
+                <div class="step-icon">
+                  <img
+                    src="/udu_clone/img/admission.png"
+                    alt="Chọn chương trình"
+                  />
+                </div>
+                <div class="step-text">Chọn chương trình</div>
+              </div>
+              <div class="process-step">
+                <div class="step-icon">
+                  <img
+                    src="/udu_clone/img/accept.png"
+                    alt="Kiểm tra điều kiện"
+                  />
+                </div>
+                <div class="step-text">Kiểm tra điều kiện</div>
+              </div>
+              <div class="process-step">
+                <div class="step-icon">
+                  <img
+                    src="/udu_clone/img/preparation.png"
+                    alt="Chuẩn bị hồ sơ"
+                  />
+                </div>
+                <div class="step-text">Chuẩn bị hồ sơ</div>
+              </div>
+              <div class="process-step">
+                <div class="step-icon">
+                  <img src="/udu_clone/img/contract.png" alt="Nộp hồ sơ" />
+                </div>
+                <div class="step-text">Nộp hồ sơ</div>
+              </div>
+            </div>
+          </section>
+
+          <section id="tai-lieu-dao-tao" class="aiot-section">
+            <h2 class="aiot-section-title">Tài liệu đào tạo</h2>
+            <a href="#" class="aiot-download-btn"
+              ><i class="fa-solid fa-download"></i> AIoT_2025_Chuong trinh dao
+              tao.docx</a
+            >
+          </section>
+        </div>
+      </div>
+    </main>

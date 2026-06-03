@@ -1,0 +1,34 @@
+<main id="main-content">
+      <div class="contact-banner research-banner">
+        <div class="contact-banner-overlay">
+          <div class="contact-breadcrumb">
+            <a href="/udu_clone/index.html"><i class="fa-solid fa-house-chimney"></i></a>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="/udu_clone/pages/research.html">Nghiên cứu</a>
+            <i class="fa-solid fa-angle-right"></i>
+            <span>Nhóm nghiên cứu</span>
+          </div>
+          <h1 class="contact-banner-title">Nhóm nghiên cứu</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="research-content">
+          {{#each groups}}
+          <div class="research-group">
+            <div class="research-group-header">
+              <img src="/udu_clone/img/logo-ptit-small.webp" class="research-group-icon" alt="PTIT Logo">
+              <h3 class="research-group-title">
+                {{this.name}}
+              </h3>
+            </div>
+            <ul class="research-list">
+              <li>Lĩnh vực nghiên cứu: {{this.description}}</li>
+              <li>Địa chỉ: {{this.address}}</li>
+              <li>Trưởng nhóm: {{this.leader}}</li>
+              <li>Số thành viên: {{this.memberCount}}</li>
+            </ul>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </main>

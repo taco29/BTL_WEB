@@ -1,0 +1,462 @@
+{
+  "name": "Trí tuệ nhân tạo vạn vật (AIoT)",
+  "description": "Mục tiêu của chương trình nhằm cung ứng nguồn nhân lực trình độ đại học trong lĩnh vực Trí tuệ nhân tạo vạn vật có bản lĩnh chính trị vững vàng, đạo đức nghề nghiệp; có kiến thức, kỹ năng sáng tạo và năng lực kỹ thuật số làm chủ công nghệ, phát triển mô hình AI trên nền tảng IoT trong bối cảnh công nghệ số liên tục thay đổi. Có khả năng khám phá lý thuyết nền tảng và thực hành chuyên sâu trong lĩnh vực Kỹ thuật điện tử viễn thông; có năng lực phân tích, thiết kế hệ thống, linh kiện và quy trình kỹ thuật trong lĩnh vực điện tử viễn thông, kết hợp kiến thức liên ngành về trí tuệ nhân tạo (AI) và Internet vạn vật (IoT); có năng lực tiến hành thí nghiệm, thu thập dữ liệu từ thiết bị IoT, phân tích và đánh giá hiệu quả của các giải pháp kỹ thuật thông qua phương pháp ứng dụng AI vào xử lý dữ liệu; có năng lực kĩ thuật số để chủ động làm việc với công nghệ và khả năng học tập, bám sát những thay đổi của công nghệ.",
+  "image": "https://udu.ptit.edu.vn/wp-content/uploads/2023/12/AIoT-Banner.png",
+  "slug": "aiot",
+  "code": "7520207",
+  "duration": "4,5 năm",
+  "intake": "Mùa thu",
+  "campus": "Phía bắc",
+  "learningOutcomes": [
+    {
+      "lo_id": "LO1",
+      "lo_desc": "Tuân thủ trách nhiệm đạo đức và nghề nghiệp của mình, nhận biết được tác động của các giải pháp kỹ thuật đối với xã hội, kinh tế và môi trường.",
+      "pis": [
+        {
+          "pi_id": "PI 1.1",
+          "pi_desc": "Hiểu và tuân theo các quy định pháp luật nói chung và các quy định đặc thù với nghề nghiệp của mình."
+        },
+        {
+          "pi_id": "PI 1.2",
+          "pi_desc": "Phân tích được tác động của giải pháp kỹ thuật đối với xã hội, kinh tế và môi trường."
+        }
+      ]
+    },
+    {
+      "lo_id": "LO2",
+      "lo_desc": "Truyền đạt, trao đổi thông tin, trình bày ý tưởng một cách hiệu quả thông qua báo cáo hoặc thuyết trình trước đồng nghiệp, đối tác hoặc các đối tượng phi chuyên môn.",
+      "pis": [
+        {
+          "pi_id": "PI 2.1",
+          "pi_desc": "Sử dụng thành thạo các công cụ tin học hỗ trợ để soạn thảo văn bản hoặc tạo các nội dung đa phương tiện."
+        },
+        {
+          "pi_id": "PI 2.2",
+          "pi_desc": "Xây dựng và trình bày được các dạng tài liệu kỹ thuật và phi kỹ thuật khác nhau phù hợp với ngữ cảnh và qui định."
+        },
+        {
+          "pi_id": "PI 2.3",
+          "pi_desc": "Giao tiếp và thực hiện hiệu quả các hoạt động chuyên môn bằng ngoại ngữ."
+        }
+      ]
+    },
+    {
+      "lo_id": "LO3",
+      "lo_desc": "Làm việc hiệu quả trong các nhóm đa ngành, biết cách hợp tác, trao đổi thông tin hiệu quả để hoàn thành các dự án kỹ thuật phức tạp.",
+      "pis": [
+        {
+          "pi_id": "PI 3.1",
+          "pi_desc": "Phối hợp, chia sẻ công việc trong một nhóm."
+        },
+        {
+          "pi_id": "PI 3.2",
+          "pi_desc": "Khả năng thích ứng và cam kết hoàn thành nhiệm vụ trong các vai trò khác nhau của nhóm."
+        },
+        {
+          "pi_id": "PI 3.3",
+          "pi_desc": "Xác định mục tiêu và thời hạn, lập kế hoạch công việc, tổ chức và điều phối các hoạt động nhóm hiệu quả."
+        }
+      ]
+    },
+    {
+      "lo_id": "LO4",
+      "lo_desc": "Phân tích vấn đề, và áp dụng kiến thức toán học, vật lý và các nguyên lý kỹ thuật để giải quyết các vấn đề trong lĩnh vực điện tử viễn thông.",
+      "pis": [
+        {
+          "pi_id": "PI 4.1",
+          "pi_desc": "Phân loại được bài toán cần giải quyết, chỉ ra các tham số chính cần xác định."
+        },
+        {
+          "pi_id": "PI 4.2",
+          "pi_desc": "Phân tích giải pháp cho một vấn đề thuộc lĩnh vực điện tử viễn thông."
+        }
+      ]
+    },
+    {
+      "lo_id": "LO5",
+      "lo_desc": "Phân tích, thiết kế các hệ thống, linh kiện hoặc quy trình kỹ thuật trong lĩnh vực điện tử viễn thông.",
+      "pis": [
+        {
+          "pi_id": "PI 5.1",
+          "pi_desc": "Trình bày hoạt động, chức năng của các hệ thống điện tử viễn thông, thiết bị IoT, các phương pháp thu thập, lưu trữ và phân tích dữ liệu."
+        },
+        {
+          "pi_id": "PI 5.2",
+          "pi_desc": "Phân tích và xác định được tham số hoạt động của các phần tử, mạch thành phần trong hệ thống thiết bị điện tử viễn thông, thiết bị IoT, phần mềm ứng dụng trí tuệ nhân tạo trên các thiết bị IoT."
+        },
+        {
+          "pi_id": "PI 5.3",
+          "pi_desc": "Thiết kế, phân tích quy trình kỹ thuật trong hệ thống điện tử viễn thông, thiết bị IoT và phần mềm ứng dụng trí tuệ nhân tạo trên các thiết bị IoT."
+        }
+      ]
+    },
+    {
+      "lo_id": "LO6",
+      "lo_desc": "Tiến hành thí nghiệm, thu thập dữ liệu và phân tích kết quả nhằm đánh giá hiệu quả của các giải pháp kỹ thuật thuộc lĩnh vực kỹ thuật điện tử viễn thông.",
+      "pis": [
+        {
+          "pi_id": "PI 6.1",
+          "pi_desc": "Nhớ được, Tuân thủ và thực hiện đúng quy trình thí nghiệm."
+        },
+        {
+          "pi_id": "PI 6.2",
+          "pi_desc": "Sử dụng và thao tác vận hành các thiết bị thí nghiệm tương ứng với nội dung kiến thức thuộc ngành kỹ thuật điện tử viễn thông, trí tuệ nhân tạo trên các thiết bị IoT."
+        },
+        {
+          "pi_id": "PI 6.3",
+          "pi_desc": "Phân tích, Đánh giá được dữ liệu thu thập trong quá trình thí nghiệm."
+        }
+      ]
+    },
+    {
+      "lo_id": "LO7",
+      "lo_desc": "Thiết kế giải pháp cho các vấn đề kỹ thuật phức tạp trong lĩnh vực điện tử viễn thông thông qua việc áp dụng các kỹ thuật và công cụ hiện đại. Nhận thức được tầm quan trọng của việc học tập liên tục để phát triển bản thân, nâng cao chuyên môn để thích ứng với sự phát triển của ngành kỹ thuật.",
+      "pis": [
+        {
+          "pi_id": "PI 7.1",
+          "pi_desc": "Sử dụng được các công cụ kỹ thuật chuyên ngành trong lĩnh vực điện tử viễn thông, thiết bị IoT, trí tuệ nhân tạo."
+        },
+        {
+          "pi_id": "PI 7.2",
+          "pi_desc": "Phân tích vấn đề, thiết kế giải pháp và áp dụng các kỹ thuật, công cụ để giải quyết vấn đề phức tạp trong lĩnh vực điện tử viễn thông, thiết bị IoT và trí tuệ nhân tạo."
+        },
+        {
+          "pi_id": "PI 7.3",
+          "pi_desc": "Đọc hiểu, phân tích và tự tổng hợp các kiến thức mới trong lĩnh vực điện tử viễn thông."
+        }
+      ]
+    }
+  ],
+  "curriculum": [
+    {
+      "semester": "Học kỳ 1",
+      "courses": [
+        {
+          "name": "Tiếng Anh Course 0",
+          "credits": "4 tín chỉ",
+          "type": "bat-buoc-chung"
+        },
+        {
+          "name": "Đại số",
+          "credits": "3 tín chỉ",
+          "type": "bat-buoc-chung-nhom-nganh"
+        },
+        {
+          "name": "Giải tích 1",
+          "credits": "3 tín chỉ",
+          "type": "bat-buoc-chung-nhom-nganh"
+        },
+        {
+          "name": "Nhập môn Lập trình với Python",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Giáo dục thể chất 1",
+          "credits": "2 tín chỉ",
+          "type": "bat-buoc-chung"
+        },
+        {
+          "name": "Pháp luật đại cương",
+          "credits": "2 tín chỉ",
+          "type": "bat-buoc-chung-nhom-nganh"
+        },
+        {
+          "name": "Giáo dục quốc phòng",
+          "credits": "7.5 tín chỉ",
+          "type": "bat-buoc-chung"
+        }
+      ]
+    },
+    {
+      "semester": "Học kỳ 2",
+      "courses": [
+        {
+          "name": "Tiếng Anh Course 1",
+          "credits": "4 tín chỉ",
+          "type": "bat-buoc-chung"
+        },
+        {
+          "name": "Vật lý 1 và thí nghiệm",
+          "credits": "4 tín chỉ",
+          "type": "bat-buoc-chung-nhom-nganh"
+        },
+        {
+          "name": "Giải tích 2",
+          "credits": "3 tín chỉ",
+          "type": "bat-buoc-chung-nhom-nganh"
+        },
+        {
+          "name": "Xác suất thống kê",
+          "credits": "2 tín chỉ",
+          "type": "bat-buoc-chung-nhom-nganh"
+        },
+        {
+          "name": "Nhập môn trí tuệ nhân tạo vạn vật",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Triết học Mác- Lênin",
+          "credits": "3 tín chỉ",
+          "type": "bat-buoc-chung-nhom-nganh"
+        },
+        {
+          "name": "Giáo dục thể chất 2",
+          "credits": "2 tín chỉ",
+          "type": "bat-buoc-chung"
+        }
+      ]
+    },
+    {
+      "semester": "Học kỳ 3",
+      "courses": [
+        {
+          "name": "Tiếng Anh Course 2",
+          "credits": "4 tín chỉ",
+          "type": "bat-buoc-chung"
+        },
+        {
+          "name": "Vật lý 2 và thí nghiệm",
+          "credits": "4 tín chỉ",
+          "type": "bat-buoc-chung-nhom-nganh"
+        },
+        {
+          "name": "Linh kiện và mạch điện tử",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Lập trình Web",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Tín hiệu và hệ thống",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Kinh tế chính trị Mác - Lênin",
+          "credits": "2 tín chỉ",
+          "type": "bat-buoc-chung-nhom-nganh"
+        },
+        {
+          "name": "Kiến trúc máy tính",
+          "credits": "2 tín chỉ",
+          "type": "bat-buoc-chung-nhom-nganh"
+        },
+        {
+          "name": "Môn kỹ năng mềm 1",
+          "credits": "1 tín chỉ",
+          "type": "bat-buoc-chung"
+        }
+      ]
+    },
+    {
+      "semester": "Học kỳ 4",
+      "courses": [
+        {
+          "name": "Tiếng Anh Course 3",
+          "credits": "4 tín chỉ",
+          "type": "bat-buoc-chung"
+        },
+        {
+          "name": "Nhập môn học máy",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Xử lý tín hiệu số",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Hệ điều hành",
+          "credits": "2 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Điện tử số",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Chủ nghĩa xã hội khoa học",
+          "credits": "2 tín chỉ",
+          "type": "bat-buoc-chung-nhom-nganh"
+        },
+        {
+          "name": "Môn kỹ năng mềm 2",
+          "credits": "1 tín chỉ",
+          "type": "bat-buoc-chung"
+        }
+      ]
+    },
+    {
+      "semester": "Học kỳ 5",
+      "courses": [
+        {
+          "name": "Tiếng Anh Course 3 (Plus)",
+          "credits": "2 tín chỉ",
+          "type": "bat-buoc-chung"
+        },
+        {
+          "name": "Nhập môn công nghệ phần mềm",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Toán rời rạc",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Cơ sở an toàn thông tin",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Kỹ thuật mạng và truyền thông",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Tư tưởng Hồ Chí Minh",
+          "credits": "2 tín chỉ",
+          "type": "bat-buoc-chung-nhom-nganh"
+        },
+        {
+          "name": "Kiến trúc và giao thức IoT",
+          "credits": "2 tín chỉ",
+          "type": "co-so-nganh"
+        }
+      ]
+    },
+    {
+      "semester": "Học kỳ 6",
+      "courses": [
+        {
+          "name": "Thực tập cơ sở",
+          "credits": "2 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Mạng cảm biến thông minh",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Nhập môn phân tích dữ liệu",
+          "credits": "2 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Nhập môn DevOps",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Hệ quản trị cơ sở dữ liệu và ứng dụng",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Lịch sử Đảng cộng sản Việt Nam",
+          "credits": "2 tín chỉ",
+          "type": "bat-buoc-chung-nhom-nganh"
+        },
+        {
+          "name": "Học phần tự chọn 1(*)",
+          "credits": "3 tín chỉ",
+          "type": "bo-tro-nganh"
+        },
+        {
+          "name": "Môn kỹ năng mềm 3",
+          "credits": "1 tín chỉ",
+          "type": "co-so-nganh"
+        }
+      ]
+    },
+    {
+      "semester": "Học kỳ 7",
+      "courses": [
+        {
+          "name": "Học phần tự chọn 2",
+          "credits": "3 tín chỉ",
+          "type": "bo-tro-nganh"
+        },
+        {
+          "name": "Phát triển ứng dụng trí tuệ nhân tạo",
+          "credits": "3 tín chỉ",
+          "type": "chuyen-nganh"
+        },
+        {
+          "name": "Học sâu và ứng dụng trong IoT",
+          "credits": "3 tín chỉ",
+          "type": "chuyen-nganh"
+        },
+        {
+          "name": "Hệ quản trị cơ sở dữ liệu nâng cao",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Phát triển ứng dụng IoT",
+          "credits": "3 tín chỉ",
+          "type": "chuyen-nganh"
+        },
+        {
+          "name": "An toàn Internet of Things",
+          "credits": "3 tín chỉ",
+          "type": "chuyen-nganh"
+        }
+      ]
+    },
+    {
+      "semester": "Học kỳ 8",
+      "courses": [
+        {
+          "name": "Học phần tự chọn 3",
+          "credits": "3 tín chỉ",
+          "type": "bo-tro-nganh"
+        },
+        {
+          "name": "Học phần tự chọn 4",
+          "credits": "3 tín chỉ",
+          "type": "bo-tro-nganh"
+        },
+        {
+          "name": "Đổi mới và sáng tạo khởi nghiệp",
+          "credits": "3 tín chỉ",
+          "type": "chuyen-nganh"
+        },
+        {
+          "name": "Điện toán đám mây",
+          "credits": "3 tín chỉ",
+          "type": "chuyen-nganh"
+        },
+        {
+          "name": "Mô hình ngôn ngữ lớn",
+          "credits": "3 tín chỉ",
+          "type": "chuyen-nganh"
+        },
+        {
+          "name": "Công nghệ phân tích dữ liệu lớn",
+          "credits": "3 tín chỉ",
+          "type": "chuyen-nganh"
+        }
+      ]
+    },
+    {
+      "semester": "Học kỳ 9",
+      "courses": [
+        {
+          "name": "Thực tập và tốt nghiệp",
+          "credits": "14 tín chỉ",
+          "type": "thuc-tap"
+        }
+      ]
+    }
+  ]
+}
