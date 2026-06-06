@@ -7,23 +7,26 @@ class CreateVectorStore:
     def __init__(self, url="http://localhost:8888"):
         self.client = QdrantClient(url)
 
-    def create_vector_store(self, documents, embedding, collection_name="vector_store"):
+    def get_vector_size(self, embedding) -> int:
+        if hasattr(embedding, "embedding_dimension"):
+            return embedding.embedding_dimension
+
+        sample = embedding.embed_documents(["test"])[0]
+        return len(sample)
+
+    def create_vector_store(self, documents, embedding, collection_name="vector_store", recreate: bool = False ):
         ids = [str(uuid.uuid4()) for _ in documents]
-        try:
-            vector_size = embedding.embedding_dimension
-        except Exception:
-            try:
-                sample = embedding.embed_querry("test")
-            except Exception:
-                sample = embedding.embed_documents("test")[0]
-            vector_size = len(sample)
-        
+        vector_size = self.get_vector_size(embedding)
+
+        if recreate and self.client.collection_exists(collection_name):
+            self.client.delete_collection(collection_name)
+
         if not self.client.collection_exists(collection_name):
             self.client.create_collection(
                 collection_name=collection_name,
-                vectors_config = VectorParams(size= vector_size, distance= Distance.COSINE)
+                vectors_config=VectorParams(size=vector_size, distance=Distance.COSINE)
             )
-        
+
         return QdrantVectorStore.from_documents(
             documents=documents,
             embedding=embedding,
