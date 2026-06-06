@@ -1,0 +1,90 @@
+[
+  {
+    "title": "Sinh viên RIPT và FIT hoàn thành trình bày các dự án hợp tác",
+    "slug": "sinh-vien-ript-va-fit-hoan-thanh-trinh-bay-cac-du-an-hop-tac",
+    "thumbnail": "/udu_clone/img/hdsv-1.png",
+    "type": "student_activity",
+    "eventDetails": {
+      "dateString": "25 TH3",
+      "location": "Hoạt động sinh viên"
+    },
+    "publishedAt": "2025-03-25T00:00:00.000Z"
+  },
+  {
+    "title": "RIPTer sôi nổi cùng chuỗi hoạt động chào mừng 8/3",
+    "slug": "ripter-soi-noi-cung-chuoi-hoat-dong-chao-mung-8-3",
+    "thumbnail": "/udu_clone/img/hdsv-2.png",
+    "type": "student_activity",
+    "eventDetails": {
+      "dateString": "08 TH3",
+      "location": "Hoạt động sinh viên"
+    },
+    "publishedAt": "2025-03-08T00:00:00.000Z"
+  },
+  {
+    "title": "Cuộc thi ảnh “Her Aura – Rạng Ngời Khí Chất RIPT”",
+    "slug": "cuoc-thi-anh-her-aura-rang-ngoi-khi-chat-ript",
+    "thumbnail": "/udu_clone/img/hdsv-3.png",
+    "type": "student_activity",
+    "eventDetails": {
+      "dateString": "20 TH11",
+      "location": "Hoạt động sinh viên"
+    },
+    "publishedAt": "2024-11-20T00:00:00.000Z"
+  },
+  {
+    "title": "Sinh viên RIPT và FIT trải nghiệm văn hóa Hà Nội",
+    "slug": "sinh-vien-ript-va-fit-trai-nghiem-van-hoa-ha-noi",
+    "thumbnail": "/udu_clone/img/hdsv-4.jpg",
+    "type": "student_activity",
+    "eventDetails": {
+      "dateString": "15 TH11",
+      "location": "Hoạt động sinh viên"
+    },
+    "publishedAt": "2024-11-15T00:00:00.000Z"
+  },
+  {
+    "title": "Chào mừng đoàn sinh viên Viện Công nghệ Fukouka (FIT) đến thăm và làm việc tại Viện Khoa học Kỹ thuật Bưu điện (RIPT)",
+    "slug": "chao-mung-doan-sinh-vien-vien-cong-nghe-fukouka-fit-den-tham-va-lam-viec-tai-vien-khoa-hoc-ky-thuat-buu-dien-ript",
+    "thumbnail": "/udu_clone/img/hdsv-5.png",
+    "type": "student_activity",
+    "eventDetails": {
+      "dateString": "10 TH11",
+      "location": "Hoạt động sinh viên"
+    },
+    "publishedAt": "2024-11-10T00:00:00.000Z"
+  },
+  {
+    "title": "Lễ trao học bổng Yokogawa 2025 – Vinh danh những gương mặt xuất sắc của UDU!",
+    "slug": "le-trao-hoc-bong-yokogawa-2025-vinh-danh-nhung-guong-mat-xuat-sac-cua-udu",
+    "thumbnail": "/udu_clone/img/hdsv-6.png",
+    "type": "student_activity",
+    "eventDetails": {
+      "dateString": "05 TH10",
+      "location": "Hoạt động sinh viên"
+    },
+    "publishedAt": "2024-10-05T00:00:00.000Z"
+  },
+  {
+    "title": "Chúc mừng sinh viên chương trình Công Nghệ Thông Tin Định Hướng Ứng dụng – PTIT có bài báo khoa học được chấp nhận tại hội thảo năm 2025",
+    "slug": "chuc-mung-sinh-vien-chuong-trinh-cong-nghe-thong-tin-dinh-huong-ung-dung-ptit-co-bai-bao-khoa-hoc-duoc-chap-nhan-tai-hoi-thao-nam-2025",
+    "thumbnail": "/udu_clone/img/hdsv-7.png",
+    "type": "student_activity",
+    "eventDetails": {
+      "dateString": "20 TH09",
+      "location": "Hoạt động sinh viên"
+    },
+    "publishedAt": "2024-09-20T00:00:00.000Z"
+  },
+  {
+    "title": "Viện Khoa học Kỹ thuật Bưu điện phối hợp cùng SotaTek Education tổ chức kỳ thi COS Pro đầu tiên tại PTIT",
+    "slug": "vien-khoa-hoc-ky-thuat-buu-dien-phoi-hop-cung-sotatek-education-to-chuc-ky-thi-cos-pro-dau-tien-tai-ptit",
+    "thumbnail": "/udu_clone/img/hdsv-8.jpg",
+    "type": "student_activity",
+    "eventDetails": {
+      "dateString": "15 TH09",
+      "location": "Hoạt động sinh viên"
+    },
+    "publishedAt": "2024-09-15T00:00:00.000Z"
+  }
+]

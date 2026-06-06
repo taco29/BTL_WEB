@@ -1,0 +1,134 @@
+{
+  "name": "Công nghệ thông tin (định hướng ứng dụng)",
+  "description": "Chương trình đào tạo Công nghệ thông tin định hướng ứng dụng được xây dựng nhằm đào tạo và cung ứng nguồn nhân lực có kỹ năng nghề nghiệp cao đáp ứng yêu cầu của tổ chức, doanh nghiệp và xã hội ngay khi tốt nghiệp...",
+  "image": "https://udu.ptit.edu.vn/wp-content/uploads/2023/12/UDU-Banner.png",
+  "slug": "udu",
+  "code": "7480201_UDU",
+  "duration": "4 năm",
+  "intake": "Mùa thu",
+  "campus": "Hà Nội",
+  "learningOutcomes": [
+    {
+      "lo_id": "LO1",
+      "lo_desc": "Hiểu biết và nắm vững kiến thức về Lý luận chính trị, có hiểu biết về Pháp luật; Hiểu biết về an ninh Quốc phòng.",
+      "pis": []
+    },
+    {
+      "lo_id": "LO2",
+      "lo_desc": "Hiểu biết và nắm vững các kiến thức khoa học công nghệ cơ bản, chuyên ngành, tiếp cận các định hướng ứng dụng về công nghệ phần mềm...",
+      "pis": []
+    },
+    {
+      "lo_id": "LO3",
+      "lo_desc": "Áp dụng tốt kiến thức cơ bản và chuyên sâu về công nghệ phần mềm, hệ thống thông tin vào phân tích, đánh giá, kết luận giải pháp chính xác...",
+      "pis": []
+    },
+    {
+      "lo_id": "LO4",
+      "lo_desc": "Áp dụng được kiến thức chuyên môn về công nghệ thông tin như phân tích, thiết kế và quản lý các dự án phần mềm, lập trình và bảo trì hệ thống phần mềm...",
+      "pis": []
+    },
+    {
+      "lo_id": "LO5",
+      "lo_desc": "Kỹ năng áp dụng các kiến thức, kĩ năng; sử dụng các công cụ khoa học kĩ thuật để nhận biết, phân tích giải quyết các vấn đề thực tiễn...",
+      "pis": []
+    }
+  ],
+  "curriculum": [
+    {
+      "semester": "Học kỳ 1",
+      "courses": [
+        {
+          "name": "Đại số",
+          "credits": "3 tín chỉ",
+          "type": "bat-buoc-chung-nhom-nganh"
+        },
+        {
+          "name": "Giải tích 1",
+          "credits": "3 tín chỉ",
+          "type": "bat-buoc-chung-nhom-nganh"
+        },
+        {
+          "name": "Pháp luật đại cương",
+          "credits": "2 tín chỉ",
+          "type": "bat-buoc-chung"
+        },
+        {
+          "name": "Nhập môn lập trình với Python",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        }
+      ]
+    },
+    {
+      "semester": "Học kỳ 2",
+      "courses": [
+        {
+          "name": "Xác suất thống kê",
+          "credits": "2 tín chỉ",
+          "type": "bat-buoc-chung-nhom-nganh"
+        },
+        {
+          "name": "Giải tích 2",
+          "credits": "3 tín chỉ",
+          "type": "bat-buoc-chung-nhom-nganh"
+        },
+        {
+          "name": "Tiếng Anh (Course 1)",
+          "credits": "4 tín chỉ",
+          "type": "bat-buoc-chung"
+        },
+        {
+          "name": "Lập trình với ngôn ngữ Script",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Cơ sở dữ liệu",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        }
+      ]
+    },
+    {
+      "semester": "Học kỳ 3",
+      "courses": [
+        {
+          "name": "Triết học Mác-Lênin",
+          "credits": "3 tín chỉ",
+          "type": "bat-buoc-chung"
+        },
+        {
+          "name": "Tiếng Anh (Course 2)",
+          "credits": "4 tín chỉ",
+          "type": "bat-buoc-chung"
+        },
+        {
+          "name": "Lập trình hướng đối tượng",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Toán rời rạc 1",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Lập trình web",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        }
+      ]
+    },
+    {
+      "semester": "Học kỳ 8",
+      "courses": [
+        {
+          "name": "Thực tập và tốt nghiệp",
+          "credits": "11 tín chỉ",
+          "type": "thuc-tap"
+        }
+      ]
+    }
+  ]
+}

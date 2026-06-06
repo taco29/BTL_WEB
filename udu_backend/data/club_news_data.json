@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Cuộc thi ảnh “Her Aura – Rạng Ngời Khí Chất RIPT”",
+    "slug": "cuoc-thi-anh-her-aura-rang-ngoi-khi-chat-ript-club",
+    "thumbnail": "/udu_clone/img/club-2.jpg",
+    "type": "club_news",
+    "publishedAt": "2024-11-20T00:00:00.000Z"
+  },
+  {
+    "title": "UDU_S4U – Đại diện duy nhất của Việt Nam xuất sắc đạt 2/6 giải tại Asia Impact Hackathon 2025",
+    "slug": "udu-s4u-dai-dien-duy-nhat-cua-viet-nam-xuat-sac-dat-2-6-giai-tai-asia-impact-hackathon-2025",
+    "thumbnail": "/udu_clone/img/club-4.png",
+    "type": "club_news",
+    "publishedAt": "2024-11-15T00:00:00.000Z"
+  },
+  {
+    "title": "Chúc mừng các đội thi UDU đạt giải Nhất, Nhì & nhiều giải thưởng khác tại P-innovation 2025!",
+    "slug": "chuc-mung-cac-doi-thi-udu-dat-giai-nhat-nhi-nhieu-giai-thuong-khac-tai-p-innovation-2025",
+    "thumbnail": "/udu_clone/img/club-5.jpg",
+    "type": "club_news",
+    "publishedAt": "2024-11-10T00:00:00.000Z"
+  },
+  {
+    "title": "Hội thảo Nghiên cứu Khoa học sinh viên 2025: Từ ý tưởng – Đến hành động",
+    "slug": "hoi-thao-nghien-cuu-khoa-hoc-sinh-vien-2025-tu-y-tuong-den-hanh-dong",
+    "thumbnail": "/udu_clone/img/club-6.png",
+    "type": "club_news",
+    "publishedAt": "2024-10-05T00:00:00.000Z"
+  },
+  {
+    "title": "Ngày hội trao đổi đồ cũ – PTIT 2025 đã diễn ra thành công",
+    "slug": "ngay-hoi-trao-doi-do-cu-ptit-2025-da-dien-ra-thanh-cong",
+    "thumbnail": "/udu_clone/img/club-7.jpg",
+    "type": "club_news",
+    "publishedAt": "2024-09-20T00:00:00.000Z"
+  },
+  {
+    "title": "[Tấm gương UDU] Sinh viên năm 1 UDU PTIT gây bão với điểm gần tuyệt đối ở level 2 trong kỳ thi COS pro",
+    "slug": "tam-guong-udu-sinh-vien-nam-1-udu-ptit-gay-bao-voi-diem-gan-tuyet-doi-o-level-2-trong-ky-thi-cos-pro",
+    "thumbnail": "/udu_clone/img/club-8.jpg",
+    "type": "club_news",
+    "publishedAt": "2024-09-15T00:00:00.000Z"
+  },
+  {
+    "title": "Chào mừng buổi gặp mặt đầu tiên của IU club ngày 17/10/2024",
+    "slug": "chao-mung-buoi-gap-mat-dau-tien-cua-iu-club-ngay-17-10-2024",
+    "thumbnail": "/udu_clone/img/club-1.jpg",
+    "type": "club_news",
+    "publishedAt": "2024-10-17T00:00:00.000Z"
+  }
+]

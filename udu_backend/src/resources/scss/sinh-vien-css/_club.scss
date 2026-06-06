@@ -1,0 +1,149 @@
+/* Intro Section */
+.club-intro {
+    padding: 60px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+}
+
+.club-intro-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.club-intro-title {
+    font-size: 28px;
+    color: var(--title-text-color);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.club-intro-desc {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.club-intro-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #c1121f;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.club-intro-btn:hover {
+    background-color: #a00f19;
+}
+
+.club-intro-img-wrapper {
+    flex: 1;
+    min-width: 300px;
+}
+
+.club-intro-img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* News Section */
+.club-news {
+    padding: 20px 15px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.club-news-header {
+    font-size: 28px;
+    color: var(--title-text-color);
+    margin-bottom: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.club-news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.club-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.club-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.club-card-img-wrapper {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+.club-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.club-card:hover .club-card-img {
+    transform: scale(1.05);
+}
+
+.club-card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.club-card-title {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.4;
+    flex-grow: 1;
+}
+
+.club-card-title a {
+    color: var(--title-text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.club-card-title a:hover {
+    color: #c1121f;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .club-news-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .club-news-grid {
+        grid-template-columns: 1fr;
+    }
+    .club-intro {
+        flex-direction: column;
+    }
+}

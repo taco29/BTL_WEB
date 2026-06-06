@@ -1,0 +1,29 @@
+<main id="main-content">
+      <div class="contact-banner research-banner">
+        <div class="contact-banner-overlay">
+          <div class="contact-breadcrumb">
+            <a href="/udu_clone/index.html"><i class="fa-solid fa-house-chimney"></i></a>
+            <i class="fa-solid fa-angle-right"></i>
+            <a href="/udu_clone/pages/research.html">Nghiên cứu</a>
+            <i class="fa-solid fa-angle-right"></i>
+            <span>Đề tài NCKH</span>
+          </div>
+          <h1 class="contact-banner-title">Đề tài NCKH</h1>
+        </div>
+      </div>
+      <div class="container">
+        <div class="nckh-content">
+          {{#each projects}}
+          <div class="nckh-card">
+            <img src="/udu_clone/img/nckh.png" alt="{{this.name}}" class="nckh-card-img">
+            <div class="nckh-card-content">
+              <h3 class="nckh-card-title">
+                <a href="{{this.link}}">{{this.name}}</a>
+              </h3>
+              <a href="{{this.link}}" class="nckh-readmore">Xem chi tiết <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </main>

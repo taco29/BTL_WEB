@@ -1,0 +1,118 @@
+.anhtenlabang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.container-gioi-thieu{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+    width: 70%;
+}
+.gioi-thieu-chung{
+    width: 60%;
+}
+.gioi-thieu-chung img{
+    width: 100%;
+}
+.sidebar-wrap {
+  width: 300px;
+  height: 400px;
+  background: #fff;       
+  border: 1.5px solid #BC2626;
+  overflow: hidden;
+  font-family: 'Manrope', sans-serif;
+  position: sticky; 
+  top: 120px;
+}
+
+ul.sidebar-menu {
+  padding: 15px;              
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+ul.sidebar-menu li a {
+  display: flex;
+  align-items: center;
+  width: 268px;             
+  height: 56px;
+  padding: 16px 24px;       
+  background: #F3F4F7;      
+  color: #051A53;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+ul.sidebar-menu li.active a {
+  background: #BC2626;
+  color: #fff;
+  font-weight: 700;
+}
+ul.sidebar-menu li.bigger a {
+  height: 80px;
+  align-items: flex-start;  
+  padding-top: 16px;
+}
+.content h4{
+    margin: 20px 0px 10px;
+    color: #051A53;
+    font-size: 20px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+.content p{
+    color: #4E4F53;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Manrope', sans-serif;
+    margin: 0px 0px 30px;
+    line-height: 1.9em;
+    text-align: justify;
+}
+.content h5{
+    font-size: 1.1487em;
+    font-weight: 800;
+    text-align: justify;
+    margin: 1em 0 0.5em 0px;
+    color: #051A53;
+}
+.content blockquote {
+  box-sizing: border-box;
+  padding: 25px 20px 20px;
+  border: 3px solid #BC2626;
+  position: relative;
+  margin: 30px 0px;
+}
+.content blockquote::before {
+  content: '\201C'; 
+  position: absolute;
+  top: -30px;
+  left:15px;     
+  font-size: 100px;
+  font-weight: 700;
+  color: #BC2626;
+  line-height: 1;
+  font-family: Georgia, serif;
+  background: #fff;
+  height: 30px;
+  width: 40px;
+}
+.content ul{
+    padding-left: 40px;
+    list-style-position: outside;
+    margin: 15px 0px;
+    padding: 0px 0px 0px 40px;
+}
+.content li{
+    padding-left: 8px;  
+    text-align: justify;
+    line-height: 2; 
+    font-size: 15px;
+    color: #4E4F53;
+    text-align: justify;
+}
