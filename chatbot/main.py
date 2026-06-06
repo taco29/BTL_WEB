@@ -72,7 +72,7 @@ def speak_text(text: str):
 
 
 def main():
-    path = r"E:\BTL_JS\data\data.md"
+    path = r"./data/data.md"
     bot = ChatBot(path)
 
     print("Chatbot tuyển sinh PTIT (gõ 'exit' để thoát)\n")
