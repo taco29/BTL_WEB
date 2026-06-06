@@ -6,19 +6,34 @@ from dotenv import load_dotenv
 load_dotenv(override=True)
 API_KEY = os.getenv("GOOGLE_API_KEY")
 
+class ChatBot:
+    def __init__(self, data_path: str, k: int = 6):
+        self.retriever = retriever(data_path, k=k).get_retriever()
+        self.generator = AnswerGenerator()
+
+    def ask(self, question: str) -> str:
+        result = self.generator.answer(self.retriever, question)
+        return result["result"]
+
+
 def main():
     path = r"C:\Users\Admin\Code\webweb\data\data.md"
-    question = "Ngành Công nghệ thông tin (định hướng ứng dụng) xét tuyển những Tổ hợp nào?"
+    bot = ChatBot(path)
 
-    my_retriever = retriever(path, k=3).get_retriever()
-    result = AnswerGenerator().answer(my_retriever, question)
-    print("ANSWER:")
-    print(result["result"])
+    print("Chatbot tuyển sinh PTIT (gõ 'exit' để thoát)\n")
+    while True:
+        question = input("Bạn: ").strip()
+        if not question:
+            continue
+        if question.lower() == "exit":
+            break
+        answer = bot.ask(question)
+        print(f"PTIT: {answer}\n")
 
-    print("\nSOURCES:")
-    for doc in result["source_documents"]:
-        print("-", doc.metadata)
-        print(doc.page_content[:200], "...\n")
+    # print("\nSOURCES:")
+    # for doc in result["source_documents"]:
+    #     print("-", doc.metadata)
+    #     print(doc.page_content[:200], "...\n")
 
     # print("\n--- CHUNKS IN THE DOCUMENT ---")
     # docs = retriever(path, k=3).get_chunks()
