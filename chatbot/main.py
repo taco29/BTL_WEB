@@ -17,7 +17,7 @@ class ChatBot:
 
 
 def main():
-    path = r"C:\Users\Admin\Code\webweb\data\data.md"
+    path = r"./data/data.md"
     bot = ChatBot(path)
 
     print("Chatbot tuyển sinh PTIT (gõ 'exit' để thoát)\n")
