@@ -7,7 +7,7 @@ def clean_text_for_speech(text: str) -> str:
     text = text.replace('_', ' ')
     
    
-    text = text.replace('/', ' trên ')
+    # text = text.replace('/', ' trên ')
     
     abbreviations = {
         "THPT": "Trung học phổ thông",
@@ -17,7 +17,12 @@ def clean_text_for_speech(text: str) -> str:
         "DM": "danh mục",
         "UDU": "U D U", 
         "PTIT": "P T I T",
-        "AIoT": "A I O T"
+        "AIoT": "A I O T",
+        "ĐHQGHCM": "Đại học Quốc gia Hồ Chí Minh",
+        "ĐHQGHN": "Đại học Quốc gia Hà Nội",
+        "ĐHSPHN": "Đại học Sư Phạm Hà Nội",
+        "ĐHBDTP": "Đại học Bách khoa Thành phố Hồ Chí Minh",
+        "HSG": "Học sinh giỏi"
     }
     
     for abbr, full_form in abbreviations.items():
