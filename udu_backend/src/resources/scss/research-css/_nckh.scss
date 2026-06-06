@@ -1,0 +1,85 @@
+.nckh-content {
+    padding: 60px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.nckh-card {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.nckh-card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+.nckh-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.nckh-card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.nckh-card-title {
+    font-size: 16px;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.nckh-card-title a {
+    color: var(--title-text-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nckh-card-title a:hover {
+    color: #c1121f;
+}
+
+.nckh-readmore {
+    font-size: 14px;
+    color: var(--title-text-color);
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.nckh-readmore:hover {
+    color: #c1121f;
+    gap: 12px;
+}
+
+/* Base Responsive */
+@media (max-width: 992px) {
+    .nckh-content {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .nckh-content {
+        grid-template-columns: 1fr;
+    }
+}

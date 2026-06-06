@@ -1,0 +1,28 @@
+{
+  "name": "udu_backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js",
+    "watch": "sass --watch src/resources/scss:src/public/css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cheerio": "^1.2.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-handlebars": "^9.0.1",
+    "mongoose": "^9.6.3",
+    "prettier": "^3.8.3"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.14",
+    "sass": "^1.100.0"
+  }
+}

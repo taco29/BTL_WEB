@@ -1,0 +1,35 @@
+/* --- Pagination Styles --- */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px; /* Khoảng cách nhỏ giữa các ô vuông */
+    margin: 40px 0;
+    
+    .page-btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 45px;
+        height: 45px;
+        background-color: #f2f2f2; /* Màu xám nhạt mặc định */
+        border: none; /* Bỏ viền */
+        border-radius: 0; /* Ô vuông góc cạnh */
+        color: #555;
+        font-weight: 600;
+        font-size: 16px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #eedddd; /* Màu hồng nhạt khi di chuột vào (giống số 2 trong hình) */
+            color: #555;
+        }
+
+        &.active {
+            background-color: #c52928; /* Màu đỏ đậm cho trang hiện tại */
+            color: #fff;
+        }
+    }
+}
