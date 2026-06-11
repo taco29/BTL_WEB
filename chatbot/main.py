@@ -35,7 +35,7 @@ class ChatBot:
 
 
 def main():
-    path = r"E:/BTL_JS/data/data.md"
+    path = r"./data/data.md"
     bot = ChatBot(path)
 
     print("Chatbot tuyển sinh PTIT (gõ 'exit' để thoát)\n")
