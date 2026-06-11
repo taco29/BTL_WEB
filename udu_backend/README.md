@@ -24,11 +24,20 @@ npm install
 ```
 
 ### Bước 3: Nạp dữ liệu mẫu vào Database (Seeding)
-Dự án cần có dữ liệu mẫu (Tin tức, Sự kiện, Giảng viên, Khóa học...) để hiển thị trên giao diện. Chỉ cần chạy lệnh này **1 lần duy nhất** để "bơm" dữ liệu từ các file JSON vào MongoDB:
-```bash
-node seed.js
-```
-*(Nếu terminal báo "✅ Database seeding completed successfully!" là thành công).*
+Dự án cần có dữ liệu mẫu (Tin tức, Sự kiện, Giảng viên, Khóa học...) để hiển thị trên giao diện. Bạn có thể nạp dữ liệu theo cách:
+
+
+**Sử dụng MongoDB Compass (Tạo bảng và Import thủ công)**
+Nếu bạn muốn tự tạo bảng mà không cần chạy code, hãy làm theo các bước sau trong phần mềm **MongoDB Compass**:
+1. Mở MongoDB Compass và kết nối với `mongodb://127.0.0.1:27017`.
+2. Bấm vào nút `+` ở phần Databases, tạo Database tên là `udu_database`.
+3. Nhập tên Collection (bảng) đầu tiên là `articles` rồi bấm **Create Database**.
+4. Tạo thêm 3 Collection nữa (bấm nút `+` cạnh chữ udu_database): `courses`, `researches`, `staffs`.
+5. Bấm vào từng bảng -> Chọn **Add Data** -> **Import JSON or CSV file** để nhập dữ liệu từ thư mục `data/`:
+   - Bảng **`articles`**: Import lần lượt `news_events_data.json`, `student_activity_data.json`, `club_news_data.json`.
+   - Bảng **`courses`**: Import lần lượt `udu_data.json`, `aiot_data.json`.
+   - Bảng **`researches`**: Import `research_data.json`.
+   - Bảng **`staffs`**: Import `staff_data.json`.
 
 ### Bước 4: Khởi động Server và trình biên dịch SCSS
 Để phát triển và chạy dự án, bạn cần mở **2 cửa sổ Terminal (hoặc chia đôi terminal trong VSCode)** và chạy song song 2 lệnh sau:
