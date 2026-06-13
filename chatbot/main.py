@@ -1,7 +1,11 @@
 import threading
 import os
+import sys
 import warnings
-import threading    
+
+# Đảm bảo stdout dùng UTF-8 để in tiếng Việt trên Windows
+sys.stdout.reconfigure(encoding='utf-8')
+sys.stderr.reconfigure(encoding='utf-8')
 
 
 os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
@@ -35,10 +39,20 @@ class ChatBot:
 
 
 def main():
-    path = r"./data/data.md"
+    # Đường dẫn tuyệt đối đến data.md, không phụ thuộc vào thư mục làm việc
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    path = os.path.join(script_dir, "..", "data", "data.md")
     bot = ChatBot(path)
 
-    print("Chatbot tuyển sinh PTIT (gõ 'exit' để thoát)\n")
+    # Nếu được gọi từ command line với câu hỏi (ví dụ từ Node.js)
+    if len(sys.argv) > 1:
+        question = " ".join(sys.argv[1:])
+        answer = bot.ask(question)
+        print(answer)
+        return
+
+    # Chế độ interactive
+    print("Chatbot tuyển sinh UDU (gõ 'exit' để thoát)\n")
     while True:
         question = input("Bạn: ").strip()
         
