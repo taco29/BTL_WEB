@@ -7,6 +7,9 @@ const port = 3000;
 const path = require('path');
 const route = require('./routes');
 
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
 route(app);
 db.connect();
 
