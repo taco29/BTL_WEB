@@ -16,6 +16,39 @@ function route(app) {
 
     app.use('/', siteRouter);
 
+    const chatbotDir = path.join(__dirname, '../../../chatbot');
+    const pythonProcess = spawn('python', ['-u', 'main.py'], {
+        cwd: chatbotDir,
+        env: { ...process.env, PYTHONIOENCODING: 'utf-8' }
+    });
+
+    let currentResolver = null;
+
+    pythonProcess.stdout.on('data', (data) => {
+        const output = data.toString().trim();
+        
+        if (output.includes("READY")) {
+            console.log("da cho embmodel vao ram!");
+            return;
+        }
+
+        if (currentResolver) {
+            try {
+                const lines = output.split('\n').filter(l => l.trim());
+                const lastLine = lines[lines.length - 1];
+                const parsed = JSON.parse(lastLine);
+                currentResolver(parsed);
+            } catch (error) {
+                currentResolver({ answer: output });
+            }
+            currentResolver = null;
+        }
+    });
+
+    pythonProcess.stderr.on('data', (data) => {
+        console.error("[🔥 Python Log]:", data.toString());
+    });
+
     app.post('/api/chat', (req, res) => {
         const question = req.body.question;
         
@@ -23,41 +56,18 @@ function route(app) {
             return res.status(400).json({ answer: "Vui lòng nhập câu hỏi!" });
         }
 
-        const pythonScriptPath = path.join(__dirname, '../../../chatbot/main.py');
-        const pythonProcess = spawn('python', [pythonScriptPath, question], {
-            cwd: path.join(__dirname, '../../../chatbot'),
-            env: { ...process.env, PYTHONIOENCODING: 'utf-8' }
-        });
+        if (currentResolver) {
+            return res.status(503).json({ answer: "Hệ thống đang bận xử lý, vui lòng chờ trong giây lát..." });
+        }
 
-        let botAnswer = '';
-        let errorOutput = '';
-
-        const timeout = setTimeout(() => {
-            pythonProcess.kill();
-            if (!res.headersSent) {
-                res.status(500).json({ answer: "Chatbot mất quá nhiều thời gian, vui lòng thử lại!" });
+        currentResolver = (result) => {
+            if (result.error) {
+                return res.status(500).json({ answer: "Lỗi xử lý AI: " + result.error });
             }
-        }, 180000);
+            res.json({ answer: result.answer });
+        };
 
-        pythonProcess.stdout.on('data', (data) => {
-            botAnswer += data.toString();
-        });
-
-        pythonProcess.stderr.on('data', (data) => {
-            errorOutput += data.toString();
-            console.error(`[Chatbot Python Error]: ${data}`);
-        });
-
-        pythonProcess.on('close', (code) => {
-            clearTimeout(timeout);
-            if (res.headersSent) return;
-            if (code !== 0 && code !== null) {
-                console.error(`[Chatbot] Python exited with code ${code}. Stderr: ${errorOutput}`);
-                return res.status(500).json({ answer: "Hệ thống đang bận, vui lòng thử lại sau!" });
-            }
-            res.json({ answer: botAnswer.trim() });
-        });
+        pythonProcess.stdin.write(question + '\n');
     });
 }
-
 module.exports = route;
