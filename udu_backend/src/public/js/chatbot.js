@@ -40,10 +40,37 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.key === 'Enter') sendMessage();
     });
 
+    function formatBotText(text) {
+        return text
+            .split('\n')
+            .map(line => {
+                // Escape HTML đặc biệt trước
+                const escaped = line
+                    .replace(/&/g, '&amp;')
+                    .replace(/</g, '&lt;')
+                    .replace(/>/g, '&gt;');
+
+                // Dòng tiêu đề số (1. 2. 3.)
+                if (/^\d+\./.test(line.trim())) {
+                    return `<span class="chat-section-title">${escaped}</span>`;
+                }
+                // Dòng thụt vào (bắt đầu bằng khoảng trắng hoặc ký tự a. b. c. -)
+                if (/^(\s+[\-a-zA-Z]|\s{2,})/.test(line)) {
+                    return `<span class="chat-indent">${escaped}</span>`;
+                }
+                return `<span>${escaped}</span>`;
+            })
+            .join('<br>');
+    }
+
     function appendMessage(text, className) {
         const msgDiv = document.createElement('div');
         msgDiv.className = `message ${className}`;
-        msgDiv.textContent = text;
+        if (className === 'bot-message') {
+            msgDiv.innerHTML = formatBotText(text);
+        } else {
+            msgDiv.textContent = text;
+        }
         messagesBox.appendChild(msgDiv);
         messagesBox.scrollTop = messagesBox.scrollHeight;
     }
