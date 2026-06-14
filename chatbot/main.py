@@ -2,6 +2,7 @@ import threading
 import os
 import sys
 import warnings
+import json
 
 # Đảm bảo stdout dùng UTF-8 để in tiếng Việt trên Windows
 sys.stdout.reconfigure(encoding='utf-8')
@@ -43,13 +44,23 @@ def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     path = os.path.join(script_dir, "..", "data", "data.md")
     bot = ChatBot(path)
+    print("READY", flush=True)
 
-    # Nếu được gọi từ command line với câu hỏi (ví dụ từ Node.js)
-    if len(sys.argv) > 1:
-        question = " ".join(sys.argv[1:])
-        answer = bot.ask(question)
-        print(answer)
-        return
+    for line in sys.stdin:
+        question = line.strip()
+        if not question: 
+            continue
+        try:
+            answer = bot.ask(question)
+            print(json.dumps({"answer": answer}, ensure_ascii=False), flush=True)
+        except Exception as e:
+            print(json.dumps({"error": str(e)}, ensure_ascii=False), flush=True)
+        
+    # if len(sys.argv) > 1:
+    #     question = " ".join(sys.argv[1:])
+    #     answer = bot.ask(question)
+    #     print(answer)
+    #     return
 
     # Chế độ interactive
     print("Chatbot tuyển sinh UDU (gõ 'exit' để thoát)\n")
