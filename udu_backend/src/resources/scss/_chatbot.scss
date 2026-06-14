@@ -119,6 +119,23 @@
         background: #e0e0e0;
         align-self: flex-start;
         border-bottom-left-radius: 0;
+
+        .chat-section-title {
+            display: block;
+            font-weight: 700;
+            color: #7a1a1a;
+            margin-top: 8px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        .chat-indent {
+            display: block;
+            padding-left: 12px;
+            color: #333;
+        }
     }
     .user-message {
         background: #cd201f;
