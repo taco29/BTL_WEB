@@ -7,8 +7,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const inputField = document.getElementById('chatbot-input-field');
     const messagesBox = document.getElementById('chatbot-messages');
 
-    toggleBtn.addEventListener('click', () => chatWindow.classList.remove('hidden'));
-    closeBtn.addEventListener('click', () => chatWindow.classList.add('hidden'));
+    const tooltip = toggleBtn.querySelector('.chatbot-tooltip');
+
+    toggleBtn.addEventListener('click', () => {
+        chatWindow.classList.remove('hidden');
+        if (tooltip) tooltip.style.display = 'none';
+    });
+    closeBtn.addEventListener('click', () => {
+        chatWindow.classList.add('hidden');
+        if (tooltip) tooltip.style.display = '';
+    });
 
     const sendMessage = async () => {
         const text = inputField.value.trim();
