@@ -1,0 +1,10 @@
+<!-- Form tìm kiếm và sắp xếp -->
+<form action="" method="GET" class="news-search">
+    <input type="text" name="search" value="{{searchQuery}}" placeholder="Nhập thông tin tìm kiếm...">
+    <select name="sort">
+        <option value="">Sắp xếp theo ...</option>
+        <option value="-createdAt" {{#if (eq currentSort '-createdAt')}}selected{{/if}}>Mới nhất</option>
+        <option value="createdAt" {{#if (eq currentSort 'createdAt')}}selected{{/if}}>Cũ nhất</option>
+    </select>
+    <button type="submit">Tìm kiếm</button>
+</form>

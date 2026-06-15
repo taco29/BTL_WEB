@@ -71,11 +71,16 @@
 .box1-img{
     width: 100%; 
     height: 256px;  
+    overflow: hidden;
 }
 .box1-img img{
   width: 100%; 
   height: 100%;
   object-fit: fill;
+  transition: transform 0.5s ease;
+}
+.box1:hover .box1-img img {
+    transform: scale(1.05);
 }
 .box1-content{
   width: 100%;
@@ -93,6 +98,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #bc2626;
 }
 .date-text{
   display: flex;
@@ -111,7 +117,23 @@
     -webkit-box-orient: vertical;
     font-weight: 800;
     color: #051A53;
+    transition: color 0.3s ease;
 }
+
+.post-title a {
+    color: #051A53;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.box1:hover .post-title a,
+.post-title a:hover {
+    text-decoration: underline;
+    color: #BC2626;
+}
+
+
+
 .wrap{
   padding: 18px 0px;
 }

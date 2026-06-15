@@ -731,17 +731,19 @@
           <div class="body11-left">
             <div class="form-wrap">
               <h2 class="form-title">Đăng ký tư vấn tuyển sinh</h2>
-              <input class="form-input" type="text" placeholder="Họ và tên">
-              <div class="form-row">
-                <input class="form-input" type="tel" placeholder="Số điện thoại">
-                <input class="form-input" type="email" placeholder="Email">
-              </div>
-              <input class="form-input" type="text" placeholder="Trường THPT">
-              <select class="form-select">
-                <option>Trí tuệ nhân tạo vạn vật (AIoT)</option>
-                <option>Công nghệ thông tin Định hướng ứng dụng (UDU)</option>
-              </select>
-              <button class="btn-submit">Đăng ký ngay</button>
+              <form id="inlineRegisterForm">
+                <input class="form-input" type="text" name="fullname" placeholder="Họ và tên" required>
+                <div class="form-row">
+                  <input class="form-input" type="tel" name="phone" placeholder="Số điện thoại" required>
+                  <input class="form-input" type="email" name="email" placeholder="Email" required>
+                </div>
+                <input class="form-input" type="text" name="highschool" placeholder="Trường THPT" required>
+                <select class="form-select" name="major" required>
+                  <option value="aiot">Trí tuệ nhân tạo vạn vật (AIoT)</option>
+                  <option value="udu">Công nghệ thông tin Định hướng ứng dụng (UDU)</option>
+                </select>
+                <button type="submit" class="btn-submit">Đăng ký ngay</button>
+              </form>
             </div>
           </div>
           <div class="body11-right">
@@ -784,24 +786,24 @@
             <h5>Đăng kí tư vấn tuyển sinh</h5>
           </div>
           <div class="popup-content-container">
-            <form class="popup-info">
+            <form class="popup-info" id="popupRegisterForm">
               <div class="popup-content-container-left">
                 <div class="popup-name">
-                  <input type="text" placeholder="Họ và tên" required="">
+                  <input type="text" name="fullname" placeholder="Họ và tên" required="">
                 </div>
                 <div class="popup-number-and-email">
                   <div class="popup-number">
-                    <input type="tel" placeholder="Số điện thoại" required="">
+                    <input type="tel" name="phone" placeholder="Số điện thoại" required="">
                   </div>
                   <div class="popup-email">
-                    <input type="email" placeholder="Email" required="">
+                    <input type="email" name="email" placeholder="Email" required="">
                   </div>
                 </div>
                 <div class="popup-school">
-                  <input type="text" placeholder="Trường THPT" required="">
+                  <input type="text" name="highschool" placeholder="Trường THPT" required="">
                 </div>
                 <div class="popup-select-field">
-                  <select required="">
+                  <select name="major" required="">
                     <option value="aiot">
                       Trí tuệ nhân tạo vạn vật (AIoT)
                     </option>
@@ -848,5 +850,42 @@
             popup.style.display = "none";
           }
         });
+
+        // Xử lý gửi form đăng ký qua AJAX
+        function handleRegister(formId) {
+          const form = document.getElementById(formId);
+          if (!form) return;
+          
+          form.addEventListener('submit', async function (e) {
+            e.preventDefault();
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+
+            try {
+              const response = await fetch('/register', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+              });
+              const result = await response.json();
+              
+              if (result.success) {
+                alert('Đăng ký thành công!');
+                form.reset();
+                if (formId === 'popupRegisterForm') {
+                  popup.style.display = 'none';
+                }
+              } else {
+                alert('Lỗi: ' + result.message);
+              }
+            } catch (error) {
+              alert('Đã xảy ra lỗi hệ thống, vui lòng thử lại!');
+              console.error(error);
+            }
+          });
+        }
+
+        handleRegister('inlineRegisterForm');
+        handleRegister('popupRegisterForm');
       });
     </script>

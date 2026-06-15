@@ -12,15 +12,7 @@
       </div>
       <div class="anhtenlabang">
         <!-- Thanh tìm kiếm -->
-        <div class="news-search">
-          <input type="text" placeholder="Nhập thông tin tìm kiếm">
-          <select>
-            <option value="">Sắp xếp theo ...</option>
-            <option value="date-desc">Mới nhất</option>
-            <option value="date-asc">Cũ nhất</option>
-          </select>
-          <button>Tìm kiếm</button>
-        </div>
+        {{> search-sort-form}}
 
         <!-- Grid bài viết -->
         <div class="news-grid">
@@ -40,7 +32,7 @@
               </div>
               <div class="wrap">
                 <div class="post-title">
-                  <span>{{this.title}}</span>
+                  <a href="/news/{{this.slug}}">{{this.title}}</a>
                 </div>
               </div>
             </div>

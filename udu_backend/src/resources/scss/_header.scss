@@ -28,10 +28,13 @@
     margin-left: 40px;
 }
 
-.info2 {
+#main-header {
     position: sticky;
-    top: 0;
-    z-index: 2;
+    top: -41px;
+    z-index: 1000;
+}
+
+.info2 {
     background-color: white;
 }
 
