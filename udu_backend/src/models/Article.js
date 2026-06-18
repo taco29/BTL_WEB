@@ -1,9 +1,13 @@
 const mongoose = require('mongoose');
+const slug = require('mongoose-slug-updater');
+
+mongoose.plugin(slug);
+
 const Schema = mongoose.Schema;
 
 const Article = new Schema({
     title: { type: String, maxLength: 255 },
-    slug: { type: String, maxLength: 255, unique: true },
+    slug: { type: String, slug: 'title', unique: true },
     thumbnail: { type: String, maxLength: 255 },
     content: { type: String }, // HTML content or short description
     type: { type: String }, // 'news', 'event', 'student_activity'

@@ -95,6 +95,36 @@
 
           <section id="cau-truc-chuong-trinh" class="udu-section">
             <h2 class="udu-section-title">Cấu trúc chương trình</h2>
+            
+            {{#if course.specializations}}
+            <div class="specialization-tabs">
+              {{#each course.specializations}}
+              <button class="tab-button {{#if @first}}active{{/if}}" data-target="spec-{{@index}}">{{this.name}}</button>
+              {{/each}}
+            </div>
+
+            <div class="specialization-contents">
+              {{#each course.specializations}}
+              <div class="spec-content {{#if @first}}active{{/if}}" id="spec-{{@index}}">
+                <div class="curriculum-container">
+                  {{#each this.curriculum}}
+                  <div class="semester-group">
+                    <div class="semester-label"><span>{{this.semester}}</span></div>
+                    <div class="semester-courses">
+                      {{#each this.courses}}
+                      <div class="course-card {{this.type}}">
+                        <span class="course-credits">{{this.credits}}</span>
+                        <h4 class="course-name">{{this.name}}</h4>
+                      </div>
+                      {{/each}}
+                    </div>
+                  </div>
+                  {{/each}}
+                </div>
+              </div>
+              {{/each}}
+            </div>
+            {{else}}
             <div class="curriculum-container">
               {{#each course.curriculum}}
               <div class="semester-group">
@@ -109,43 +139,106 @@
                 </div>
               </div>
               {{/each}}
+            </div>
+            {{/if}}
 
-
-              <div class="curriculum-legend">
-                <div class="legend-item">
-                  <div class="legend-color bg-bat-buoc-chung"></div>
-                  Bắt buộc chung
-                </div>
-                <div class="legend-item">
-                  <div class="legend-color bg-bo-tro-nganh"></div>
-                  Bổ trợ ngành
-                </div>
-                <div class="legend-item">
-                  <div class="legend-color bg-chuyen-nganh"></div>
-                  Chuyên ngành
-                </div>
-                <div class="legend-item">
-                  <div class="legend-color bg-giao-duc-chuyen-nghiep"></div>
-                  Giáo dục chuyên nghiệp
-                </div>
-                <div class="legend-item">
-                  <div class="legend-color bg-bat-buoc-chung-nhom-nganh"></div>
-                  Bắt buộc chung nhóm ngành
-                </div>
-                <div class="legend-item">
-                  <div class="legend-color bg-co-so-nganh"></div>
-                  Cơ sở ngành
-                </div>
-                <div class="legend-item">
-                  <div class="legend-color bg-thuc-tap"></div>
-                  Thực tập
-                </div>
-                <div class="legend-item">
-                  <div class="legend-color bg-luan-van"></div>
-                  Luận văn tốt nghiệp
-                </div>
+            <div class="curriculum-legend mt-4" style="margin-top: 20px;">
+              <div class="legend-item">
+                <div class="legend-color bg-bat-buoc-chung"></div>
+                Bắt buộc chung
+              </div>
+              <div class="legend-item">
+                <div class="legend-color bg-bo-tro-nganh"></div>
+                Bổ trợ ngành
+              </div>
+              <div class="legend-item">
+                <div class="legend-color bg-chuyen-nganh"></div>
+                Chuyên ngành
+              </div>
+              <div class="legend-item">
+                <div class="legend-color bg-giao-duc-chuyen-nghiep"></div>
+                Giáo dục chuyên nghiệp
+              </div>
+              <div class="legend-item">
+                <div class="legend-color bg-bat-buoc-chung-nhom-nganh"></div>
+                Bắt buộc chung nhóm ngành
+              </div>
+              <div class="legend-item">
+                <div class="legend-color bg-co-so-nganh"></div>
+                Cơ sở ngành
+              </div>
+              <div class="legend-item">
+                <div class="legend-color bg-thuc-tap"></div>
+                Thực tập
+              </div>
+              <div class="legend-item">
+                <div class="legend-color bg-luan-van"></div>
+                Luận văn tốt nghiệp
               </div>
             </div>
+
+            <style>
+              .specialization-tabs {
+                display: flex;
+                gap: 20px;
+                margin-bottom: 20px;
+                border-bottom: 1px solid #ddd;
+              }
+              .tab-button {
+                background: none;
+                border: none;
+                font-size: 1.1rem;
+                color: #666;
+                padding: 10px 0;
+                cursor: pointer;
+                position: relative;
+                font-weight: 500;
+                transition: color 0.3s;
+              }
+              .tab-button:hover {
+                color: #cb2d3e;
+              }
+              .tab-button.active {
+                color: #cb2d3e; 
+              }
+              .tab-button.active::after {
+                content: '';
+                position: absolute;
+                bottom: -1px;
+                left: 0;
+                width: 100%;
+                height: 2px;
+                background-color: #cb2d3e;
+              }
+              .spec-content {
+                display: none;
+              }
+              .spec-content.active {
+                display: block;
+                animation: fadeIn 0.4s;
+              }
+              @keyframes fadeIn {
+                from { opacity: 0; }
+                to { opacity: 1; }
+              }
+            </style>
+            <script>
+              document.addEventListener('DOMContentLoaded', function() {
+                const tabButtons = document.querySelectorAll('.tab-button');
+                const specContents = document.querySelectorAll('.spec-content');
+
+                tabButtons.forEach(button => {
+                  button.addEventListener('click', () => {
+                    tabButtons.forEach(btn => btn.classList.remove('active'));
+                    specContents.forEach(content => content.classList.remove('active'));
+                    
+                    button.classList.add('active');
+                    const targetId = button.getAttribute('data-target');
+                    document.getElementById(targetId).classList.add('active');
+                  });
+                });
+              });
+            </script>
           </section>
 
           <section id="nghe-nghiep" class="udu-section">

@@ -3,12 +3,12 @@ const Schema = mongoose.Schema;
 
 const Research = new Schema({
     name: { type: String, required: true },
-    type: { type: String }, // 'project' (Đề tài) or 'group' (Nhóm)
+    type: { type: String },
     leader: { type: String },
     members: { type: [String], default: [] },
     year: { type: String },
     status: { type: String },
-    level: { type: String }, // 'Cấp Cơ sở', 'Cấp Bộ' etc.
+    level: { type: String },
     description: { type: String },
     link: { type: String },
     address: { type: String },

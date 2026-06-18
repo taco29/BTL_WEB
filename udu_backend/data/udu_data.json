@@ -69,7 +69,7 @@
           "type": "bat-buoc-chung-nhom-nganh"
         },
         {
-          "name": "Giải tích 2",
+          "name": "Giải tích",
           "credits": "3 tín chỉ",
           "type": "bat-buoc-chung-nhom-nganh"
         },
@@ -121,12 +121,679 @@
       ]
     },
     {
+      "semester": "Học kỳ 4",
+      "courses": [
+        {
+          "name": "Kinh tế chính trị Mác-Lênin",
+          "credits": "2 tín chỉ",
+          "type": "bat-buoc-chung"
+        },
+        {
+          "name": "Tiếng Anh (Course 3)",
+          "credits": "4 tín chỉ",
+          "type": "bat-buoc-chung"
+        },
+        {
+          "name": "An toàn và bảo mật hệ thống thông tin",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Quản lý dự án phần mềm",
+          "credits": "2 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Thực hành lập trình web",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Học phần doanh nghiệp 1",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        }
+      ]
+    },
+    {
+      "semester": "Học kỳ 5",
+      "courses": [
+        {
+          "name": "Chủ nghĩa xã hội khoa học",
+          "credits": "2 tín chỉ",
+          "type": "bat-buoc-chung"
+        },
+        {
+          "name": "Tiếng Anh (Course 3 Plus)",
+          "credits": "2 tín chỉ",
+          "type": "bat-buoc-chung"
+        },
+        {
+          "name": "Phát triển ứng dụng cho các thiết bị di động",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Cấu trúc dữ liệu và giải thuật",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Nhập môn công nghệ nền tảng",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Nhập môn tích hợp hệ thống",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        }
+      ]
+    },
+    {
+      "semester": "Học kỳ 6",
+      "courses": [
+        {
+          "name": "Tư tưởng Hồ Chí Minh",
+          "credits": "2 tín chỉ",
+          "type": "bat-buoc-chung"
+        },
+        {
+          "name": "Mạng máy tính theo CCNA",
+          "credits": "4 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Học phần doanh nghiệp 2",
+          "credits": "3 tín chỉ",
+          "type": "co-so-nganh"
+        },
+        {
+          "name": "Nhập môn công nghệ phần mềm",
+          "credits": "3 tín chỉ",
+          "type": "chuyen-nganh"
+        },
+        {
+          "name": "Kiến trúc và thiết kế phần mềm",
+          "credits": "3 tín chỉ",
+          "type": "chuyen-nganh"
+        },
+        {
+          "name": "Thiết kế giao diện người dùng",
+          "credits": "3 tín chỉ",
+          "type": "chuyen-nganh"
+        }
+      ]
+    },
+    {
+      "semester": "Học kỳ 7",
+      "courses": [
+        {
+          "name": "Lịch sử Đảng cộng sản VN",
+          "credits": "2 tín chỉ",
+          "type": "bat-buoc-chung"
+        },
+        {
+          "name": "Lập trình web nâng cao",
+          "credits": "3 tín chỉ",
+          "type": "chuyen-nganh"
+        },
+        {
+          "name": "Đảm bảo chất lượng phần mềm",
+          "credits": "3 tín chỉ",
+          "type": "chuyen-nganh"
+        },
+        {
+          "name": "Phân tích nghiệp vụ",
+          "credits": "3 tín chỉ",
+          "type": "chuyen-nganh"
+        },
+        {
+          "name": "Phát triển ứng dụng di động đa nền tảng",
+          "credits": "3 tín chỉ",
+          "type": "chuyen-nganh"
+        },
+        {
+          "name": "Học phần tự chọn",
+          "credits": "3 tín chỉ",
+          "type": "chuyen-nganh"
+        },
+        {
+          "name": "Phát triển phần mềm hướng agent",
+          "credits": "3 tín chỉ",
+          "type": "chuyen-nganh"
+        },
+        {
+          "name": "Tương tác người máy",
+          "credits": "3 tín chỉ",
+          "type": "chuyen-nganh"
+        },
+        {
+          "name": "Phát triển phần mềm hướng dịch vụ",
+          "credits": "3 tín chỉ",
+          "type": "chuyen-nganh"
+        }
+      ]
+    },
+    {
       "semester": "Học kỳ 8",
       "courses": [
         {
           "name": "Thực tập và tốt nghiệp",
-          "credits": "11 tín chỉ",
+          "credits": "12 tín chỉ",
           "type": "thuc-tap"
+        }
+      ]
+    }
+  ],
+  "specializations": [
+    {
+      "name": "Công nghệ phần mềm",
+      "curriculum": [
+        {
+          "semester": "Học kỳ 1",
+          "courses": [
+            {
+              "name": "Đại số",
+              "credits": "3 tín chỉ",
+              "type": "bat-buoc-chung-nhom-nganh"
+            },
+            {
+              "name": "Giải tích 1",
+              "credits": "3 tín chỉ",
+              "type": "bat-buoc-chung-nhom-nganh"
+            },
+            {
+              "name": "Pháp luật đại cương",
+              "credits": "2 tín chỉ",
+              "type": "bat-buoc-chung"
+            },
+            {
+              "name": "Nhập môn lập trình với Python",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            }
+          ]
+        },
+        {
+          "semester": "Học kỳ 2",
+          "courses": [
+            {
+              "name": "Xác suất thống kê",
+              "credits": "2 tín chỉ",
+              "type": "bat-buoc-chung-nhom-nganh"
+            },
+            {
+              "name": "Giải tích",
+              "credits": "3 tín chỉ",
+              "type": "bat-buoc-chung-nhom-nganh"
+            },
+            {
+              "name": "Tiếng Anh (Course 1)",
+              "credits": "4 tín chỉ",
+              "type": "bat-buoc-chung"
+            },
+            {
+              "name": "Lập trình với ngôn ngữ Script",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Cơ sở dữ liệu",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            }
+          ]
+        },
+        {
+          "semester": "Học kỳ 3",
+          "courses": [
+            {
+              "name": "Triết học Mác-Lênin",
+              "credits": "3 tín chỉ",
+              "type": "bat-buoc-chung"
+            },
+            {
+              "name": "Tiếng Anh (Course 2)",
+              "credits": "4 tín chỉ",
+              "type": "bat-buoc-chung"
+            },
+            {
+              "name": "Lập trình hướng đối tượng",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Toán rời rạc 1",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Lập trình web",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            }
+          ]
+        },
+        {
+          "semester": "Học kỳ 4",
+          "courses": [
+            {
+              "name": "Kinh tế chính trị Mác-Lênin",
+              "credits": "2 tín chỉ",
+              "type": "bat-buoc-chung"
+            },
+            {
+              "name": "Tiếng Anh (Course 3)",
+              "credits": "4 tín chỉ",
+              "type": "bat-buoc-chung"
+            },
+            {
+              "name": "An toàn và bảo mật hệ thống thông tin",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Quản lý dự án phần mềm",
+              "credits": "2 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Thực hành lập trình web",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Học phần doanh nghiệp 1",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            }
+          ]
+        },
+        {
+          "semester": "Học kỳ 5",
+          "courses": [
+            {
+              "name": "Chủ nghĩa xã hội khoa học",
+              "credits": "2 tín chỉ",
+              "type": "bat-buoc-chung"
+            },
+            {
+              "name": "Tiếng Anh (Course 3 Plus)",
+              "credits": "2 tín chỉ",
+              "type": "bat-buoc-chung"
+            },
+            {
+              "name": "Phát triển ứng dụng cho các thiết bị di động",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Cấu trúc dữ liệu và giải thuật",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Nhập môn công nghệ nền tảng",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Nhập môn tích hợp hệ thống",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            }
+          ]
+        },
+        {
+          "semester": "Học kỳ 6",
+          "courses": [
+            {
+              "name": "Tư tưởng Hồ Chí Minh",
+              "credits": "2 tín chỉ",
+              "type": "bat-buoc-chung"
+            },
+            {
+              "name": "Mạng máy tính theo CCNA",
+              "credits": "4 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Học phần doanh nghiệp 2",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Nhập môn công nghệ phần mềm",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            },
+            {
+              "name": "Kiến trúc và thiết kế phần mềm",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            },
+            {
+              "name": "Thiết kế giao diện người dùng",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            }
+          ]
+        },
+        {
+          "semester": "Học kỳ 7",
+          "courses": [
+            {
+              "name": "Lịch sử Đảng cộng sản VN",
+              "credits": "2 tín chỉ",
+              "type": "bat-buoc-chung"
+            },
+            {
+              "name": "Lập trình web nâng cao",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            },
+            {
+              "name": "Đảm bảo chất lượng phần mềm",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            },
+            {
+              "name": "Phân tích nghiệp vụ",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            },
+            {
+              "name": "Phát triển ứng dụng di động đa nền tảng",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            },
+            {
+              "name": "Học phần tự chọn",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            },
+            {
+              "name": "Phát triển phần mềm hướng agent",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            },
+            {
+              "name": "Tương tác người máy",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            },
+            {
+              "name": "Phát triển phần mềm hướng dịch vụ",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            }
+          ]
+        },
+        {
+          "semester": "Học kỳ 8",
+          "courses": [
+            {
+              "name": "Thực tập và tốt nghiệp",
+              "credits": "12 tín chỉ",
+              "type": "thuc-tap"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Hệ thống thông tin",
+      "curriculum": [
+        {
+          "semester": "Học kỳ 1",
+          "courses": [
+            {
+              "name": "Đại số",
+              "credits": "3 tín chỉ",
+              "type": "bat-buoc-chung-nhom-nganh"
+            },
+            {
+              "name": "Giải tích 1",
+              "credits": "3 tín chỉ",
+              "type": "bat-buoc-chung-nhom-nganh"
+            },
+            {
+              "name": "Pháp luật đại cương",
+              "credits": "2 tín chỉ",
+              "type": "bat-buoc-chung"
+            },
+            {
+              "name": "Nhập môn lập trình với Python",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            }
+          ]
+        },
+        {
+          "semester": "Học kỳ 2",
+          "courses": [
+            {
+              "name": "Xác suất thống kê",
+              "credits": "2 tín chỉ",
+              "type": "bat-buoc-chung-nhom-nganh"
+            },
+            {
+              "name": "Giải tích",
+              "credits": "3 tín chỉ",
+              "type": "bat-buoc-chung-nhom-nganh"
+            },
+            {
+              "name": "Tiếng Anh (Course 1)",
+              "credits": "4 tín chỉ",
+              "type": "bat-buoc-chung"
+            },
+            {
+              "name": "Lập trình với ngôn ngữ Script",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Cơ sở dữ liệu",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            }
+          ]
+        },
+        {
+          "semester": "Học kỳ 3",
+          "courses": [
+            {
+              "name": "Triết học Mác-Lênin",
+              "credits": "3 tín chỉ",
+              "type": "bat-buoc-chung"
+            },
+            {
+              "name": "Tiếng Anh (Course 2)",
+              "credits": "4 tín chỉ",
+              "type": "bat-buoc-chung"
+            },
+            {
+              "name": "Lập trình hướng đối tượng",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Toán rời rạc 1",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Lập trình web",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            }
+          ]
+        },
+        {
+          "semester": "Học kỳ 4",
+          "courses": [
+            {
+              "name": "Kinh tế chính trị Mác-Lênin",
+              "credits": "2 tín chỉ",
+              "type": "bat-buoc-chung"
+            },
+            {
+              "name": "Tiếng Anh (Course 3)",
+              "credits": "4 tín chỉ",
+              "type": "bat-buoc-chung"
+            },
+            {
+              "name": "An toàn và bảo mật hệ thống thông tin",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Quản lý dự án phần mềm",
+              "credits": "2 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Thực hành lập trình web",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Học phần doanh nghiệp 1",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            }
+          ]
+        },
+        {
+          "semester": "Học kỳ 5",
+          "courses": [
+            {
+              "name": "Chủ nghĩa xã hội khoa học",
+              "credits": "2 tín chỉ",
+              "type": "bat-buoc-chung"
+            },
+            {
+              "name": "Tiếng Anh (Course 3 Plus)",
+              "credits": "2 tín chỉ",
+              "type": "bat-buoc-chung"
+            },
+            {
+              "name": "Phát triển ứng dụng cho các thiết bị di động",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Cấu trúc dữ liệu và giải thuật",
+              "credits": "2 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Nhập môn công nghệ nền tảng",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Nhập môn tích hợp hệ thống",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            }
+          ]
+        },
+        {
+          "semester": "Học kỳ 6",
+          "courses": [
+            {
+              "name": "Tư tưởng Hồ Chí Minh",
+              "credits": "2 tín chỉ",
+              "type": "bat-buoc-chung"
+            },
+            {
+              "name": "Mạng máy tính theo CCNA",
+              "credits": "4 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Học phần doanh nghiệp 2",
+              "credits": "3 tín chỉ",
+              "type": "co-so-nganh"
+            },
+            {
+              "name": "Nhập môn DevOps",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            },
+            {
+              "name": "Quản trị cơ sở dữ liệu nâng cao",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            },
+            {
+              "name": "Điện toán đám mây",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            }
+          ]
+        },
+        {
+          "semester": "Học kỳ 7",
+          "courses": [
+            {
+              "name": "Lịch sử Đảng cộng sản VN",
+              "credits": "2 tín chỉ",
+              "type": "bat-buoc-chung"
+            },
+            {
+              "name": "Kho dữ liệu và khai phá dữ liệu",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            },
+            {
+              "name": "Cấu hình hệ thống phân tán",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            },
+            {
+              "name": "Thực hành DevOps",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            },
+            {
+              "name": "Phát triển hệ thống thông tin quản lý",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            },
+            {
+              "name": "Học phần tự chọn",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            },
+            {
+              "name": "Hệ trợ giúp quyết định",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            },
+            {
+              "name": "Các hệ thống dựa trên tri thức",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            },
+            {
+              "name": "Phát triển các hệ thống phân tán",
+              "credits": "3 tín chỉ",
+              "type": "chuyen-nganh"
+            }
+          ]
+        },
+        {
+          "semester": "Học kỳ 8",
+          "courses": [
+            {
+              "name": "Thực tập và tốt nghiệp",
+              "credits": "12 tín chỉ",
+              "type": "thuc-tap"
+            }
+          ]
         }
       ]
     }
