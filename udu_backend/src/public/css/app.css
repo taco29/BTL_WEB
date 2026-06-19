@@ -5678,6 +5678,34 @@ ul.sidebar-menu li.bigger a {
   pointer-events: none;
   transform: translateY(20px);
 }
+.chatbot-window .chatbot-scroll-bottom {
+  position: absolute;
+  bottom: 70px; /* Nằm ngay trên thanh gõ chữ */
+  right: 20px; /* Né qua mép phải một chút */
+  width: 30px;
+  height: 30px;
+  background-color: rgba(205, 32, 31, 0.8); /* Màu đỏ PTIT, hơi trong suốt */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.chatbot-window .chatbot-scroll-bottom:hover {
+  background-color: rgb(205, 32, 31); /* Đậm lên khi trỏ chuột */
+}
+.chatbot-window .chatbot-scroll-bottom {
+  /* Khi ở dưới cùng thì ẩn đi */
+}
+.chatbot-window .chatbot-scroll-bottom.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
 
 .chatbot-header {
   background: #bc2626;
@@ -5736,7 +5764,38 @@ ul.sidebar-menu li.bigger a {
   align-self: flex-end;
   border-bottom-right-radius: 0;
 }
+.chatbot-messages .typing-indicator {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 12px 15px;
+  width: fit-content;
+}
+.chatbot-messages .typing-indicator .dot {
+  width: 6px;
+  height: 6px;
+  background-color: #888;
+  border-radius: 50%;
+  animation: jump 1.5s infinite ease-in-out;
+}
+.chatbot-messages .typing-indicator .dot:nth-child(1) {
+  animation-delay: 0s;
+}
+.chatbot-messages .typing-indicator .dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.chatbot-messages .typing-indicator .dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
 
+@keyframes jump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
 .chatbot-input {
   display: flex;
   padding: 10px;
