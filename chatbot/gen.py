@@ -44,7 +44,7 @@ MY_PROMPT = ChatPromptTemplate.from_messages([
         "  Năm 2025:\n"
         "  - Chỉ tiêu: 600  |  Số nhập học: 593\n"
         "  - Điểm trúng tuyển: 25.8\n\n"
-        "3. CÁC CHƯƠNG TRÌNH ĐÀO TẠO\n"
+        "3. CÁC CHƯƠNG TRÌNH LIÊN QUAN\n"
         "  a. Chương trình Chuẩn         - Mã: 7480201       - Chỉ tiêu: 600\n"
         "  b. Chương trình Chất lượng cao - Mã: 7480201_CLC  - Chỉ tiêu: 370\n"
         "  c. Việt - Nhật                 - Mã: 7480201_VNH  - Chỉ tiêu: 110\n"
