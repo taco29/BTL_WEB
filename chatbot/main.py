@@ -1,4 +1,3 @@
-import threading
 import os
 import sys
 import warnings
@@ -7,9 +6,6 @@ import json
 # Đảm bảo stdout dùng UTF-8 để in tiếng Việt trên Windows
 sys.stdout.reconfigure(encoding='utf-8')
 sys.stderr.reconfigure(encoding='utf-8')
-
-
-os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = "hide"
 
 warnings.filterwarnings("ignore", category=UserWarning)
 
@@ -21,9 +17,6 @@ os.environ["TQDM_DISABLE"] = "1"
 from retrieve import retriever
 from gen import AnswerGenerator
 from dotenv import load_dotenv
-
-from voice.tts import speak_text, stop_speaking_event
-from voice.normalize_text import clean_text_for_speech
 
 load_dotenv(override=True)
 API_KEY = os.getenv("GOOGLE_API_KEY")
@@ -67,22 +60,12 @@ def main():
     while True:
         question = input("Bạn: ").strip()
         
-        # Kích hoạt cờ ngắt để dừng ngay lập tức luồng TTS hiện tại (nếu có)
-        stop_speaking_event.set()
-        
         if not question:
             continue
         if question.lower() == "exit":
             break
         answer = bot.ask(question)
         print(f"PTIT: {answer}\n")
-
-        # Tắt cờ ngắt trước khi đọc luồng mới
-        stop_speaking_event.clear()
-        
-        # Chuẩn hóa văn bản trước khi đưa vào hàm nói
-        cleaned_answer = clean_text_for_speech(answer)
-        threading.Thread(target=speak_text, args=(cleaned_answer,), daemon=True).start()
 
     # print("\nSOURCES:")
     # for doc in result["source_documents"]:

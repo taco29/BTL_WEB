@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "6a32837aac209a9a4cf65fe2",
+    "fullname": "hehe",
+    "phone": "1234",
+    "email": "minh@sdfasd",
+    "highschool": "ádfas",
+    "major": "aiot",
+    "createdAt": "2026-06-17T11:22:34.894Z",
+    "__v": 0
+  },
+  {
+    "_id": "6a328422ac209a9a4cf65fe3",
+    "fullname": "1234",
+    "phone": "1234",
+    "email": "asdf@xn--df-lia",
+    "highschool": "ádf",
+    "major": "aiot",
+    "createdAt": "2026-06-17T11:25:22.866Z",
+    "__v": 0
+  }
+]

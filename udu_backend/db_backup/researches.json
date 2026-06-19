@@ -1,0 +1,94 @@
+[
+  {
+    "_id": "6a204bbb1ed5f51fe899a37b",
+    "name": "Dữ liệu thông minh (D2AI - Data To Artificial Intelligence)",
+    "type": "group",
+    "leader": "TS. Phan Lý Huỳnh",
+    "members": [],
+    "description": "Nghiên cứu, phát triển và ứng dụng trí tuệ nhân tạo, khoa học dữ liệu vào xử lý dữ liệu thông minh và giải quyết các bài toán thực tế trong nhiều lĩnh vực như giáo dục, nhà thông minh, hành chính công, chăm sóc khách hàng.",
+    "link": "#",
+    "address": "Phòng Nghiên cứu Phát triển Công nghệ số, Tầng 4 Viện Khoa học Kỹ thuật Bưu điện, 122 Hoàng Quốc Việt, Hà Nội.",
+    "memberCount": 3,
+    "__v": 0,
+    "createdAt": "2026-06-03T15:43:55.292Z",
+    "updatedAt": "2026-06-03T15:43:55.292Z"
+  },
+  {
+    "_id": "6a204bbb1ed5f51fe899a37c",
+    "name": "An ninh mạng và Hệ thống thông minh (Cybersecurity and Intelligent Systems Research Group – CISRG)",
+    "type": "group",
+    "leader": "TS. Nguyễn Huy Trung",
+    "members": [],
+    "description": "Nghiên cứu các giải pháp công nghệ tiên tiến trong lĩnh vực an toàn thông tin, bảo mật IoT, phân tích mã độc và ứng dụng trí tuệ nhân tạo trong hệ thống mạng và dữ liệu lớn.",
+    "link": "#",
+    "address": "Phòng Nghiên cứu Phát triển Công nghệ số, Tầng 4 Viện Khoa học Kỹ thuật Bưu điện, 122 Hoàng Quốc Việt, Hà Nội.",
+    "memberCount": 5,
+    "__v": 0,
+    "createdAt": "2026-06-03T15:43:55.294Z",
+    "updatedAt": "2026-06-03T15:43:55.294Z"
+  },
+  {
+    "_id": "6a204bbb1ed5f51fe899a37d",
+    "name": "Nghiên cứu và phát triển công nghệ và thiết bị viễn thông thế hệ mới",
+    "type": "group",
+    "leader": "TS. Nguyễn Thành",
+    "members": [],
+    "description": "Nghiên cứu các công nghệ mới cho mạng 5G/6G. Xây dựng mạng viễn thông phục vụ phát triển và đánh giá công nghệ 5G/6G. Phát triển các sản phẩm mẫu 5G/6G. Nghiên cứu và phát triển kỹ thuật đo lường viễn thông. Xây dựng phương pháp đo lường cho các công nghệ mới. Nghiên cứu và xây dựng các hệ thống đo lường các mạng và công nghệ mới. Nghiên cứu và phát triển các thiết bị phục vụ đo lường.",
+    "link": "#",
+    "address": "Phòng Nghiên cứu Kỹ thuật Dịch vụ Viễn thông, Tầng 4 Viện Khoa học Kỹ thuật Bưu điện, 122 Hoàng Quốc Việt, Hà Nội.",
+    "memberCount": 50,
+    "__v": 0,
+    "createdAt": "2026-06-03T15:43:55.295Z",
+    "updatedAt": "2026-06-03T15:43:55.295Z"
+  },
+  {
+    "_id": "6a204bbb1ed5f51fe899a37e",
+    "name": "Bảng tổng hợp đề tài KHCN cấp bộ năm 2022 – viện KHKTBĐ",
+    "type": "project",
+    "members": [],
+    "link": "#",
+    "__v": 0,
+    "createdAt": "2026-06-03T15:43:55.295Z",
+    "updatedAt": "2026-06-03T15:43:55.295Z"
+  },
+  {
+    "_id": "6a204bbb1ed5f51fe899a37f",
+    "name": "Bảng tổng hợp đề tài KHCN cấp bộ 2021 – viện KHKTBĐ",
+    "type": "project",
+    "members": [],
+    "link": "#",
+    "__v": 0,
+    "createdAt": "2026-06-03T15:43:55.295Z",
+    "updatedAt": "2026-06-03T15:43:55.295Z"
+  },
+  {
+    "_id": "6a204bbb1ed5f51fe899a380",
+    "name": "Bảng tổng hợp đề tài KHCN cấp bộ 2020 – viện KHKTBĐ",
+    "type": "project",
+    "members": [],
+    "link": "#",
+    "__v": 0,
+    "createdAt": "2026-06-03T15:43:55.295Z",
+    "updatedAt": "2026-06-03T15:43:55.295Z"
+  },
+  {
+    "_id": "6a204bbb1ed5f51fe899a381",
+    "name": "Bảng tổng hợp đề tài KHCN cấp bộ 2019 – viện KHKTBĐ",
+    "type": "project",
+    "members": [],
+    "link": "#",
+    "__v": 0,
+    "createdAt": "2026-06-03T15:43:55.295Z",
+    "updatedAt": "2026-06-03T15:43:55.295Z"
+  },
+  {
+    "_id": "6a204bbb1ed5f51fe899a382",
+    "name": "Bảng tổng hợp nhiệm vụ KHCN cấp bộ 2018 – Viện KHKTBĐ",
+    "type": "project",
+    "members": [],
+    "link": "#",
+    "__v": 0,
+    "createdAt": "2026-06-03T15:43:55.295Z",
+    "updatedAt": "2026-06-03T15:43:55.295Z"
+  }
+]
