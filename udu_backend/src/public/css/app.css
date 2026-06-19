@@ -965,7 +965,7 @@ body {
 
 .body2-content-left-down-h2 span {
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   color: #FFFFFF;
   margin-top: -9px;
   line-height: 1.8;
@@ -2057,6 +2057,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 21.5px 24px 0px;
+  -webkit-line-clamp: 3;
 }
 
 .body9-content-info-date span {
