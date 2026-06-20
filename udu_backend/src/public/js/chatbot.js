@@ -6,8 +6,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     const inputField = document.getElementById('chatbot-input-field');
     const messagesBox = document.getElementById('chatbot-messages');
+    const scrollBottomBtn = document.getElementById('chatbot-scroll-bottom-btn');
 
     const tooltip = toggleBtn.querySelector('.chatbot-tooltip');
+
+    let typingElement = null;
 
     toggleBtn.addEventListener('click', () => {
         chatWindow.classList.remove('hidden');
@@ -18,6 +21,39 @@ document.addEventListener('DOMContentLoaded', function() {
         if (tooltip) tooltip.style.display = '';
     });
 
+    function scrollToBottom() {
+        messagesBox.scrollTo({
+            top: messagesBox.scrollHeight,
+            behavior: 'smooth'
+        });
+    }
+
+    scrollBottomBtn.addEventListener('click', scrollToBottom);
+
+    messagesBox.addEventListener('scroll', () => {
+        const isNearBottom = messagesBox.scrollHeight - messagesBox.scrollTop - messagesBox.clientHeight < 50;
+        if (isNearBottom) {
+            scrollBottomBtn.classList.add('hidden'); 
+        } else {
+            scrollBottomBtn.classList.remove('hidden'); 
+        }
+    });
+
+    function showTyping() {
+        typingElement = document.createElement('div');
+        typingElement.className = 'message bot-message typing-indicator';
+        typingElement.innerHTML = '<span class="dot"></span><span class="dot"></span><span class="dot"></span>';
+        messagesBox.appendChild(typingElement);
+        messagesBox.scrollTop = messagesBox.scrollHeight;
+    }
+
+    function removeTyping() {
+        if (typingElement) {
+            messagesBox.removeChild(typingElement);
+            typingElement = null;
+        }
+    }
+    
     const sendMessage = async () => {
         const text = inputField.value.trim();
         if (!text) return;
@@ -27,6 +63,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         sendBtn.disabled = true;
 
+        showTyping();
+        
         try { 
             const response = await fetch('/api/chat', {
                 method: 'POST',
@@ -34,6 +72,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 body: JSON.stringify({ question: text })
             });
             const data = await response.json();
+
+            removeTyping();
 
             appendMessage(data.answer, 'bot-message');
         } catch (error) {
@@ -52,17 +92,13 @@ document.addEventListener('DOMContentLoaded', function() {
         return text
             .split('\n')
             .map(line => {
-                // Escape HTML đặc biệt trước
                 const escaped = line
                     .replace(/&/g, '&amp;')
                     .replace(/</g, '&lt;')
                     .replace(/>/g, '&gt;');
-
-                // Dòng tiêu đề số (1. 2. 3.)
                 if (/^\d+\./.test(line.trim())) {
                     return `<span class="chat-section-title">${escaped}</span>`;
                 }
-                // Dòng thụt vào (bắt đầu bằng khoảng trắng hoặc ký tự a. b. c. -)
                 if (/^(\s+[\-a-zA-Z]|\s{2,})/.test(line)) {
                     return `<span class="chat-indent">${escaped}</span>`;
                 }
@@ -80,6 +116,6 @@ document.addEventListener('DOMContentLoaded', function() {
             msgDiv.textContent = text;
         }
         messagesBox.appendChild(msgDiv);
-        messagesBox.scrollTop = messagesBox.scrollHeight;
-    }
+        scrollToBottom();
+    } 
 });
