@@ -11,27 +11,24 @@ const Course = new Schema({
     image: { type: String, maxLength: 255 },
     slug: { type: String, slug: 'name', unique: true },
 
-    // Tổng quan
-    code: { type: String }, // Mã ngành
-    duration: { type: String }, // Thời gian
-    intake: { type: String }, // Kỳ nhập học
-    campus: { type: String }, // Cơ sở
+    code: { type: String },
+    duration: { type: String },
+    intake: { type: String },
+    campus: { type: String },
 
-    // Chuẩn đầu ra 
     learningOutcomes: [
         {
-            lo_id: { type: String }, // LO1
+            lo_id: { type: String },
             lo_desc: { type: String },
             pis: [
                 {
-                    pi_id: { type: String }, // PI 1.1
+                    pi_id: { type: String },
                     pi_desc: { type: String }
                 }
             ]
         }
     ],
 
-    // Cấu trúc chương trình
     curriculum: [
         {
             semester: { type: String },
